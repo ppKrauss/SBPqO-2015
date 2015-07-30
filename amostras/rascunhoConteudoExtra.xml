@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:app xmlns:tns="http://www.example.org/app/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/app/ app.xsd">
+
+	<secao nome="programacao">
+		<titulo>Programação</titulo>
+		<grupo>
+			<titulo>Pré-evento - Terça-feira, 02 de setembro de 2014</titulo>
+			<eventos>
+				<evento>
+					<titulo>Reunião da Pós Graduação - CAPES</titulo>
+					<data>2014-09-02</data>
+					<hora-inicio>08:00:00</hora-inicio>
+					<hora-termino>17:00:00</hora-termino>
+					<sala>Sala Fienze - 10ª andar</sala>
+				</evento>
+				<evento>
+					<titulo>Reunião da Comissõa de Apoio</titulo>
+					<data>2014-09-02</data>
+					<hora-inicio>16:00:00</hora-inicio>
+					<sala>Sala Montanara - 10ª andar</sala>
+				</evento>
+				<evento>
+					<titulo>Reunião Avaliadores</titulo>
+					<data>2014-09-02</data>
+					<hora-inicio>17:30:00</hora-inicio>
+					<sala>Sala Fienze - 10ª andar</sala>
+				</evento>
+			</eventos>
+		</grupo>
+		<grupo>
+			<titulo>Quarta-feira, 03 de setembro de 2014</titulo>
+			<eventos>
+				<evento>
+					<titulo>Abertura da Secretaria</titulo>
+					<data>2014-09-03</data>
+					<hora-inicio>07:00:00</hora-inicio>
+					<sala>Hall do Salão Monumentale</sala>
+				</evento>
+			</eventos>
+		</grupo>
+	</secao>
+
+	<secao nome="curso_e_simposio">
+		<titulo>Cursos e Simpósios</titulo>
+		<texto>Inscrições gratuitas no local (vagas limitadas)</texto>
+		<grupo>
+			<titulo>SIMPÓSIO I - Quarta-feira, 03 de setembro de 2014</titulo>
+			<cursos>
+				<curso>
+					<titulo>BIOBANCOS, BIORREPOSITÓRIOS E BANCOS DE DENTES: ASPECTOS ÉTICOS, OPERACIONAIS E DE ENSINO E PESQUISA</titulo>
+					<evento>
+						<data>2014-09-03</data>
+						<hora-inicio>08:30:00</hora-inicio>
+						<hora-termino>12:00:00</hora-termino>
+						<sala>Sala Florada</sala>
+					</evento>
+					<topicos>
+						<topico>Aspectos éticos e as resoluções que tratam da questão;</topico>
+						<topico>Implicações e desafios envolvidos ao armazenar material biológico;</topico>
+					</topicos>
+					<palestrantes>
+						<pessoa>
+							<nome>Décio dos Santos Pinto Júnior</nome>
+							<cargo>Supervisor Técnico do Biobanco da FOUSP</cargo>
+						</pessoa>
+						<pessoa>
+							<nome>José Carlos Pettrossi Imparato</nome>
+							<cargo>Supervisor Técnico do Banco de Dentes da FOUSP (BDH/FOUSP)</cargo>
+						</pessoa>
+					</palestrantes>
+				</curso>
+			</cursos>
+		</grupo>
+	</secao>
+
+	<secao nome="reunioes_paralelas">
+		<titulo>Reuniões Paralelas</titulo>
+		<grupo>
+			<titulo>Sexta-feira, 05 de setembro de 2014</titulo>
+			<texto>Frquencia Livre</texto>
+			<eventos>
+				<evento>
+					<titulo>GRUPO PET</titulo>
+					<data>2014-09-05</data>
+					<sala>Sala Torino - 10ª andar</sala>
+				</evento>
+				<evento>
+					<titulo>GBPD</titulo>
+					<data>2014-09-05</data>
+					<sala>Sala Capri - 10ª andar</sala>
+				</evento>
+				<evento>
+					<titulo>GBMD</titulo>
+					<data>2014-09-05</data>
+					<sala>Sala Fienze - 10ª andar</sala>
+				</evento>
+			</eventos>
+		</grupo>
+	</secao>
+
+	<secao nome="informacoes_gerais">
+		<titulo>Informações Gerais</titulo>
+		<grupo>
+			<titulo>Conselho Diretor</titulo>
+			<pessoas>
+				<pessoa>
+					<nome>Luis Laberto Plácido</nome>
+					<cargo>Presidente</cargo>
+					<foto>luis.png</foto>
+				</pessoa>
+				<pessoa>
+					<nome>Altair Antoninha Del Bel Cury</nome>
+					<cargo>Vice-presidente</cargo>
+					<foto>altair.png</foto>
+				</pessoa>
+			</pessoas>
+		</grupo>
+		<grupo>
+			<titulo>Assessor</titulo>
+			<pessoas>
+				<pessoa>
+					<nome>Sigmar de Mello Rode</nome>
+					<cargo>Editor Científico da BOR</cargo>
+				</pessoa>
+			</pessoas>
+		</grupo>
+	</secao>
+
+	<secao nome="patrocinadores">
+		<titulo>Patrocinadores</titulo>
+		<grupo>
+			<titulo>Apoio</titulo>
+			<imagens>
+				<imagem>iadr.png</imagem>
+				<imagem>capes.png</imagem>
+				<imagem>cnpq.png</imagem>
+			</imagens>
+		</grupo>
+		<grupo>
+			<titulo>Patrocinio</titulo>
+			<imagens>
+				<imagem>colgate.png</imagem>
+				<imagem>listerine.png</imagem>
+			</imagens>
+		</grupo>
+	</secao>
+
+	<secao nome="hospedagem">
+		<titulo>Hospedagem</titulo>
+		<grupo>
+			<titulo>RENASE</titulo>
+			<texto>AGENCIA OFICIAL DA SBPqO</texto>
+			<topicos tipo="PARAGRAFO">
+				<topico>A Renasce Agência...</topico>
+				<topico>Foram negociadas...</topico>
+			</topicos>
+			<contatos>
+				<contato>
+					<titulo>Maiores informações</titulo>
+					<telefone>(11) 2344-0006</telefone>
+					<email>sbpqo@renase.com.br</email>
+				</contato>
+			</contatos>
+		</grupo>
+		<grupo>
+			<titulo>COMO EFETUAR SUA RESERVA DE HOSPEDAGEM?</titulo>
+			<topicos tipo="NUMERACAO">
+				<topico>Escolha o hotel de interesse...</topico>
+				<topico>A disponibilidade será consultada...</topico>
+				<topico>Sua reserva...</topico>
+			</topicos>
+		</grupo>
+		<grupo>
+			<titulo>TRANSPORTE TERRESTRE E AEREO</titulo>
+			<topicos tipo="MARCADOR">
+				<topico>AEROPORTOS - Para solicitar...</topico>
+				<topico>ENTRE HOTÉIS - Haverá transporte...</topico>
+				<topico>AEREO - Podemos auxiliá-lo...</topico>
+			</topicos>
+		</grupo>
+	</secao>
+
+	<secao nome="localizacao">
+		<titulo>Localização</titulo>
+		<grupo>
+			<titulo>Vacance Hotel</titulo>
+			<contatos>
+				<contato>
+					<imagem>vacance-hotel.png</imagem>
+					<texto>Av. das Nações Unidas, 1374</texto>
+					<telefone>(11) 3333-3333</telefone>
+					<email>contato@vacancehotel.com.br</email>
+					<link>http://www.vacancehotel.com.br/</link>
+				</contato>
+			</contatos>
+			<imagens>
+				<imagem>mapa.png</imagem>
+			</imagens>
+		</grupo>
+	</secao>
+
+	<secao nome="contatos">
+		<titulo>Contatos</titulo>
+		<grupo>
+			<contatos>
+				<contato>
+					<imagem>sbpqo.png</imagem>
+					<telefone>(11) 3333-3333</telefone>
+					<email>contato@sbpqo.org.br</email>
+					<link>http://www.sbpqo.org.br</link>
+				</contato>
+				<contato>
+					<imagem>vacance-hotel.png</imagem>
+					<texto>Av. das Nações Unidas, 1374</texto>
+					<telefone>(11) 3333-3333</telefone>
+					<email>contato@vacancehotel.com.br</email>
+					<link>http://www.vacancehotel.com.br/</link>
+				</contato>
+			</contatos>
+		</grupo>
+	</secao>
+
+	<secao nome="instrocoes_para_autores">
+		<titulo>Modalidade: PAINÉIS EFETIVOS + ASPIRANTES</titulo>
+		<grupo>
+			<topicos>
+				<painel>
+					<modalidade>PAINEL A</modalidade>
+					<instalacao>
+						<data>2015-09-03</data>
+						<hora-inicio>08:00:00</hora-inicio>
+						<sala>Salão Monumentale</sala>
+					</instalacao>
+					<apresentacao>
+						<data>2015-09-03</data>
+						<hora-inicio>08:30:00</hora-inicio>
+						<hora-termino>12:00:00</hora-termino>
+						<sala>Salão Monumentale</sala>
+					</apresentacao>
+					<retirada>
+						<data>2015-09-03</data>
+						<hora-inicio>12:00:00</hora-inicio>
+						<hora-termino>12:15:00</hora-termino>
+						<sala>Salão Monumentale</sala>
+					</retirada>
+				</painel>
+			</topicos>
+		</grupo>
+		<grupo>
+			<titulo>Orientações para Reunião</titulo>
+			<topicos tipo="PARAGRAFO">
+				<topico>As reuniões de grupos de area...</topico>
+				<topico>Os certificados serão...</topico>
+				<topico>IMPORTANTE: para receber...</topico>
+				<topico>Localize seu grupo...</topico>
+				<tabela>
+					<linha>
+						<coluna>Reunião de Grupo</coluna>
+						<coluna>Sala Fineze</coluna>
+						<coluna>10º andar</coluna>
+					</linha>
+					<linha>
+						<coluna>Reunião de Grupo</coluna>
+						<coluna>Sala Torino</coluna>
+						<coluna>10º andar</coluna>
+					</linha>
+				</tabela>
+			</topicos>
+		</grupo>
+		<grupo>
+			<topicos>
+				<painel>
+					<modalidade>PAINEL B</modalidade>
+					<instalacao>
+						<data>2015-09-03</data>
+						<hora-inicio>08:00:00</hora-inicio>
+						<sala>Salão Monumentale</sala>
+					</instalacao>
+					<apresentacao>
+						<data>2015-09-03</data>
+						<hora-inicio>08:30:00</hora-inicio>
+						<hora-termino>12:00:00</hora-termino>
+						<sala>Salão Monumentale</sala>
+					</apresentacao>
+					<retirada>
+						<data>2015-09-03</data>
+						<hora-inicio>12:00:00</hora-inicio>
+						<hora-termino>12:15:00</hora-termino>
+						<sala>Salão Monumentale</sala>
+					</retirada>
+				</painel>
+			</topicos>
+		</grupo>
+	</secao>
+
+</tns:app>

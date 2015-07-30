@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/app/"
+	targetNamespace="http://www.example.org/app/">
+	
+	<element name="app" type="tns:app" />
+
+	<complexType name="app">
+		<sequence>
+			<element name="secao" type="tns:secao" minOccurs="1" maxOccurs="unbounded" />
+		</sequence>
+	</complexType>
+
+	<complexType name="secao">
+		<sequence>
+			<element name="titulo" type="string" minOccurs="1" maxOccurs="1" />
+			<element name="texto" type="string" minOccurs="0" maxOccurs="1" />
+			<element name="grupo" type="tns:grupo" minOccurs="0" maxOccurs="unbounded" />
+		</sequence>
+		<attribute name="nome" use="required" />
+		<attribute name="template" />
+	</complexType>
+	
+	<complexType name="grupo">
+		<sequence>
+			<element name="titulo" type="string" minOccurs="0" maxOccurs="1" />
+			<element name="texto" type="string" minOccurs="0" maxOccurs="1" />
+			<element name="link" type="string" minOccurs="0" maxOccurs="unbounded" />
+			<element name="cursos" type="tns:cursos" minOccurs="0" maxOccurs="1" />
+			<element name="topicos" type="tns:topicos" minOccurs="0" maxOccurs="1" />
+			<element name="pessoas" type="tns:pessoas" minOccurs="0" maxOccurs="1" />
+			<element name="eventos" type="tns:eventos" minOccurs="0" maxOccurs="1" />
+			<element name="contatos" type="tns:contatos" minOccurs="0" maxOccurs="1" />
+			<element name="imagens" type="tns:imagens" minOccurs="0" maxOccurs="1" />
+		</sequence>
+	</complexType>
+
+	<complexType name="contatos">
+		<sequence>
+			<element name="contato" type="tns:contato" minOccurs="1" maxOccurs="unbounded" />
+		</sequence>	
+	</complexType>
+	
+	<complexType name="contato">
+		<sequence>
+			<element name="imagem" type="string" minOccurs="0" maxOccurs="1" />
+			<element name="titulo" type="string" minOccurs="0" maxOccurs="1" />
+			<element name="texto" type="string" minOccurs="0" maxOccurs="1" />
+			<element name="telefone" type="string" minOccurs="0" maxOccurs="unbounded" />
+			<element name="email" type="string" minOccurs="0" maxOccurs="unbounded" />
+			<element name="link" type="string" minOccurs="0" maxOccurs="unbounded" />
+		</sequence>
+	</complexType>
+
+	<complexType name="imagens">
+		<sequence>
+			<element name="imagem" type="string" minOccurs="1" maxOccurs="unbounded" />
+		</sequence>
+	</complexType>
+
+	<complexType name="cursos">
+		<sequence>
+			<element name="curso" type="tns:curso" minOccurs="0" maxOccurs="unbounded" />
+		</sequence>
+	</complexType>
+	
+	<complexType name="curso">
+		<sequence>
+			<element name="titulo" type="string" minOccurs="1" maxOccurs="1" />		
+			<element name="evento" type="tns:evento" minOccurs="1" maxOccurs="1" />		
+			<element name="topicos" type="tns:topicos" minOccurs="0" maxOccurs="1" />		
+			<element name="palestrantes" type="tns:pessoas" minOccurs="0" maxOccurs="1" />		
+		</sequence>
+	</complexType>
+
+	<complexType name="topicos">
+		<choice maxOccurs="unbounded">
+			<element name="topico" type="string" />
+			<element name="painel" type="tns:painel" />
+			<element name="tabela" type="tns:tabela" />
+		</choice>
+		<attribute name="tipo" type="tns:tipo-topico" default="MARCADOR" />
+	</complexType>
+	
+	<complexType name="painel">
+		<sequence>
+			<element name="modalidade" type="string" minOccurs="0" maxOccurs="1" />
+			<element name="instalacao" type="tns:evento" minOccurs="0" maxOccurs="1" />
+			<element name="apresentacao" type="tns:evento" minOccurs="0" maxOccurs="1" />
+			<element name="retirada" type="tns:evento" minOccurs="0" maxOccurs="1" />
+		</sequence>
+	</complexType>
+	
+	<complexType name="tabela">
+		<sequence>
+			<element name="linha" type="tns:tabela-linha" minOccurs="1" maxOccurs="unbounded" />
+		</sequence>
+	</complexType>
+	
+	<complexType name="tabela-linha">
+		<sequence>
+			<element name="coluna" type="string" minOccurs="1" maxOccurs="unbounded" />
+		</sequence>
+	</complexType>
+	
+	<complexType name="pessoas">
+		<sequence>
+			<element name="pessoa" type="tns:pessoa" minOccurs="1" maxOccurs="unbounded" />
+		</sequence>
+	</complexType>
+	
+	<complexType name="pessoa">
+		<sequence>
+			<element name="nome" type="string" minOccurs="1" maxOccurs="1" />
+			<element name="cargo" type="string" minOccurs="0" maxOccurs="1" />
+			<element name="foto" type="string" minOccurs="0" maxOccurs="1" />
+		</sequence>
+	</complexType>
+
+	<complexType name="eventos">
+		<sequence>
+			<element name="evento" type="tns:evento" minOccurs="1" maxOccurs="unbounded" />
+		</sequence>	
+	</complexType>
+	
+	<complexType name="evento">
+		<sequence>
+			<element name="titulo" type="string" minOccurs="0" maxOccurs="1" />
+			<element name="data" type="date" minOccurs="1" maxOccurs="1" />
+			<element name="hora-inicio" type="time" minOccurs="0" maxOccurs="1" />
+			<element name="hora-termino" type="time" minOccurs="0" maxOccurs="1" />
+			<element name="sala" type="string" minOccurs="1" maxOccurs="1" />
+		</sequence>
+	</complexType>
+
+	<simpleType name="tipo-topico">
+		<restriction base="string">
+			<enumeration value="PARAGRAFO" />
+			<enumeration value="MARCADOR" />
+			<enumeration value="NUMERACAO" />
+		</restriction>
+	</simpleType>
+
+</schema>
