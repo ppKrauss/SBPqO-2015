@@ -51,11 +51,11 @@ No *workflow* os tipos de pacotes entregáveis são rotulados, uma entrega consi
 
 * **ES2** (amostra/{lote2014,indiceAutores,indiceDescritores,localHorario}): amostras para discussão dos prazos e acertos contratuais entre as partes do *workflow*. 
 
+Os [contratos referentes às entregas encontram-se na Wiki](https://github.com/ppKrauss/SBPqO-2015/wiki).
 
 ##Subsídios externos
-* http://www.sbpqo.org.br/
-* https://trello.com/b/ST4FS44Z/sbpqo-2015
-* http://www.open-contracting.org
-* [Contratos em pequenos projetos](http://www.xmlfusion.org/wiki-do-mei/Contratos)
-
+* http://www.SBPqO.org.br/ (cliente e evento relacionados ao presente projeto)
+* [Nosso Trello](https://trello.com/b/ST4FS44Z/sbpqo-2015) (kanban das tarefas)
+* http://www.Open-Contracting.org (referencial sobre transparência em contratos)
+* [Contratos deste projeto](https://github.com/ppKrauss/SBPqO-2015/wiki) e [discussão geral de contratos em pequenos projetos](http://www.xmlfusion.org/wiki-do-mei/Contratos)
 
