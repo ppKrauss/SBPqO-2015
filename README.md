@@ -34,7 +34,7 @@ A seguir as entregas acordadas até o momento (o status delas deve ser verificad
 
 * **EP1.4 (CSV1-3)**: primeiro lote de planilhas (CSV1 a CSV3).
 
-* **EP1.5 (XML1,PDF1)**: primeiro lote de materiais processados. A subdivisão de conteúdos em *XML1* é uma facilidade para tratar o [conteúdo-extra](https://github.com/ppKrauss/SBPqO-2015/wiki/Gloss%C3%A1rio).
+* **EP1.5 (XML1,PDF1)**: primeiro lote de materiais processados. A subdivisão de conteúdos em *XML1* é uma facilidade para tratar o [conteúdo-extra](https://github.com/ppKrauss/SBPqO-2015/wiki/Gloss%C3%A1rio-e-conven%C3%A7%C3%B5es).
 
 * **EP2.1 (HTM1)**: ultima versão de resumos originais.
 
@@ -46,7 +46,7 @@ A seguir as entregas acordadas até o momento (o status delas deve ser verificad
 
 * **EP2.5 (XML1,PDF1)**: ultima versão de materiais processados.
 
-* **EP3.1 (HTM4)**: versão bruta do [Conteúdo-extra estático](https://github.com/ppKrauss/SBPqO-2015/wiki/Gloss%C3%A1rio). Isso inclui também o mapa do local do evento.
+* **EP3.1 (HTM4)**: versão bruta do [Conteúdo-extra estático](https://github.com/ppKrauss/SBPqO-2015/wiki/Gloss%C3%A1rio-e-conven%C3%A7%C3%B5es). Isso inclui também o mapa do local do evento.
 
 * **EP3.2 (XML2)**: versão convertida do *conteúdo-extra estático*.
 
