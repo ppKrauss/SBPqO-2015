@@ -9,18 +9,20 @@ Repositório comum da equipe de processamento do material. *Workflow* :
 
 Nomes de pastas:
 
-* [**`amostras`**](./amostras): arquivos de amostragem de material bruto para decisões e discussões na equipe do projeto. 
+* [**`amostras`**](./amostras): arquivos de amostragem de material bruto para decisões e discussões na equipe do projeto.
 
-* **`entregas`**: arquivos "brutos" de cada uma das entregas, finais ou parciais. 
+* [**`entregas`**](./entregas): arquivos "brutos" de cada uma das entregas, finais ou parciais. 
 
-* **`src`**: código-fonte das ferramentas de uso comum da equipe.
+* [**`src`**](./src): código-fonte das ferramentas de uso comum da equipe.
 
-* **`etc`**: outros materiais de uso geral, como a pasta `img` de imagens deste README.
+* [**`etc`**](./etc): outros materiais de uso geral, como a pasta `img` de imagens deste README.
 
-Sintaxe dos nomes dos arquivos nas pastas `amostras` e `entregas`:&nbsp; `NOME-tXvY.ext.zip`, onde `NOME.ext` é o nome original do arquivo, e `X` e `Y` a numeração sequencial da versão (1.1, 1.2, 2.1, etc.) que é hieraquizada em *teste* (1 para primeira tentativa, 2 para a segunda, etc.) e *versão* (pequenas alterações de formato ou correções do arquivo). Exemplos: `AO-t1v1.html.zip`, o primeiro teste de dados brutos, `AO-t1v2.html.zip` uma versão convertida para UTF8 e acrescida de tags para encapsulamento. Quando a versão não requer backup (controle pelo git) pode-se dispensar o indicador de versão `vY`.
+Ver  [mais detalhes nas convenções de sintaxe](https://github.com/ppKrauss/SBPqO-2015/wiki/Gloss%C3%A1rio-e-conven%C3%A7%C3%B5es).
 
 ## Entregas
-No *workflow* os tipos de pacotes entregáveis são rotulados, uma entrega consiste do depósito de um ou mais desses pacotes, seguida de aviso em e-mail. Se os pocates forem integralmente aceitos, o Trello é atualizado. A seguir as entregas acordadas até o momento (o status delas deve ser verificado no Trello).
+No *workflow* os tipos de pacotes entregáveis são rotulados, uma entrega consiste do depósito de um ou mais desses pacotes, seguida de aviso em e-mail. Se os pocates forem integralmente aceitos, o Trello é atualizado. Apenas a entrega tipo *XML2* não se encontra ilustrada.  
+
+A seguir as entregas acordadas até o momento (o status delas deve ser verificado no Trello).
 
 **Entregas produtivas** contendo pacotes previstos pelo *workflow*:
 
@@ -45,7 +47,8 @@ No *workflow* os tipos de pacotes entregáveis são rotulados, uma entrega consi
 * **EP2.5 (XML1,PDF1)**: ultima versão de materiais processados.
 
 * **EP3.1 (HTM4)**: versão bruta do [Conteúdo-extra estático](https://github.com/ppKrauss/SBPqO-2015/wiki/Gloss%C3%A1rio). Isso inclui também o mapa do local do evento.
-* **EP3.2 (XML2)**: versão convertida do do *conteúdo-extra estático*.
+
+* **EP3.2 (XML2)**: versão convertida do *conteúdo-extra estático*.
 
 **Entregas secundárias**, não-produtivas, para ajustes, testes e discussões:
 
