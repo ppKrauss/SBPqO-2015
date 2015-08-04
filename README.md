@@ -26,29 +26,35 @@ A seguir as entregas acordadas até o momento (o status delas deve ser verificad
 
 **Entregas produtivas** contendo pacotes previstos pelo *workflow*:
 
-* **EP1.1 (HTM1)**: primeiro lote de resumos, originais.
+* Resumos e conteúdos vinculados:
 
-* **EP1.2 (HTM2)**: primeiro lote de resumos convertidos e normalizados.
+ * **EP1.1 (HTM1)**: primeiro lote de resumos, originais.
 
-* **EP1.3 (HTM3)**: primeiro lote de resumos revisados.
+ * **EP1.2 (HTM2)**: primeiro lote de resumos convertidos e normalizados.
 
-* **EP1.4 (CSV1-3)**: primeiro lote de planilhas (CSV1 a CSV3).
+ * **EP1.3 (HTM3)**: primeiro lote de resumos revisados.
 
-* **EP1.5 (XML1,PDF1)**: primeiro lote de materiais processados. A subdivisão de conteúdos em *XML1* é uma facilidade para tratar o [conteúdo-extra](https://github.com/ppKrauss/SBPqO-2015/wiki/Gloss%C3%A1rio-e-conven%C3%A7%C3%B5es).
+ * **EP1.4 (CSV1-3)**: primeiro lote de planilhas (CSV1 a CSV3).
 
-* **EP2.1 (HTM1)**: ultima versão de resumos originais.
+ * **EP1.5 (XML1,PDF1)**: primeiro lote de materiais processados. A subdivisão de conteúdos em *XML1* é uma facilidade para tratar o [conteúdo-extra](https://github.com/ppKrauss/SBPqO-2015/wiki/Gloss%C3%A1rio-e-conven%C3%A7%C3%B5es).
 
-* **EP2.2 (HTM2)**: ultima versão de resumos convertidos e normalizados.
+ * **EP2.1 (HTM1)**: ultima versão de resumos originais.
 
-* **EP2.3 (HTM3)**: ultima versão de resumos revisados.
+ * **EP2.2 (HTM2)**: ultima versão de resumos convertidos e normalizados.
 
-* **EP2.4 (CSV1-3)**: ultima versão de planilhas (CSV1 a CSV3).
+ * **EP2.3 (HTM3)**: ultima versão de resumos revisados.
 
-* **EP2.5 (XML1,PDF1)**: ultima versão de materiais processados.
+ * **EP2.4 (CSV1-3)**: ultima versão de planilhas (CSV1 a CSV3).
 
-* **EP3.1 (HTM4)**: versão bruta do [Conteúdo-extra estático](https://github.com/ppKrauss/SBPqO-2015/wiki/Gloss%C3%A1rio-e-conven%C3%A7%C3%B5es). Isso inclui também o mapa do local do evento.
+ * **EP2.5 (XML1,PDF1)**: ultima versão de materiais processados.
+  
+* [Conteúdo-extra independente](https://github.com/ppKrauss/SBPqO-2015/wiki/Gloss%C3%A1rio-e-conven%C3%A7%C3%B5es):
 
-* **EP3.2 (XML2)**: versão convertida do *conteúdo-extra estático*.
+ * **EP3.1 (HTM4)**: versão bruta dos diversos conteúdos e imagens, que inclui também o mapa do local do evento.
+
+ * **EP3.2 (CSV4-14)**: planilhas (CSV4 a CSV14).
+
+ * **EP3.3 (XML2)**: versão convertida do *conteúdo-extra independente*.
 
 **Entregas secundárias**, não-produtivas, para ajustes, testes e discussões:
 
