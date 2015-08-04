@@ -14,11 +14,13 @@ $LIBVERS = '1.5.1'; // v1.5.0 de 2014; v1.4 de 2014-08-24; v1.3 de 2014-08-12; v
 $io_baseDir = realpath( dirname(__FILE__).'/..' );  // não usar getcwd();
 
 // CONFIGS:
-$modoAmostra   = TRUE;
+$modoAmostra   = FALSE;
 $pastaDados    = $modoAmostra? 'amostras': 'entregas';
-$fileAutores   = "$io_baseDir/../$pastaDados/indiceAutores-t1.csv"; // fora de uso, falta usar com resoluçao de homonimos!
-$fileDescr     = "$io_baseDir/../$pastaDados/indiceDescritores-t1.csv";
-$fileLocalHora = "$io_baseDir/../$pastaDados/localHorario-t1.csv";
+$fileAutores   = "$io_baseDir/../$pastaDados/CSV1-3/indiceAutores.csv"; // fora de uso, falta usar com resoluçao de homonimos!
+$fileDescr     = "$io_baseDir/../$pastaDados/CSV1-3/indiceDescritores.csv";
+$fileLocalHora = "$io_baseDir/../$pastaDados/CSV1-3/localHorario.csv";
+$CSV_SEP=',';
+// resumos em "$io_baseDir/../$pastaDados/HTML1"
 $fileFieldAu   = 'COD_AUTOR';
 $fileField00   = 'COD_CHAVE';
 $buffsize      = 3000;
@@ -58,10 +60,10 @@ $ctrl_idnames     = array(); // cria e controla IDs
 
 // DESCRITORES DE CADA RESUMO:	
 if (($handle = fopen($fileDescr, "r")) !== FALSE) {
-	$tmp = fgetcsv( $handle, $buffsize, ';');
+	$tmp = fgetcsv( $handle, $buffsize, $CSV_SEP);
 	if ($tmp[0]!=$fileField00)  // caracteristica
 		die("\nERRO343 em $fileDescr\n{$tmp[0]}\n");
-    while (($tmp = fgetcsv($handle, $buffsize, ';')) !== FALSE) {
+    while (($tmp = fgetcsv($handle, $buffsize, $CSV_SEP)) !== FALSE) {
     	$resumos = preg_split('/[ ,]+/', $tmp[2]);
     	$DESCRITORES[$tmp[1]] = $resumos;
     	foreach ($resumos as $rid) {
@@ -81,7 +83,7 @@ if (($handle = fopen($fileDescr, "r")) !== FALSE) {
 // LOCAL E HORA DE CADA RESUMO:
 if (($handle = fopen($fileLocalHora, "r")) !== FALSE) {
 	//$tmp = fgetcsv( $handle, $buffsize, ';');
-    while (($tmp = fgetcsv($handle, $buffsize, ';')) !== FALSE) 
+    while (($tmp = fgetcsv($handle, $buffsize, $CSV_SEP)) !== FALSE) 
       if (strlen($tmp[0])>2 && $tmp[0]!='SIGLA') {
     	//Exemplo:
     	//  PR0001;2014-09-03;8:30 às 12:00 h;Sala Novara – 10º andar
