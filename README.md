@@ -32,17 +32,11 @@ A seguir as entregas acordadas até o momento (o status delas deve ser verificad
 
  * **EP1.2 (HTM2)**: primeiro lote de resumos convertidos e normalizados.
 
- * **EP1.3 (HTM3)**: primeiro lote de resumos revisados.
-
  * **EP1.4 (CSV1-3)**: primeiro lote de planilhas (CSV1 a CSV3).
 
  * **EP1.5 (XML1,PDF1)**: primeiro lote de materiais processados. A subdivisão de conteúdos em *XML1* é uma facilidade para tratar o [conteúdo-extra](https://github.com/ppKrauss/SBPqO-2015/wiki/Gloss%C3%A1rio-e-conven%C3%A7%C3%B5es).
 
  * **EP2.1 (HTM1)**: ultima versão de resumos originais.
-
- * **EP2.2 (HTM2)**: ultima versão de resumos convertidos e normalizados.
-
- * **EP2.3 (HTM3)**: ultima versão de resumos revisados.
 
  * **EP2.4 (CSV1-3)**: ultima versão de planilhas (CSV1 a CSV3).
 
@@ -50,7 +44,7 @@ A seguir as entregas acordadas até o momento (o status delas deve ser verificad
   
 * [Conteúdo-extra independente](https://github.com/ppKrauss/SBPqO-2015/wiki/Gloss%C3%A1rio-e-conven%C3%A7%C3%B5es):
 
- * **EP3.1 (HTM4)**: versão bruta dos diversos conteúdos e imagens, que inclui também o mapa do local do evento.
+ * **EP3.1 (HTM5)**: versão bruta dos diversos conteúdos e imagens, que inclui também o mapa do local do evento.
 
  * **EP3.2 (CSV4-14)**: planilhas (CSV4 a CSV14).
 
@@ -63,6 +57,8 @@ A seguir as entregas acordadas até o momento (o status delas deve ser verificad
 * **ES2** (amostra/{lote2014,indiceAutores,indiceDescritores,localHorario}): amostras para discussão dos prazos e acertos contratuais entre as partes do *workflow*. 
 
 Os [contratos referentes às entregas encontram-se na Wiki](https://github.com/ppKrauss/SBPqO-2015/wiki).
+
+Sobre *EP2.2 (HTM2)* e *EP2.3 (HTM3)*, e demais resumos convertidos e normalizados. As entregas entre Peter e Cristina serão ignoradas, visto que HTM2 e HTM3 serão praticamente idênticos a HTM1, o processo será apenas uma *homologação* de segurança. Optou-se também por realizar uma breve revisão e homologação sobre CSV1 (em `indiceAutores`) para normalização dos nomes. O HTM4 será mantido apenas como *dump* para eventuais verificações de bug na geração do XML. Concluindo: a entrega EP2.2 não será verificada, o que de fato terá valor de entregável é *EP2.5*.
 
 ##Subsídios externos
 * http://www.SBPqO.org.br/ (cliente e evento relacionados ao presente projeto)
