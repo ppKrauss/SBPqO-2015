@@ -100,10 +100,10 @@ function exec_cmd($cmd,$file,$isRELAT,$rmHeader=1,$finalUTF8=true) {
 		// deveria parsear no XML ... Mas por hora tudo bem, pois não há risco em resumos simples.
 		$out = preg_replace('/(\d)(?:\s*±\s+|\s+±\s*)(\d)/us','$1±$2', $out); // sem &#8239;
 		$out = preg_replace('/±\s+/us','±', $out); // gruda a dirieta em "resultou em ± 2,5mm" ou "valores médios ± dp"
-		$out = preg_replace('/(\dº?)(?:\s*\-\s*)(\d)/us','$1−$2', $out);  // MINUS SIGN ("−"=&#8722; não é "-")
+		$out = preg_replace('/(\d[º%]?)(?:\s*\-\s*)(\d)/us','$1&#8209;$2', $out);  // no break hyphen ERRO=MINUS SIGN ("−"=&#8722; não é "-")
 		$out = preg_replace('/(\d)\s+%\s+/us','$1% ', $out); // ex "entre 32,7 % e 33,5%"
-		$out = preg_replace_callback('/\(apoio[^\)]+\)/is', function($m){return str_replace('−','-',$m[0]);}, $out); // undo
-		$out = preg_replace('/([\dp])\s*(&lt;|&gt;|=)\s*([\dp])/ius','$1&#8239;$2&#8239;$3', $out);
+		//$out = preg_replace_callback('/\(apoio[^\)]+\)/is', function($m){return str_replace('−','-',$m[0]);}, $out); // undo
+		$out = preg_replace('/([\dpn])\s*(&lt;|&gt;|=)\s*([\dpn])/ius','$1&#8239;$2&#8239;$3', $out);
 //p é " p" .. ";p =", etc.
 		$out = preg_replace('|<(su[bp])>(\s*)(.+?)(\s*)</\1>|is','$2<$1>$3</$1>$4', $out); // ex. <sub>10 </sub>
 
