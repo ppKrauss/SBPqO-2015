@@ -58,6 +58,8 @@ A seguir as entregas acordadas até o momento (o status delas deve ser verificad
 
 Os [contratos referentes às entregas encontram-se na Wiki](https://github.com/ppKrauss/SBPqO-2015/wiki).
 
+### Notas
+
 Sobre *EP2.2 (HTM2)* e *EP2.3 (HTM3)*, e demais resumos convertidos e normalizados. As entregas entre Peter e Cristina serão ignoradas, visto que HTM2 e HTM3 serão praticamente idênticos a HTM1, o processo será apenas uma *homologação* de segurança. Optou-se também por realizar uma breve revisão e homologação sobre CSV1 (em `indiceAutores`) para normalização dos nomes. O HTM4 será mantido apenas como *dump* para eventuais verificações de bug na geração do XML. Concluindo: a entrega EP2.2 não será verificada, o que de fato terá valor de entregável é *EP2.5*.
 
 ##Subsídios externos
