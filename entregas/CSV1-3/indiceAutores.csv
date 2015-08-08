@@ -29,7 +29,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 6504,,Ramos AL,Adilson Luiz Ramos,"PN0557, PN1004, COL005, COL013"
 24523,,Oliveira AT,Adilson Tolfo de Oliveira,PN0964
 11076,,Furuse AY,Adilson Yoshio Furuse,"PN0441, PN0747, PN1596"
-15590,H2,Delbem ACB,Ádina Cléia Botazzo Delbem,"PI0814, PN0658"
+15590,H1,Delbem ACB,Ádina Cléia Botazzo Delbem,"PI0814, PN0658"
 29436,,Massarioli AP,Adna Prado Massarioli,FC008
 16187,,Araujo ACAJ,Adrian Camargo Amaral Jorge Araujo,PN0349
 9884,,Lussi A,Adrian Lussi,PN0386
@@ -97,7 +97,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 17791,,Santos AM,Adrielle Mangabeira Santos,"PI0750, PI0892, PN1350, PN1696"
 29350,,Gomes AMP,Adrielle Mendes de Paula Gomes,"PN1509, PN1832"
 24506,,Rodrigues AAB,Aélcia Antônia Borges Rodrigues,PN0697
-19897,,Andreotti AM,Agda Marobo Andreotti,"HA015, HA016, HA018"
+19897,,Andreotti AM,Agda Marobo Andreotti,"HA016, HA018"
 27697,,Osório A,Agenor Osório,PN0654
 5150,,Assao A,AGNES ASSAO,"FC019, PI0218, PI0374"
 29460,,Meireles AB,Agnes Batista Meireles,PN0791
@@ -120,18 +120,18 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 6358,,Silva ARS,Alan Roger dos Santos Silva,PN1131
 29813,,Pinto ABA,Alana Barbosa Alves Pinto,PI0248
 26302,H2,Oliveira AC,Alana Carvalho de Oliveira,PN1347
-27115,H2,Machado AC,Alana Cristina Machado,PI0297
+27115,H3,Machado AC,Alana Cristina Machado,PI0297
 21114,,Azevedo ACS,Alana de Cassia Silva Azevedo,"PN1217, PN1218, PN1232"
-27576,H4,Pereira AC,Alana de Castro Pereira,PN0469
+27576,H1,Pereira AC,Alana de Castro Pereira,PN0469
 27738,,Disarz A,Alana Disarz,PI0790
 9975,,Lima AKMMN,Alana Kelly Maia Macedo Nobre de Lima,PI0048
 29495,,Danielli AL,Alana Louise Danielli,PI0441
 23317,,Dantas AMX,Alana Moura Xavier Dantas,PN1846
 28900,H1,Santos AS,Alana Silva Santos,PI0386
-25434,H1,Fernandes A,Alane Fernandes,PI0134
+25434,H2,Fernandes A,Alane Fernandes,PI0134
 29078,,Nascimento ASB,Alane Sonally Benício do Nascimento,PN0326
 22291,,Freitas AT,Albano Teixeira Freitas,"PN0360, PN1104"
-367,H1,Delbem ACB,Alberto Carlos Botazzo Delbem,"FC013, FC017, AO0002, PI0448, PI0753, PI0814, PN0647, PN0658, PN0984, PN0997, PN1017, PN1020, PN1026, PN1028, PN1323, PN1347, COL001, COL004, COL006, COL009"
+367,H2,Delbem ACB,Alberto Carlos Botazzo Delbem,"FC013, FC017, AO0002, PI0448, PI0753, PI0814, PN0647, PN0658, PN0984, PN0997, PN1017, PN1020, PN1026, PN1028, PN1323, PN1347, COL001, COL004, COL006, COL009"
 3698,,Consolaro A,Alberto Consolaro,PN0361
 29779,,Gurgel AC,Alberto Costa Gurgel,FC027
 6611,,Kojima AN,Alberto Noriyuki Kojima,"PI0470, PN0224, PN0303, PN0766, PN0779"
@@ -143,7 +143,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 1706,,Pesqueira AA,Aldiéris Alves Pesqueira,"HA018, PI0633, PN1529"
 27939,,Cordeiro AS,Aldir da Silva Cordeiro,PN0664
 7313,,Dias AA,Aldo Angelim Dias,PN0003
-15469,H2,Silva AM,Alecsandro de Moura Silva,PN0482
+15469,H1,Silva AM,Alecsandro de Moura Silva,PN0482
 20597,,González AHM,Alejandra Hortencia Miranda González,"AO0188, AO0190, PI0712, PN1087"
 27747,,Pérez A,Alejandro Pérez,"PN0067, PN0335, PN1265"
 4590,,Medrado ARAP,Alena Ribeiro Alves Peixoto Medrado,"PI0364, PN1413, PN1764"
@@ -154,7 +154,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 27688,,Lopes AB,Alessandra Barreto Lopes,PN1204
 1132,,Borges AB,Alessandra Bühler Borges,"PI0429, PI0583, PI0886, PN0106, PN0130, PN0133, PN0179, PN0429, PN0442, PN1107, PN1301, COL014"
 2295,,Cassoni A,Alessandra Cassoni,"PN0795, PN0818"
-4120,H3,Machado AC,Alessandra Cury Machado,PN0079
+4120,H1,Machado AC,Alessandra Cury Machado,PN0079
 27985,,Freitas AS,alessandra da silva freitas,"PI0369, PN0440"
 22755,,Dahmer A,Alessandra Dahmer,PE004
 20480,,Carvalho AAT,Alessandra De Albuquerque Tavares Carvalho,"PI0095, PN1431"
@@ -173,7 +173,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 2719,,Barreto AO,Alessandra Oliveira Barreto,PN1422
 28357,,Dalmaz AP,Alessandra Pugsley Dalmaz,PI0365
 24718,,Carneiro AR,Alessandra Raid Carneiro,PN1657
-783,H1,Reis A,Alessandra Reis,"PI0294, PI0406, PI0412, PN0100, PN0131, PN0141, PN0168, PN0433, PN0472, PN0484, PN0492, PN1101, PN1122, PN1359"
+783,H2,Reis A,Alessandra Reis,"PI0294, PI0406, PI0412, PN0100, PN0131, PN0141, PN0168, PN0433, PN0472, PN0484, PN0492, PN1101, PN1122, PN1359"
 7783,,Reyes A,Alessandra Reyes,PN1698
 21241,,Coelho AR,ALESSANDRA ROSSI COELHO,"PN1258, PN1273"
 8916,,Cruz ATG,ALESSANDRA TIMPONI GOES CRUZ,PN0025
@@ -183,7 +183,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 28922,,Salles AG,ALESSANDRO GUIMARÃES SALLES,"PN0880, PN1012"
 778,,Cavalcanti AL,ALESSANDRO LEITE CAVALCANTI,"PI0088, PI0395, PN0071, PN1223, PN1496, PN1508"
 20140,,Deana AM,Alessandro Melo Deana,"PN0150, PN0262, PN1322, PN1655"
-26138,H2,Freire AM,Alessandro Moreira Freire,"PN0336, PN0372, PN1490"
+26138,H1,Freire AM,Alessandro Moreira Freire,"PN0336, PN0372, PN1490"
 3625,,Maggioni AR,Alessandro Rodrigo Maggioni,"PI0488, PI0793"
 24019,,Schwertner A,Alessandro Schwertner,PN1334
 18010,,Marques ATC,ALESSANDRO TADEU CORREA MARQUES,"PI0354, PI0788"
@@ -194,12 +194,12 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 9048,,Pereira ALP,Alex Luiz Pozzobon Pereira,"PN1030, PN1385"
 11995,,Herval AM,Álex Moreira Herval,PI0401
 2498,,Haas AN,Alex Nogueira Haas,"FC024, PN1187, JL002"
-26612,H2,Ribeiro AR,Alex Rodrigues Ribeiro,PN0076
+26612,H1,Ribeiro AR,Alex Rodrigues Ribeiro,PN0076
 1889,,Semenoff-Segundo A,Alex Semenoff-Segundo,"AO0160, PI0214, PI0354, PI0493, PI0654, PI0702, PI0707, PI0788, PI0813, PN0811, PN1275, PN1316, PN1321, PN1737"
 17116,,Fok AS,Alex Sui-Lun Fok,PN1847
 22940,,Moresca AHK,Alexa Helena Köhler Moresca,"PI0757, PN0674"
 27978,,Balluta A,alexandra balluta,AO0155
-29121,H1,Alves AC,Alexandra C. Alves,AO0208
+29121,H2,Alves AC,Alexandra C. Alves,AO0208
 22642,,Senegaglia AC,Alexandra Cristina Senegaglia,PN0312
 29145,,Paula AM,Alexandra Mara de Paula,PN0492
 28748,,Alonso AA,ALEXANDRE ABDALLA ALONSO,PN1050
@@ -207,7 +207,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 3975,,Zaia AA,Alexandre Augusto Zaia,"AO0057, AO0063, AO0077, PI0180, PN0029, PN0034, PN0058, PN0345, PN0362, PN1226, PN1248, PN1269, PN1286, PN1582, PN1604"
 17527,,Elias AB,Alexandre Barbosa Elias,PN0310
 635,,Lemos AB,Alexandre Barboza de Lemos,"AO0133, PI0174, PN0310, PN0615"
-16392,H1,Machado AC,Alexandre Coelho Machado,"PI0427, PI0883, PI0887, PN0762, PN0784, PN1098, PN1118"
+16392,H2,Machado AC,Alexandre Coelho Machado,"PI0427, PI0883, PI0887, PN0762, PN0784, PN1098, PN1118"
 15380,,Conte A,alexandre conte,PN1483
 24730,,Ehrhardt A,Alexandre Ehrhardt,"PI0230, PI0531, PI0645"
 497,,Silva AER,Alexandre Emidio Ribeiro Silva,"PO007, PI0252"
@@ -269,7 +269,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 21046,,Neves AA,Aline de Almeida Neves,"AO0062, AO0174, PI0038, PI0293, PI0339, PI0352, PI0415, PI0646, PI0799, PN0383, PN1566"
 28868,,Trombini AL,Aline de Lucca Trombini,PI0687
 27699,,Baia AO,Aline de Oliveira Baia,PI0823
-3629,,Ogliari AO,Aline de Oliveira Ogliari,"HA013, PN0753, PN1045, PN1051, PN1136"
+3629,,Ogliari AO,Aline de Oliveira Ogliari,"HA013, PN1045, PN1051, PN1136"
 29753,,Paiva AS,Aline de Sousa Paiva,PI0454
 28085,,Soares ASLS,Aline de Souza Lage Santoro Soares,AO0038
 28883,,Bastos AC,Aline do Carmo Bastos,PN1031
@@ -299,7 +299,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 29615,,Oliveira AV,Aline Vasconcelos de Oliveira,PN1844
 23097,,Barbosa AS,Alinne Sousa Barbosa,PN1626
 9450,,Kirchhoff AL,Alison Luís Kirchhoff,HA003
-28523,H1,Silva AC,Alisson Costa e Silva,"PI0113, PI0116, PN0446"
+28523,H2,Silva AC,Alisson Costa e Silva,"PI0113, PI0116, PN0446"
 19609,,Vechiato-Filho AJ,Aljomar José Vechiato Filho,"PI0169, PN0206"
 20120,,Albuquerque AJR,Allan de Jesus dos Reis Albuquerque,"PI0655, PN0739"
 10703,,Giovanini AF,Allan Fernando Giovanini,"AO0131, AO0155, PE006, PI0462, PI0662, PN0314, PN0624, PN0627, PN0640, PN0946, PN1344, PN1848"
@@ -315,7 +315,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 3703,,Catirse ABCEB,Alma Blásida Concepción Elizaur Benitez Catirse,"PI0560, PI0572, PI0860, PI0867, PN0843"
 28311,,Spinelli A,Almir Spinelli,PN0299
 1171,,Spazzin AO,ALOÍSIO ORO SPAZZIN,"PN0225, PN0849, PN1839"
-21347,,Kantarci A,Alpdogan Kantarci,"HA006, PN1487"
+21347,,Kantarci A,Alpdogan Kantarci,PN1487
 1409,,Cury AAB,Altair Antoninha Del Bel Cury,"FC006, AO0096, AO0102, AO0134, AO0138, AO0149, AO0196, AO0210, PI0175, PI0780, PN0398, PN0513, PN1156, PN1532, COL002"
 11177,,Moura AS,Altair Soares de Moura,PN0110
 21163,,Junqueira-Júnior AA,Alvaro Augusto Junqueira-Júnior,PN1756
@@ -345,13 +345,13 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 28350,,Deon AC,Amanda Cristina Deon,PI0728
 27685,H1,Rocha AC,Amanda Cristina Rocha,"PI0371, PI0675"
 25021,,Schoeffel AC,Amanda Cristina Schoeffel,PN0213
-24793,H2,Alves AC,Amanda Cypriano Alves,PI0875
+24793,H1,Alves AC,Amanda Cypriano Alves,PI0875
 13322,,Silveira AC,Amanda da Costa Silveira,PN0346
 25725,H2,Santos AS,Amanda da Silva Santos,PN1816
 28817,,Valente ADB,Amanda Dal Bosco Valente,PI0092
 26054,,Fialho ADV,Amanda Dalla Vecchia Fialho,"AO0116, PI0522"
 24886,,Desidera AC,Amanda de Carvalho Desidera,PN1294
-21619,H2,Silva AC,Amanda de Carvalho Silva,PN0300
+21619,H1,Silva AC,Amanda de Carvalho Silva,PN0300
 28582,,Cota AOC,AMANDA DE OLIVEIRA CAMPOS COTA,"AO0190, PI0418"
 23601,,Freitas AO,Amanda de Oliveira Freitas,PN0553
 29249,,Macedo AO,Amanda de Oliveira Macedo,PN0732
@@ -375,7 +375,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 29898,,Zanon AN,AMANDA NICOLA ZANON,PN1719
 27793,H2,Oliveira AP,Amanda Pedrosa Oliveira,"PI0711, PI0732"
 28300,,Diniz AR,Amanda Rafaela Diniz,PI0327
-27219,H1,Ribeiro AR,Amanda Rinaldi Ribeiro,PI0663
+27219,H2,Ribeiro AR,Amanda Rinaldi Ribeiro,PI0663
 27382,,Santos AR,Amanda Rodrigues dos Santos,"PI0286, PI0747"
 22669,,Aragão AS,Amanda Silva Aragão,"PI0088, PN1508"
 28270,,Miranda AS,Amanda Silva Miranda,PI0489
@@ -385,7 +385,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 17792,,Silva AIV,Amaro Ilídio Vespasiano Silva,"AO0115, PN0587, PN1766"
 12981,,Formiga-Filho ALN,Amaro Lafayette Nobre Formiga-Filho,PN1742
 27869,,Sanches A,Amauri Sanches,PI0597
-2508,,Correr AB,Américo Bortolazzo Correr,"AO0171, AO0177, PI0717, PN0111, PN0138, PN0172, PN0186, PN0418, PN0435, PN0479, PN0650, PN0701, PN0729, PN0753, PN0812, PN0817, PN0847, PN1072, PN1110, PN1127"
+2508,,Correr AB,Américo Bortolazzo Correr,"AO0171, AO0177, PI0717, PN0111, PN0138, PN0172, PN0186, PN0418, PN0435, PN0479, PN0650, PN0701, PN0729, PN0812, PN0817, PN0847, PN1072, PN1110, PN1127"
 26084,,Tabata A,Américo Tabata,PN0277
 957,,Freitas-Júnior AC,Amilcar Chagas Freitas Júnior,AO0213
 27233,H1,Souza AA,Ana Amélia de Souza,PN0238
@@ -560,8 +560,8 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 1364,,Macedo AP,Ana Paula Macedo,"PN0124, PN0205, PN0284, PN0521, PN0589, PN0831, PN0850, PN0852, PN1836"
 24383,,Marcondes APM,ANA PAULA MARÇAL MARCONDES,"PI0443, PI0741"
 12216,,Martini AP,Ana Paula Martini,"AO0200, AO0204, AO0209, AO0211, PI0319"
-5542,H1,Gomes APM,Ana Paula Martins Gomes,"PI0059, PI0186, PI0692, PN0021, PN0048, PN0088, PN0200, PN0727, PN0978, PN1643, PN1713"
 7370,H2,Gomes APM,Ana Paula Martins Gomes,"PI0767, PN0401"
+5542,H1,Gomes APM,Ana Paula Martins Gomes,"PI0059, PI0692, PN0021, PN0048, PN0088, PN0200, PN0727, PN0978, PN1643, PN1713"
 17114,,Alves APNN,Ana Paula Negreiros Nunes Alves,"AO0112, PI0523, PN0553, PN1694, PN1767"
 7472,,Bossolan APOG,Ana Paula Oliveira Giorgetti Bossolan,"PN1471, PN1790"
 22870,,Brito APP,Ana Paula Pedroso Brito,PN0026
@@ -651,7 +651,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 20387,,Tolentino AB,Andrea Barros Tolentino,"PI0245, PN0846"
 29409,,Moleri AB,Andrea Braga Moleri,AO0125
 12531,,Reis AC,Andrea Cândido Dos Reis,"AO0170, AO0173, AO0180, AO0191, PI0566, PI0710"
-21181,H3,Pereira AC,Andrea Cardoso Pereira,"PN0362, PN1226"
+21181,H4,Pereira AC,Andrea Cardoso Pereira,"PN0362, PN1226"
 23737,,Marco AC,Andrea Carvalho De Marco,"PN0872, PN0874, PN0889, PN1775"
 25812,,Konrath AC,Andréa Cristina Konrath,"PI0284, PI0594, PI0743, PI0895, PI0900, PN0695, PN0968, PN0977, PN1006, PN1024, PN1034, PN1328, PN1340, PN1345, PN1353, PN1369, PN1581"
 2234,,Câmara AC,Andréa Cruz Câmara,"PI0495, PN0001"
@@ -731,7 +731,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 19455,,Arata A,Anelyse Arata,PI0262
 21016,,Costa-e-Silva AB,ANGELA BENEDITA DA COSTA-E-SILVA,"PI0094, PI0240, PI0400, PI0703, PN1519"
 1583,,Zuanon ACC,Angela Cristina Cilense Zuanon,"PN0394, PN0668, PN0985, PN1019, PN1027, PN1373, PN1382"
-983,H2,Fernandes A,Ângela Fernandes,"PE008, PI0371, PI0675, PI0685, PN0567"
+983,H1,Fernandes A,Ângela Fernandes,"PE008, PI0371, PI0675, PI0685, PN0567"
 25192,,Giacomin A,Angela Giacomin,"PI0900, PN0968, PN1328"
 17687,,Dullius AIS,Angela Isabel dos Santos Dullius,"PI0388, PI0859"
 17384,,Martins AMC,Angela Maria do Couto Martins,"PE014, PI0236, PI0748"
@@ -749,7 +749,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 19575,,Bós AJG,Angelo José Gonçalves Bós,AO0041
 7023,,Pavan AJ,Angelo José Pavan,PI0089
 15389,,Santos AMT,angelo marcelo tirado dos santos,PN0835
-27867,H1,Freire AM,Angelo Menezes Freire,PN0058
+27867,H2,Freire AM,Angelo Menezes Freire,PN0058
 24052,,Abbate-Filho AS,anibal soley abbate filho,PN0886
 17664,,Lacerda AC,Aniele Carvalho Lacerda,"AO0078, PI0347, PI0491"
 29051,,Lacerda AM,Aniele Monica Lacerda,PI0319
@@ -798,7 +798,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 5373,,Guastaldi AC,Antonio Carlos Guastaldi,PN0947
 2999,,Hernandes AC,Antonio Carlos Hernandes,PN0493
 29143,,Nascimento AC,Antonio Carlos Nascimento,PN1240
-3591,H1,Pereira AC,Antonio Carlos Pereira,"AO0043, PN1229"
+3591,H3,Pereira AC,Antonio Carlos Pereira,"AO0043, PN1229"
 13341,,Shimano AC,Antonio Carlos Shimano,"AO0173, PI0566"
 28149,,Correia-Junior AC,Antonio Cotrim Correia Junior,PI0440
 10012,,Normando ADC,Antonio David Corrêa Normando,PN1031
@@ -807,7 +807,6 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 23812,,Ferreira-Junior AEC,Antonio Ernando Carlos Ferreira-Junior,"PI0523, PN0553"
 203,,Falcao AFP,Antonio Fernando Pereira Falcao,PN0236
 11539,,Braitt AH,Antônio Henrique Braitt,PN1292
-29617,,Chaves-Neto AH,Antonio Hernandes Chaves Neto,HA015
 22942,,Trindade-Neto AI,Antonio Irineu Trindade Neto,PN0013
 28669,,Rosa AJB,Antonio José Bittencourt da Rosa,PN0608
 4584,,Pereira ALA,Antônio Luiz Amaral Pereira,"FC010, PI0557, PN0556, PN1014, PN1628, PN1778, PN1791"
@@ -831,7 +830,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 345,,Marques AMC,Aparecida Maria Cordeiro Marques,PI0486
 27356,,Caldas ATL,Aparecida Tharlla Leite de Caldas,"PI0264, PI0586"
 5884,H2,Ribeiro AA,Apoena de Aguiar Ribeiro,PN1617
-28954,H2,Reis A,Apoliana Reis,PI0911
+28954,H1,Reis A,Apoliana Reis,PI0911
 21087,,Dantas A,ÁQUILA DANTAS,"PI0099, PI0670"
 16375,,Almeida AM,Araci Malagodi de Almeida,AO0011
 24642,,Brito ACM,Arella Cristina Muniz Brito,PI0506
@@ -871,7 +870,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 25014,,Soares AS,Artur dos Santos Soares,PN0761
 28952,,Alves-Filho AO,Ary de Oliveira Alves Filho,PN0985
 1821,,Santos-Pinto A,Ary Santos-Pinto,"PN0656, PN0665"
-27223,H1,Silva AM,Aryvelto Miranda Silva,"FC025, PI0136, PI0516, PI0849"
+27223,H2,Silva AM,Aryvelto Miranda Silva,"FC025, PI0136, PI0516, PI0849"
 29545,,Azabi A,Asma Azabi,HA002
 10531,,Bacchi A,Ataís Bacchi,"PI0720, PN0225, PN0847, PN0849, PN0859, PN1839, PN1841"
 16930,,Fabre AF,Aubrey Fernando Fabre,PN1396
@@ -1228,7 +1227,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 13763,,Pantoja CAMS,Carlos Augusto de Morais Souto Pantoja,AO0063
 28993,,Lima CAS,CARLOS AUGUSTO DE SOUZA LIMA,PN1428
 7907,,Barboza CAG,CARLOS AUGUSTO GALVÃO BARBOZA,PN0265
-10687,,Nassar CA,Carlos Augusto Nassar,"PN0463, PN0879, PN1779"
+10687,,Nassar CA,Carlos Augusto Nassar,"PN0463, PN0879"
 26426,,Botazzo C,Carlos Botazzo,PE020
 28266,,Cavaleiro C,Carlos Cavaleiro,PN0079
 16803,,Oliveira-Júnior CC,Carlos da Cunha Oliveira-Júnior,PN0459
@@ -1302,7 +1301,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 20830,,Proietti CC,CAROLINA CARMINE PROIETTI,"AO0116, PI0521, PI0522"
 18248,,Menezes CC,Carolina Carmo de Menezes,"PN0193, PN0988, PN1011"
 1549,,Bortoletto CC,Carolina Carvalho Bortoletto,PN1322
-6516,H1,Gomes CC,Carolina Cavalieri Gomes,"HA020, FC022, PN1424"
+6516,H2,Gomes CC,Carolina Cavalieri Gomes,"HA020, FC022, PN1424"
 27727,,Adorno CC,Carolina Côcco Adorno,PI0129
 19368,,Vogas CC,CAROLINA CONSIDERA VOGAS,"PN0681, PN0693"
 28157,,Marchese CC,Carolina Cordeiro Marchese,"PN0931, PN1210"
@@ -1334,7 +1333,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 21918,,Mordente CM,Carolina Morsani Mordente,PN1023
 19117,,Arruda CNF,Carolina Noronha Ferraz Arruda,PN0205
 27748,,Lima CO,CAROLINA OLIVEIRA DE  LIMA,"PI0768, PN1162"
-26659,H2,Silva CO,CAROLINA OLIVER DA SILVA,PI0059
+26659,H1,Silva CO,CAROLINA OLIVER DA SILVA,PI0059
 28159,,Silva CP,Carolina Peres da Silva,PN1683
 26521,,Braz CPS,Carolina pio da silva braz,PI0044
 26037,,Rivera CP,Carolina Poquechoque Rivera,PN1527
@@ -1498,7 +1497,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 16397,,Cunha CMBL,Cinthia Maria Baggio de Luca da Cunha,"PN0411, PN1357"
 5120,,Tabchoury CPM,Cínthia Pereira Machado Tabchoury,"AO0093, AO0096, PN0805, PN1392, PN1620, PN1631, PN1709"
 19322,,Kubo CS,Cinthia Sawamura Kubo,AO0185
-724,H2,Gomes CC,Cinthya Cristina Gomes,"PN0077, PN1617"
+724,H1,Gomes CC,Cinthya Cristina Gomes,"PN0077, PN1617"
 28167,,Ferreira CA,Cintia Almada Ferreira,PI0598
 19420,,Gouveia CL,Cíntia de Lima Gouveia,"PI0050, PI0054, PN1079, PN1108"
 10235,,Saraceni CHC,Cintia Helena Coury Saraceni,"PI0270, PN0173, PN0458, PN0474, PN0766, PN1311"
@@ -1548,7 +1547,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 28039,,Ferreira CLR,Cláudia Luísa Ribeiro Ferreira,PN1605
 57,,Alves CMC,Cláudia Maria Coêlho Alves,"AO0029, PN0070, PN0162, PN0456, PN1469, PN1630, PN1784"
 17398,,Raposo CMO,Cláudia Maria de Oliveira Raposo,PI0863
-28220,H1,Pereira CM,Cláudia Maria Pereira,AO0125
+28220,H2,Pereira CM,Cláudia Maria Pereira,AO0125
 24260,,Silva CMT,Claudia Maria Tavares da Silva,PN0705
 17410,,Pagliarin CML,claudia medianeira londero pagliarin,PN0061
 16270,,Rothbarth CP,Cláudia Pires Rothbarth,"PI0334, PN1268"
@@ -1569,7 +1568,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 17503,,Amante CJ,Claudio José Amante,PI0896
 29390,,Sá CL,Claudio Loredo de Sá,PI0097
 19433,,Machado CMC,Cláudio Manoel Cabral Machado,PN1005
-6499,H2,Pereira CM,Claudio Maranhão Pereira,PN0244
+6499,H1,Pereira CM,Claudio Maranhão Pereira,PN0244
 22613,,Marcantonio C,Claudio Marcantonio,PN0607
 17276,,Pereira CMP,Claudio Martin P. Pereira,FC009
 1227,,Pannuti CM,Claudio Mendes Pannuti,"PI0687, PN1201"
@@ -1598,7 +1597,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 4520,,Araújo CA,Cleudmar Amaral Araújo,PN0226
 12947,,Geraldini CAC,CLEUSA APARECIDA CAMPANINI GERALDINI,"PI0016, PI0201"
 16534,,Vieira C,cleusa vieira,PN0165
-1736,H1,Silva CO,Cléverson de Oliveira e Silva,AO0035
+1736,H2,Silva CO,Cléverson de Oliveira e Silva,AO0035
 28541,,Pinto CAL,CLÓVIS ANTÔNIO LOPES PINTO,"FC019, PI0218, PI0374"
 3471,,Bramante CM,Clovis Monteiro Bramante,"AO0066, PI0487, PN0368, PN1249, PN1259, PN1276, PN1572"
 426,,Pagani C,Clovis Pagani,"PI0692, PN0200, PN0500, PN1091"
@@ -1682,7 +1681,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 22721,,Cavalli D,Daiana Cavalli,"PI0489, PN1254"
 16186,,Böttcher DE,Daiana Elisabeth Böttcher,PN1064
 25865,,Sachetti D,Daiana Sachetti,PI0118
-28756,H1,Silva DA,Daiane Aparecida da Silva,PI0791
+28756,H2,Silva DA,Daiane Aparecida da Silva,PI0791
 20258,H1,Silva DCB,DAIANE CLAYDES BAIA DA SILVA,PN1595
 14499,,Costa DC,Daiane Cristianismo Costa,"PI0582, PN0791"
 1386,,Peruzzo DC,Daiane Cristina Peruzzo,"FC026, PI0632, PN0280, PN0282, PN0288, PN0293, PN0295, PN0296, PN0310, PN0615, PN0972, PN1461, PN1477, PN1798, PN1852, PN1859, PN1860"
@@ -1707,7 +1706,6 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 25130,,Lana DLD,Daniel de Lima Dalla Lana,PI0032
 4480,,Mendes DM,Daniel de Melo Mendes,PN0005
 11838,,Faustino-Silva DD,Daniel Demétrio Faustino-Silva,"PO005, PI0090, PI0690, PN1668"
-14529,,Fernandes D,Daniel Fernandes,HA006
 28652,,Gallafassi DF,Daniel Freire Gallafassi,PN1202
 8681,H1,Silva DF,Daniel Furtado Silva,PN0092
 2371,,Galafassi D,Daniel Galafassi,PN0496
@@ -1758,7 +1756,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 14066,,Carcereri DL,Daniela Lemos Carcereri,"PN1817, PN1826"
 18120,,Prietsch DL,Daniela Loureiro Prietsch,PN1053
 16045,,Pessoa DMV,Daniela Mendes da Veiga Pessoa,PI0846
-1708,,Santos DM,Daniela Micheline dos Santos,"HA015, HA016, HA017, HA018, PI0018, PI0019, PI0020, PI0168, PI0169, PI0408, PI0633, PI0778, PN0206, PN0460, PN0526, PN0840, PN1529"
+1708,,Santos DM,Daniela Micheline dos Santos,"HA016, HA017, HA018, PI0018, PI0019, PI0020, PI0168, PI0169, PI0408, PI0633, PI0778, PN0206, PN0460, PN0526, PN0840, PN1529"
 15379,,Salgado DMRA,Daniela Miranda Richarte de Andrade Salgado,"PN0261, PN0563, PN1451, PN1755, PN1757, PN1797"
 18832,,Iyomasa DM,Daniela Mizusaki Iyomasa,PN0628
 27502,,Liébana DM,Daniela Munhoz Liébana,PI0275
@@ -1863,7 +1861,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 25453,,Freitas DL,Dayse Lopes Freitas,PI0442
 2894,,Lima DANL,Débora Alves Nunes Leite Lima,"PN0102, PN0103, PN0118, PN0431, PN0434, PN0805, PN0821, PN1073, PN1089, PN1129"
 24584,,Ribeiro DA,Débora Amgarten Ribeiro,"AO0130, PN1544, PN1548"
-28919,H2,Silva DA,Débora Andrade da Silva,PI0891
+28919,H1,Silva DA,Débora Andrade da Silva,PI0891
 18163,,Salatti DB,Débora Barella Salatti,PI0481
 2023,,Barbosa DB,Débora Barros Barbosa,"FC017, PN0072, PN0857, PN1323, COL004"
 16864,,Bastos DC,Debora Campanella Bastos,FC021
@@ -1960,7 +1958,6 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 27666,,Rabello DGD,Diego Guilherme Dias de Rabello,"PN0021, PN0088"
 14720,,Silva-Santos DJ,Diego Junior da Silva-Santos,PI0303
 29607,,Oliveira DLV,Diego Lomonaco Vasconcelos de Oliveira,HA013
-5941,,De-Paula DM,Diego Martins de-Paula,PN0753
 24858,,Matheus DM,Diego Moraes de Matheus,PN1835
 27378,,Carneiro DPA,Diego Patrik Alves Carneiro,PI0313
 18097,,Valentim D,Diego Valentim,"AO0076, AO0080, PN0425, PN1625"
@@ -2020,7 +2017,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 29325,,Carvalho ELF,Edla Layanne Florêncio de Carvalho,PN1085
 20294,,Bergamo E,Edmara Bergamo,"AO0196, PN0513, PN0841, PN1156"
 27588,,Silva-Junior EZ,Edmilson Zacarias da Silva Junior,PN0095
-6913,H2,Silva EM,Edna Maria da Silva,"PI0551, PI0699"
+6913,H1,Silva EM,Edna Maria da Silva,"PI0551, PI0699"
 22423,,Diniz EMA,Edna Maria de Albuquerque Diniz,PN0688
 24426,,Padilha EZ,Edna Zakrzevski Padilha,PN0324
 28715,,Miranda EFP-,EDNELE FABYENE PRIMO - MIRANDA,"PI0436, PI0596, PN1029, PN1690"
@@ -2062,7 +2059,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 27698,,Lima EM,EDUARDO MARMELSTEIN LIMA,PI0908
 29020,,Sousa EM,Eduardo Martins de Sousa,PN0385
 28527,,Aoki EM,Eduardo Massaharu Aoki,"PN0554, PN0577"
-3776,H1,Silva EM,Eduardo Moreira da Silva,"PI0125, PI0258, PI0584, PN0466, PN1092, PN1640"
+3776,H2,Silva EM,Eduardo Moreira da Silva,"PI0125, PI0258, PI0584, PN0466, PN1092, PN1640"
 4591,,Nunes E,Eduardo Nunes,"PN0285, PN0360, PN1104, PN1274, PN1594"
 28592,,Frare EO,Eduardo Osório Frare,PI0827
 4240,,Rocha EP,Eduardo Passos Rocha,"AO0200, AO0204, AO0209, AO0211, PI0319"
@@ -2195,7 +2192,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 493,,Sponchiado-Júnior EC,Emílio Carlos Sponchiado Jr,PN1271
 28570,,Fonseca EP,EMÍLIO PRADO DA FONSECA,"PO013, PN1229"
 24708,,Rego EF,Emily Feitosa Rego,"PI0024, PI0193, PI0329"
-19984,,Silva EVF,Emily Vivianne Freitas da Silva,"HA015, HA016, HA017, PI0018, PI0168, PI0169, PI0408, PN0840"
+19984,,Silva EVF,Emily Vivianne Freitas da Silva,"HA016, HA017, PI0018, PI0168, PI0169, PI0408, PN0840"
 9998,,Silva EJNL,Emmanuel João Nogueira Leal da Silva,"AO0062, PI0031, PI0038, PI0189, PI0339, PI0340, PI0488, PI0646, PI0793, PI0799, PI0800, PN0024, PN0029, PN0034, PN1291, PN1566, PN1597"
 28590,,Pinto ETF,Emmily Tamiris Farias Pinto,PI0103
 3049,,Sallum EA,ENILSON ANTONIO SALLUM,"AO0027, AO0028, AO0030, PN0893, PN0898, PN1189, PN1200, PN1466, PN1471, PN1790"
@@ -2320,7 +2317,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 27122,,Roman F,Fabiana Roman,"PI0230, PI0531, PI0597, PI0645, PN1009"
 9423,,Naufel FS,Fabiana Scarparo Naufel,"PN0412, PN1670"
 13453,,Grecca FS,Fabiana Soares Grecca,PN1064
-10818,H1,Oliveira FS,Fabiana Sodré Oliveira,"PI0437, PI0444"
+10818,H2,Oliveira FS,Fabiana Sodré Oliveira,"PI0437, PI0444"
 19276,,Siqueira FSF,Fabiana Suelen Figueredo de Siqueira,"PI0412, PN0770, PN0771, PN1359"
 15299,,Rolim FUG,Fabiana Uchôa Gouveia Rolim,PN0404
 8111,,Vargas-Ferreira F,Fabiana Vargas-Ferreira,"PN0723, PN0987"
@@ -2331,7 +2328,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 22022,,Zanette F,Fabiane Zanette,PI0268
 7869,,Alvim-Pereira F,Fabiano Alvim-Pereira,PN0888
 29887,,Cunha FA,Fabiano Araújo Cunha,PN1462
-28659,H2,Aznar FDC,Fabiano Duarte da Costa Aznar,PN1220
+28659,H1,Aznar FDC,Fabiano Duarte da Costa Aznar,PN1220
 5268,,Rodrigues FG,Fabiano Gonzaga Rodrigues,PN0594
 14826,,Ferreira FG,Fabiano Guerra Ferreira,PN0644
 4073,,Jeremias F,Fabiano Jeremias,"PN1344, PN1675"
@@ -2352,7 +2349,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 3470,,Nunes FD,Fabio Daumas Nunes,PN1419
 10217,,Alves FA,Fábio de Abreu Alves,PN0586
 28304,,Domingues F,Fábio Domingues,PN1008
-21285,H1,Aznar FDC,Fábio Duarte da Costa Aznar,"AO0055, PN1219, PN1220, PN1501"
+21285,H2,Aznar FDC,Fábio Duarte da Costa Aznar,"AO0055, PN1219, PN1220, PN1501"
 12402,,Nascimento FD,Fabio Dupart Nascimento,"PI0428, PN1109"
 6404,,Woitchunas FE,Fábio Eduardo Woitchunas,PN1038
 28975,,Néspoli FFP,FÁBIO FERREIRA PINTO NÉSPOLI,PI0190
@@ -2386,12 +2383,12 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 28536,,Marin F,Fabiola Marin,"PN1225, PN1228"
 16505,,Ormiga F,Fabiola Ormiga,PN1266
 10825,,Leite FPP,Fabíola Pessoa Pereira Leite,"PN0745, PN1162"
-2468,H2,Oliveira FS,Fabíola Singaretti de Oliveira,"PI0351, PN1537"
+2468,H1,Oliveira FS,Fabíola Singaretti de Oliveira,"PI0351, PN1537"
 9615,,Pereira FA,Fabrícia Araújo Pereira,"FC016, PI0887, PN0784, PN1118"
 25090,,Nunes FMR,Fabrícia Mickele Rodrigues Nunes,"PI0200, PI0204, PI0317"
 29047,,Costa FV,Fabrícia Viana Costa,PN0140
 28834,,Silva FX,Fabrìcia Xavier Da Silva,PI0855
-3431,,Ogliari FA,Fabrício Aulo Ogliari,"HA013, PN0753, PN1136"
+3431,,Ogliari FA,Fabrício Aulo Ogliari,"HA013, PN1136"
 16675,,Zanatta FB,Fabricio Batistin Zanatta,PN0877
 6146,H1,Sousa FB,Fabricio Bitu Sousa,"AO0112, PI0523, PN0553"
 28700,,Bonetti FS,Fabricio de Souza Bonetti,PN1540
@@ -2605,11 +2602,11 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 4875,,Modolo F,Filipe Modolo,"PI0066, PN0004, PN0006, PN0245, PN0576, PN0584"
 18422,,Chaves FN,Filipe Nobre Chaves,PN1767
 28875,H1,Silva FS,Filipe Samuel Silva,"AO0195, AO0208"
-27822,H3,Silva FA,Fillipe Augusto da Silva,"PN0331, PN1570"
+27822,H2,Silva FA,Fillipe Augusto da Silva,"PN0331, PN1570"
 7884,,Baratto-Filho F,Flares Baratto-Filho,"PI0891, PN0009, PN0040, PN0065, PN0343, PN0356, PN0370, PN1257"
 26373,,Carmo FA,Flávia Almada do Carmo,PN1377
 9532,,Scalioni FAR,Flávia Almeida Ribeiro Scalioni,PN1332
-28731,H1,Silva FA,Flavia Almeida Silva,PI0156
+28731,H3,Silva FA,Flavia Almeida Silva,PI0156
 2277,,Furlaneto FAC,Flávia Aparecida Chaves Furlaneto,"AO0034, PI0072, PI0229, PN1460"
 757,,Artese F,Flavia Artese,"PI0303, PI0599, PN0693, PN1648"
 2333,,Xavier FCA,Flávia Caló de Aquino Xavier,PN1752
@@ -2717,10 +2714,10 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 27444,,Oliveira FLP,Fred Lucas Pinto Oliveira,PI0225
 9294,,Rueggeberg FA,Frederick Allen Rueggeberg,PN0797
 1360,,Rueggeberg F,Frederick Rueggeberg,AO0176
-3081,H2,Silva FA,Frederico Andrade e Silva,"PN0218, PN0222"
+3081,H1,Silva FA,Frederico Andrade e Silva,"PN0218, PN0222"
 16757,H3,Sousa FB,Frederico Barbosa De Sousa,"PI0500, PN1063"
 6890,,Manhães FC,Frederico Campos Manhães,AO0057
-4100,,Martinho FC,Frederico Canato Martinho,"FC003, AO0105, PI0039, PI0186, PI0692, PI0767, PN0021, PN0048, PN0088, PN0200"
+4100,,Martinho FC,Frederico Canato Martinho,"FC003, AO0105, PI0039, PI0692, PI0767, PN0021, PN0048, PN0088, PN0200"
 28595,,Carvalho-Junior FM,Frederico Martins de Carvalho Junior,PN0219
 27982,,Deliberador FR,Frederico Ribeiro Deliberador,PN0624
 4532,,Lages FS,Frederico Santos Lages,PN1527
@@ -2775,7 +2772,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 15528,,Ferreira GLS,Gabriela Lacet Silva Ferreira,"PN0743, PN1612, PN1616"
 27484,,Souza GL,Gabriela Leite de Souza,PI0127
 17881,,Siqueira GLC,Gabriela Leticia Clavisio Siqueira,PN0956
-22195,H2,Fernandes GL,Gabriela Lopes Fernandes,"PN0072, PN0816, PN0857, PN1323"
+22195,H1,Fernandes GL,Gabriela Lopes Fernandes,"PN0072, PN0816, PN0857, PN1323"
 28258,,Terra GMO,Gabriela Machado de Oliveira Terra,"PI0447, COL013"
 25124,,Núñez GMC,GABRIELA MARIANA CASTRO NÚÑEZ,"PN0876, PN1284, PN1562"
 25826,,Martelli GMF,Gabriela Maris de Faria Martelli,"PI0825, PN0583, PN1272"
@@ -2892,7 +2889,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 8279,,Araujo GSA,Giovana Spagnolo Albamonte de Araujo,"PN0651, PN1691"
 27652,,Ortigara GA,Giovani Antonio Ortigara,PN0051
 13135,,Corrêa GO,Giovani de Oliveira Corrêa,PN0833
-27383,H1,Fernandes GL,Giovani Lopes Fernandes,"PI0528, PI0833"
+27383,H2,Fernandes GL,Giovani Lopes Fernandes,"PI0528, PI0833"
 23150,,Francisconi GB,Giovanna Barbosa Francisconi,"AO0144, AO0166"
 25088,,Dalpasquale G,giovanna dalpasquale,PN0647
 25606,,Costa GFA,Giovanna de Fátima Alves da Costa,"PI0259, PI0874, PI0885"
@@ -3053,7 +3050,6 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 26693,,Santiago HRR,Hariane Roberta Reis Santiago,PI0073
 21541,,Paiva HN,Haroldo Neves de Paiva,"PN1241, PN1351, PN1362"
 26284,,Oballe HR,Harry Rivera Oballe,PN1180
-8419,,Harstuk H,Hatice Harstuk,HA006
 13150,,Kubo H,Hatsuo Kubo,"PI0601, PN0504"
 25435,,Gomes H,Hayder Gomes,PI0784
 3387,,Galvão HC,Hébel Cavalcanti Galvão,"PI0060, PN1417, PN1429, PN1430, PN1735, PN1771"
@@ -4096,7 +4092,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 593,,Castro-Raucci LMS,Larissa Moreira Spinola de Castro-Raucci,PI0763
 25267,,Müller L,Larissa Müller,PN0217
 22412,,Miotto LN,Larissa Natiele Miotto,"PN0597, PN1145"
-28807,H1,Oliveira LP,Larissa Paulino de Oliveira,PI0307
+28807,H2,Oliveira LP,Larissa Paulino de Oliveira,PI0307
 26215,,Melo LPL,Larissa Pereira Lagos de Melo,PN1742
 8335,,Chaves LP,Larissa Pinceli Chaves,"PI0577, PN0491"
 19652,,Peixoto LR,Larissa Rangel Peixoto,"PN0743, PN1612, PN1616"
@@ -4223,7 +4219,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 8700,,Gaião L,Lêonilson Gaião,"PI0158, PI0454, PI0755"
 3946,,Almeida LFD,Leopoldina de Fátima Dantas de Almeida,"PI0049, PN0348"
 722,,Capelozza-Filho L,Leopoldino Capelozza Filho,"PN0643, PN0664, PN1680"
-17859,H1,Silva LC,Leopoldo Cosme Silva,"PI0182, PI0191, PI0847, PN0023"
+17859,H2,Silva LC,Leopoldo Cosme Silva,"PI0182, PI0191, PI0847, PN0023"
 29292,,Fujii LLR,Leopoldo Luiz Rocha Fujii,PI0542
 28382,H3,Silva LP,Leorik Pereira da Silva,"PN0545, PN0562"
 28956,,Morse L,Leslie Morse,HA001
@@ -4237,7 +4233,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 25140,,Ferreira LC,Letícia Chaves Ferreira,"PI0305, PI0761"
 29005,,Conti LC,Leticia Citelli Conti,"PI0039, PI0089"
 1278,,Boaro LCC,Leticia Cristina Cidreira Boaro,"PI0416, PI0716, PI0726, PI0870, PN0140, PN0180, PN0471"
-27475,H3,Silva LC,Leticia Cristina Silva,PI0444
+27475,H4,Silva LC,Leticia Cristina Silva,PI0444
 28762,,Machado LCR,Letícia Cristine Rinaldo Machado,PI0791
 26996,,Giacomini LA,Leticia de Abreu Giacomini,"PI0205, PI0355"
 26454,,Wenderoscky LF,Letícia de Farias Wenderoscky,"PN0884, PN1205"
@@ -4301,7 +4297,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 18290,,Soares LC,Lidiane de Castro Soares,PE009
 24329,,Nascimento LG,Lidiane Gonçalves do Nascimento,"PO015, PI0317, PI0517, PI0661"
 22405,,Leite LMB,Lidiane Maria Boldrini Leite,PN0312
-3577,,Rodrigues LKA,Lidiany Karla Azevedo Rodrigues,"PI0128, PI0657, PN0748, PN0753, PN1048, PN1110, PN1297, PN1320"
+3577,,Rodrigues LKA,Lidiany Karla Azevedo Rodrigues,"PI0128, PI0657, PN0748, PN1048, PN1110, PN1297, PN1320"
 26920,,Araújo LNM,Lidya Nara Marques de Araújo,PI0259
 21326,,Montoro LA,Liege Aldrovandi Montoro,PN0348
 22791,,Fernandes LHF,Liege Helena Freitas Fernandes,"PI0088, PN1496, PN1508"
@@ -4335,7 +4331,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 20659,,Barros LAP,Liliana Aparecida Pimenta de Barros,PN1822
 14681,,Maltagliati LA,Liliana Ávila Maltagliati,PN1680
 28796,,Báez LC,Liliana Carolina Báez,"PN0984, PN0997"
-21213,,Bonatto LR,Liliane da Rocha Bonatto,"HA015, HA016, HA017, PI0018, PI0168, PN0840"
+21213,,Bonatto LR,Liliane da Rocha Bonatto,"HA016, HA017, PI0018, PI0168, PN0840"
 26913,,Jesus LS,Liliane de Sá Jesus,"PI0031, PI0189, PI0339, PI0340, PI0799, PI0800"
 13085,H2,Machado LS,Liliane dos Santos Machado,PN1504
 27806,,Pellegrine LE,LILIANE EDNEIA PELLEGRINE,PN0957
@@ -4417,7 +4413,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 23470,,Ferreira L,Lorraine Ferreira,PN0180
 15682,,Faria LP,Lorraine Perciliano de Faria,"PN1396, PN1407, PN1412, PN1639"
 27712,,Paula LCS,Lorrane Caroline Santos de Paula,PI0189
-21268,H4,Silva LC,LORRANY CANDIDO DA SILVA,"PI0623, PI0627, PN1825"
+21268,H3,Silva LC,LORRANY CANDIDO DA SILVA,"PI0623, PI0627, PN1825"
 21916,,Bezerra LMD,Louise Morais Dornelas Bezerra,PN0980
 29746,,Pietrobon L,Louise Pietrobon,PI0595
 9114,,Chiok-Ocaña L,Lourdes Chiok-Ocaña,PN1596
@@ -4425,7 +4421,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 1964,,Correr-Sobrinho L,Lourenço Correr-Sobrinho,"AO0115, PI0717, PN0111, PN0138, PN0172, PN0186, PN0196, PN0435, PN0633, PN0729, PN0754, PN0812, PN0817, PN0976, PN1072, PN1127"
 11413,,Roselino LMR,Lourenço de Moraes Rego Roselino,PN0495
 24802,,Albarello LL,LOURENÇO LUÍS ALBARELLO,"PN0330, PN1252, PN1282"
-27373,H2,Silva LC,Luan César da Silva,PI0015
+27373,H1,Silva LC,Luan César da Silva,PI0015
 25136,,Toro LF,Luan Felipe Toro,"PI0305, PI0458, PI0761, PN0327"
 29137,,Benetti LP,Luan Pier Benetti,PI0609
 14521,,Cabral LC,Luana Cardoso Cabral,PN1151
@@ -4475,7 +4471,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 23556,,Candido LM,Lucas Miguel Candido,"PI0776, PN1145, PN1150"
 592,,Teixeira LN,Lucas Novaes Teixeira,"PI0763, PN1448"
 28835,,Vieira LPL,lucas paiva lamounier vieira,PN0533
-27511,H2,Oliveira LP,LUCAS PORTELA OLIVEIRA,PI0849
+27511,H1,Oliveira LP,LUCAS PORTELA OLIVEIRA,PI0849
 6354,,Pinheiro LR,Lucas Rodrigues Pinheiro,"AO0113, AO0114, PN1201"
 27580,,Chaves LS,Lucas Silva Chaves,PI0333
 9182,H1,Machado LS,Lucas Silveira Machado,"PI0265, PN1125"
@@ -4691,7 +4687,6 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 27836,,Guimarães LC,Luiza Cruz Guimarães,PN1287
 27947,,Leme LMM,Luiza Maria Mendes Leme,PI0692
 14787,,Campos LMP,Luiza Mello de Paiva Campos,"PI0416, PI0716, PI0726, PN0471"
-28483,,Tavares LN,LUIZA NEMENZ TAVARES,PI0186
 29588,,Monteiro LR,Luiza Ribeiro Monteiro,AO0023
 28035,,Amorim LA,Luma Alves Amorim,PN0087
 25222,,Oliveira LV,Luna do Val de Oliveira,PN0377
@@ -4770,14 +4765,14 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 24268,,Brant MO,Marcela de Oliveira Brant,"PI0745, PN1393"
 25717,,Macedo MP,Marcela de Paula Macedo,PN1663
 21969,,Barbosa MM,Marcela Di Moura Barbosa,PN1200
-2186,,Haddad MF,Marcela Filié Haddad,"HA015, PN1529"
+2186,,Haddad MF,Marcela Filié Haddad,PN1529
 17841,,Borges MG,Marcela Gonçalves Borges,PN1082
 25295,,Rey MI,Marcela Ito Rey,PI0647
 24761,,Gonçalves MLL,Marcela Leticia Leal Gonçalves,"PN0150, PN0881"
 21334,,Gurgel ML,Marcela Lima Gurgel,"PI0140, PI0244"
 11868,,Miyasaki ML,Marcela Lumi Miyasaki,"COL001, COL009"
 14034,,Franco MMP,Marcela Mayana Pereira Franco,PN0162
-25962,H2,Santos MM,Marcela Melo dos Santos,"PN1198, PN1773"
+25962,H1,Santos MM,Marcela Melo dos Santos,"PN1198, PN1773"
 24955,,Penteado MM,Marcela Moreira Penteado,PN0833
 21616,,Salles MM,Marcela Moreira Salles,"PN0205, PN0852"
 8410,,Calabria MP,Marcela Pagani Calabria,"PI0577, PN0854"
@@ -4811,7 +4806,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 12706,,Bortoluzzi MC,Marcelo Carlos Bortoluzzi,PN0945
 3422,,Chain MC,Marcelo Carvalho Chain,"PI0721, PN1558, PN1581"
 19547,,Silva MCP,MARCELO CAVENAGHI PEREIRA DA SILVA,PE001
-1980,,Goiato MC,Marcelo Coelho Goiato,"HA015, HA016, HA017, HA018, PI0019, PI0020, PI0168, PI0169, PI0408, PI0633, PN0460, PN0526, PN0840, PN1529"
+1980,,Goiato MC,Marcelo Coelho Goiato,"HA016, HA017, HA018, PI0019, PI0020, PI0168, PI0169, PI0408, PI0633, PN0460, PN0526, PN0840, PN1529"
 3546,,Alves MC,Marcelo Corrêa Alves,"AO0157, PN0382"
 6952,,Bolzan MC,Marcelo Costa Bolzan,"PN0234, PN1443"
 14344,H2,Rios MA,Marcelo de Azevêdo Rios,PN1788
@@ -4931,10 +4926,10 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 29537,,Bottino MC,Marco Cicero Bottino,HA002
 22702,,Pinto MPC,Marco Paulo da Cruz Pinto,PI0166
 10128,,Ribeiro MTF,Marco Túlio de Freitas Ribeiro,PI0243
-8677,H2,Moura MS,Marcoeli Silva de Moura,"AO0005, AO0021, PI0141, PI0740, PN0905, PN0958, PN1003, PN1235"
+8677,H1,Moura MS,Marcoeli Silva de Moura,"AO0005, AO0021, PI0141, PI0740, PN0905, PN0958, PN1003, PN1235"
 28589,,Santana-Neto MC,Marcondes Cavalcante Santana Neto,PI0434
 3487,,Silva MAM,Marcos Alex Mendes da Silva,"PE009, PN0899"
-13823,H2,Oliveira MAC,Marcos Alexandre Casimiro de Oliveira,"PN0326, PN1520"
+13823,H1,Oliveira MAC,Marcos Alexandre Casimiro de Oliveira,"PN0326, PN1520"
 7587,H1,Silva MAS,MARCOS ANDRÉ DOS SANTOS DA SILVA,PN1426
 200,,Senna MAA,Marcos Antônio Albuquerque De Senna,"PE015, PE016, PE017, PE023, PI0539, PN1495"
 12559,,Montes MAJR,Marcos Antonio Japiassú Resende Montes,PN1085
@@ -4985,7 +4980,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 4883,,Souza MMG,Margareth Maria Gomes de Souza,"PN0316, PN0587"
 24841,,Sogayar MC,Mari Cleide Sogayar,"FC001, PN0180"
 19104,,Sugii MM,Mari Miura Sugii,"PN0434, PN1089"
-15627,H1,Oliveira MAC,Maria Alcioneia Carvalho de Oliveira,PI0658
+15627,H2,Oliveira MAC,Maria Alcioneia Carvalho de Oliveira,PI0658
 6066,H1,Borges MAC,Maria Aldeíde da Costa Borges,PI0601
 12609,,Palma MAG,Maria Alice Gatti Palma,AO0027
 2339,,Silva MAGS,MARIA ALVES GARCIA SANTOS SILVA,"PN1338, PN1726"
@@ -5063,7 +5058,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 26793,,Viganó MEF,Maria Eduarda Franco Viganó,"AO0001, PO004, PN1381, PN1698, PN1722"
 29229,,Crespo-Lopez ME,MARIA ELENA CRESPO-LOPEZ,"PI0360, PI0361"
 22377,,Silva MES,Maria Elisa de Souza e Silva,"PI0682, PI0853, PN1497"
-15287,,Moura MEM,Maria Elisa Martins Moura,"PN0748, PN0753"
+15287,,Moura MEM,Maria Elisa Martins Moura,PN0748
 12786,,Santos MEO,Maria Elisa Oliveira dos Santos,PN1090
 27729,,Lima-Verde MEQ,Maria Elisa Quezado Lima-Verde,"PI0523, PN0553"
 23311,,Moraes MEA,Maria Elisabete Amaral de Moraes,"COL003, COL010"
@@ -5163,10 +5158,9 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 18221,,Cominotte MA,Mariana Aline Cominotte,PN1776
 29814,,Frizzo MA,Mariana Almeida Frizzo,AO0001
 18015,,Proença MAM,Mariana Almeida Mello Proença,"PN0070, PN0456"
-24531,H2,Pereira MA,Mariana Almeida Pereira,PI0558
+24531,H1,Pereira MA,Mariana Almeida Pereira,PI0558
 28189,,Reis MAQ,Mariana Alvarez Quinta Reis,PN0055
 21101,,Souza MBC,Mariana Barbosa Câmara de Souza,PN0832
-29670,,Leite MB,Mariana Barros Leite,PI0137
 28285,H2,Ribeiro MB,Mariana Batista Ribeiro,PN0718
 21197,,Lourenço MB,mariana boanova lourenço,PI0698
 27714,,Amaral MCA,Mariana Carvalho de Andrade Amaral,PN1293
@@ -5318,7 +5312,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 27388,H1,Oliveira M,Marine de Oliveira,"AO0109, PN0574, PN0581, PN1488"
 5872,,Caldeira MH,Marinella Holzhausen Caldeira,PI0687
 3724,,Nobre-dos-Santos M,Marinês Nobre-dos-Santos,"PN1397, PN1403, PN1665, PN1718"
-2702,,Sinhoreti MAC,Mário Alexandre Coelho Sinhoreti,"AO0171, AO0177, PI0417, PI0717, PN0111, PN0114, PN0116, PN0138, PN0172, PN0194, PN0289, PN0412, PN0418, PN0463, PN0479, PN0480, PN0524, PN0753, PN0754, PN0780, PN0812, PN0817, PN1072, PN1110, PN1127"
+2702,,Sinhoreti MAC,Mário Alexandre Coelho Sinhoreti,"AO0171, AO0177, PI0417, PI0717, PN0111, PN0114, PN0116, PN0138, PN0172, PN0194, PN0289, PN0412, PN0418, PN0463, PN0479, PN0480, PN0524, PN0754, PN0780, PN0812, PN0817, PN1072, PN1110, PN1127"
 24226,,Gomes MAG,Mario Augusto Gori Gomes,PN1025
 28083,,Cappellette-Junior M,mario cappellette junior,"PN0685, PN1040, PN1365, PN1400"
 24554,H1,Gutierrez MF,MARIO FELIPE GUTIERREZ,PN0100
@@ -5380,7 +5374,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 5977,,Valle MAS,Marly Almeida Saleme do Valle,"PN0401, PN0727, PN0978, PN1643, PN1713"
 12611,,Cardoso MCR,Marna Costa Ribeiro Cardoso,PI0782
 25808,,Vasconcellos MC,Marne Carvalho de Vasconcellos,"PI0282, PI0729, PI0868"
-29470,H1,Santos MM,Marquiony Marques dos Santos,"AO0213, PI0404, PI0468"
+29470,H2,Santos MM,Marquiony Marques dos Santos,"AO0213, PI0404, PI0468"
 20051,,Nuernberg MAA,Marta Aparecida Alberton Nuernberg,"PE007, PI0082, PI0246, PI0667, PI0669, PI0685, PN1782"
 21276,,Dantas MCC,Marta Cléa Costa Dantas,PN0440
 5094,,Duarte MCT,Marta Cristina Teixeira Duarte,"PN1262, PN1295, PN1607"
@@ -5410,7 +5404,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 29593,,Queiroz MX,Mateus Xavier de Queiroz,COL002
 3715,H1,Souza MA,Matheus Albino Souza,"PI0032, PI0188, PI0343, PI0346, PI0469, PI0490, PI0641, PI0738, PI0789, PI0790, PI0796, PN0330, PN0359, PN1251, PN1252, PN1282, PN1560"
 28607,,Ramos MAS,Matheus Aparecido dos Santos Ramos,PN0493
-28518,H2,Silva MB,Matheus Balbino da Silva,"PI0637, PI0648"
+28518,H1,Silva MB,Matheus Balbino da Silva,"PI0637, PI0648"
 24968,,Pereira MC,Matheus Cavassani Pereira,PN1637
 981,,Bandéca MC,Matheus Coêlho Bandéca,"PI0037, PI0187, PI0263, PI0279, PI0344, PI0581, PI0642, PI0727, PI0760, PN0101, PN0174, PN0175, PN0292, PN0350, PN0413, PN0462, PN0811, PN0876, PN0952, PN1016, PN1042, PN1288, PN1389, PN1480, PN1575"
 27635,,Tertulino MD,Matheus Dantas Tertulino,"PI0551, PI0699"
@@ -5438,14 +5432,14 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 10558,,Marcondes ML,Maurem Leitão Marcondes,"PN0136, PN0153"
 29096,,Aroni MAT,Mauricio Andres Tinajero Aroni,"PI0535, PN1538"
 24242,,Oliveira MA,Mauricio Antônio  de Oliveira,PN1221
-24409,H1,Pereira MA,MAURICIO ASSUNÇÃO PEREIRA,"AO0130, PN1544, PN1548"
+24409,H2,Pereira MA,MAURICIO ASSUNÇÃO PEREIRA,"AO0130, PN1544, PN1548"
 23970,,Guarda MB,Mauricio Bottene Guarda,PN0194
 28078,,Ortega MC,Mauricio Cardoso Ortega,PN1472
 11457,,Dourado MR,Maurício da Rocha Dourado,PI0681
 720,,Cardoso MA,Mauricio de Almeida Cardoso,"PN0642, PN0643, PN0664, PN1680"
 27741,,Pepe MM,MAURICIO DE MENDONÇA PEPE,PI0608
 4719,,Spin MD,Mauricio Donalonso Spin,"PN0933, PN1210, PN1212, PN1222"
-13532,H1,Moura MS,Maurício dos Santos Moura,FC024
+13532,H2,Moura MS,Maurício dos Santos Moura,FC024
 21059,,Sousa MGC,Mauricio Gonçalves da Costa Sousa,PN0066
 13079,,Cosso MG,Maurício Greco Cosso,"PI0177, PI0784"
 16088,,Lenza MG,Maurício Guilherme Lenza,"PN1380, PN1662"
@@ -5503,7 +5497,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 22061,,Santos MMPR,Mayra Manoella Perez Reis dos Santos,"PN0699, PN0715"
 18289,,Franco MM,Mayra Moura Franco,FC010
 21472,,Gomes MS,Mayra Sousa Gomes,"PN1768, PN1770"
-19217,,Duarte ML,Maysa Lannes Duarte,"PI0137, PN1337"
+19217,,Duarte ML,Maysa Lannes Duarte,PN1337
 21327,,Vaz MM,Maysa Magalhães Vaz,PN0742
 79,,Ferreira MC,Meire Coelho Ferreira,"FC025, PI0574, PN0925"
 24315,,Cavalcanti MG,Melina Guedes Cavalcanti,PN0661
@@ -5619,11 +5613,10 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 17039,,Tostes MA,MÔNICA ALMEIDA TOSTES,"PI0044, PI0195, PI0292, PI0805, PI0899, PI0902, PN0388, PN0391"
 5676,,Neves MAS,Mônica Aparecida Schultz Neves,PN0045
 3425,,Macedo MBL,MÔNICA BARBOSA LEAL MACEDO,PI0366
-27568,H1,Silva MB,Mônica Barros da Silva,"PI0263, PI0279, PI0581, PI0727, PI0760, PN0101, PN0174, PN0175, PN0413, PN1042, PN1480"
+27568,H2,Silva MB,Mônica Barros da Silva,"PI0263, PI0279, PI0581, PI0727, PI0760, PN0101, PN0174, PN0175, PN0413, PN1042, PN1480"
 29193,,Pereira MCG,Mônica Ciler Gomes Pereira,"PI0553, PI0701"
 26592,,Bastos MDR,MONICA DANIELLE RIBEIRO BASTOS,PN0076
 24714,,Rodrigues MAP,Monica de Abreu Pessoa Rodrigues,"PN1167, PN1534, PN1541, PN1542, PN1544, PN1548"
-28152,,Stevanim MFP,Mônica de Fátima Paula Stevanim,PI0137
 845,,Calasans-Maia MD,Mônica Diuana Calasans-Maia,PI0460
 28229,,Brito MEO,Mônica Edila de Oliveira Brito,PI0646
 5063,,Gomes MF,Mônica Fernandes Gomes,PI0306
@@ -5953,7 +5946,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 29060,,Gonçalves PM,Patrícia Moreira Gonçalves,PI0595
 7268,,Rabello PM,Patrícia Moreira Rabello,"PE013, PI0011, PN0636"
 1257,,Tannure PN,PATRICIA NIVOLONI TANNURE,PN1035
-7687,,Nassar PO,Patricia Oehlmeyer Nassar,"PN0879, PN1642, PN1779"
+7687,,Nassar PO,Patricia Oehlmeyer Nassar,"PN0879, PN1642"
 14846,,Lima PO,Patricia Oliveira de Lima,PN0390
 27975,,Pauletto P,PATRICIA PAULETTO,"PI0471, PI0474, PN1161"
 22410,,Perinoto P,Patrícia Perinoto,PI0181
@@ -6140,7 +6133,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 1326,,Duarte PM,Poliana Mendes Duarte,"FC026, AO0140, PI0079, PI0081, PI0176, PN1182, PN1479, PN1789, PN1853"
 29466,,Val PP,Poliana Pacifico Val,PN1310
 2660,,Scaffa PMC,Polliana Mendes Candia Scaffa,"PI0428, PN1109"
-1407,H2,Alves PM,Pollianna Muniz Alves,"PI0049, PI0052, PI0515, PI0610, PI0754, PI0756, PI0863, PN0265, PN0266, PN0317, PN0983, PN1416, PN1725"
+1407,H1,Alves PM,Pollianna Muniz Alves,"PI0049, PI0052, PI0515, PI0610, PI0754, PI0756, PI0863, PN0265, PN0266, PN0317, PN0983, PN1416, PN1725"
 28569,,Comoti P,Pollini Comoti,PI0372
 29008,,Darós P,POLLYANA DARÓS,PN1739
 28476,,Monteiro PMG,Pollyanna Maia de Gois Monteiro,PI0697
@@ -6148,7 +6141,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 28886,,Medina PO,Pollyanna Oliveira Medina,PN0985
 27448,,Alcântara PM,Polyana Matos Alcântara,PN0791
 21948,,Queiroz PM,Polyane Mazucatto Queiroz,"PN0551, PN0568, PN1452, PN1743"
-6412,H1,Alves PM,Polyanna Miranda Alves,PI0508
+6412,H2,Alves PM,Polyanna Miranda Alves,PI0508
 10247,H2,Strini PJSA,Polyanne Junqueira Silva Andresen Strini,"PN0203, PN0214"
 29775,,Meirelles PD,Potira Dalques Meirelles,PI0565
 17031,,Henriques PA,Priscila Alonso Henriques,PN1579
@@ -6286,7 +6279,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 12390,,Oliveira RMC,Rafaella Monteiro Cid Oliveira,PN1543
 24340,,Gomes RR,Rafaella Rodrigues Gomes,"PI0427, PI0887, PN1118"
 21829,,Tonani R,Rafaella Tonani,"AO0183, PN0775"
-29200,H1,Monteiro RV,Rafaella Viana monteiro,PI0797
+29200,H2,Monteiro RV,Rafaella Viana monteiro,PI0797
 27313,,Santos RRLQ,Ragindra Rachel Londero Quintino dos Santos,"AO0109, PN0243"
 27667,H3,Silva RA,Rai de Almeida da Silva,PN1597
 28664,,Santos RMC,Rai Matheus Carvalho Santos,"FC025, PI0516, PI0849"
@@ -6296,7 +6289,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 21258,,Coqueiro RS,Raildo Silva Coqueiro,"PI0101, PI0149, PI0453, PI0553, PI0602, PN1349, PN1696"
 29289,,Menezes-Junior RA,Raimundo Aprigio de Menezes Junior,PN0739
 266,,Prado-Junior RR,Raimundo Rosendo Prado Junior,"FC025, PI0849, PN0527, PN1231, PN1239"
-21832,H2,Silva RB,Raíra de Brito Silva,PI0666
+21832,H1,Silva RB,Raíra de Brito Silva,PI0666
 21549,,Vasconcelos RMP,Raira Maria Pires de Vasconcelos,"PI0289, PN1710"
 22941,,Nogueira RCB,Raísa Castelo Bessa Nogueira,"PI0560, PI0572, PI0860, PN0843"
 26354,,Falkine RZ,Raisa Zago Falkine,PN0218
@@ -6319,7 +6312,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 23578,,Gonzaga RCQ,Ramon Corrêa de Queiroz Gonzaga,"PI0714, PI0883, PN1098, PN1474"
 29080,,Costa RS,Ramon Soares da Costa,PN0326
 18301,,Firmino RT,Ramon Targino Firmino,"PI0084, PN0649, PN0655"
-16266,H2,Lima RL,RAMONIKE LOPES LIMA,"PI0443, PI0741"
+16266,H3,Lima RL,RAMONIKE LOPES LIMA,"PI0443, PI0741"
 29735,H1,Silva RL,Rangel Leal Silva,AO0100
 13428,,Peixoto RF,RANIEL FERNANDES PEIXOTO,"PN0589, PN0831, PN0850"
 27942,,Resende RF,Ranielle Fernandes Resende,"PN1613, PN1632"
@@ -6397,7 +6390,6 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 29262,,Valentim RS,Regis de Souza Valentim,PI0414
 22882,,Brachtvogel RJ,Regis Jhonatan Brachtvogel,PN0508
 29803,,Sartori R,RÉGIS SARTORI,PI0585
-15226,,Mendes RT,Reila Tainá Mendes,HA006
 28942,,Abdala-Júnior R,Reinaldo Abdala Júnior,"PN0554, PN0577"
 1382,,Dias RB,Reinaldo Brito e Dias,"PI0016, PI0201, PI0245, PN0219, PN0512, PN0514, PN0846"
 24184,,Silva-Neto RD,REINALDO DIAS DA SILVA NETO,"PN0736, PN0819"
@@ -6487,7 +6479,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 15799,,Sathler R,Renata Sathler,PI0910
 28723,,Sarlo RS,Renata Silva Sarlo,PI0272
 18562,,Bastos RTRM,RENATA TRAVASSOS DA ROSA MOREIRA BASTOS,PN0722
-25051,H2,Monteiro RV,Renata Vasconcelos Monteiro,PN0468
+25051,H1,Monteiro RV,Renata Vasconcelos Monteiro,PN0468
 26795,,Miranda RD,Renatha Duarte Miranda,PI0544
 2040,,Prates RA,Renato Araújo Prates,PN1322
 21376,,Machado RA,Renato Assis Machado,"FC018, PN0270, PN1436"
@@ -6507,11 +6499,10 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 2516,,Jóias RM,Renato Morales Jóias,PI0905
 5198,,Arcieri RM,Renato Moreira Arcieri,"PN1509, PN1517"
 1659,,Martins RP,Renato Parsekian Martins,AO0017
-173,H2,Pereira RP,renato piai pereira,PN0515
+173,H1,Pereira RP,renato piai pereira,PN0515
 12708,,Almeida RR,Renato Rodrigues de Almeida,"PI0150, PI0759, PN0713, PN1008, PN1334, PN1704"
 28850,,Roperto R,Renato Roperto,PN1246
 11358,,Fajardo RS,Renato Salviato Fajardo,PI0092
-23726,,Lima RS,Renato Sampaio Lima,PI0137
 5433,,Nishioka RS,Renato Sussumu Nishioka,"AO0139, PI0022, PI0470, PI0781, PN0279, PN0303, PN1838"
 27305,,Tiosso-Tamburi R,Renato Tiosso-Tamburi,PN1477
 23975,,Yaedú RYF,Renato Yassutaka Faria Yaedú,PN0956
@@ -6583,7 +6574,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 21309,,Campos RM,Riva Marques Campos,PN0865
 8103,,Figueiredo RLQ,Robéria Lucia de Queiroz Figueiredo,"PI0212, PI0818"
 13555,,Quivey RG,Robert G Quivey,AO0085
-4418,,Barcelos R,Roberta Barcelos,"AO0015, PI0137, PI0415, PN1035, PN1227, PN1337"
+4418,,Barcelos R,Roberta Barcelos,"AO0015, PI0415, PN1035, PN1227, PN1337"
 3112,,Cavalcante RB,Roberta Barroso Cavalcante,"PI0461, PN0570"
 24430,H2,Rodrigues RB,Roberta Bento Rodrigues,PN1074
 8779,,Bosso-Martelo R,Roberta Bosso-Martelo,"AO0061, AO0079, PI0181, PI0792, PI0801, PN0358, PN0373, PN1278"
@@ -6622,7 +6613,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 27608,,Oliveira R F,Robson  Ferraz de Oliveira,PI0417
 4827,,Cunha RF,Robson Frederico Cunha,"PN1371, PN1379"
 2455,,Sasaki RT,Robson Tetsuo Sasaki,PE001
-7017,H1,Silva RB,Rodivan Braz da Silva,"PN0185, PN0453, PN0746, PN0750, PN0756, PN0788, PN1055, PN1192"
+7017,H2,Silva RB,Rodivan Braz da Silva,"PN0185, PN0453, PN0746, PN0750, PN0756, PN0788, PN1055, PN1192"
 3449,,Rossoni RD,Rodnei Dennis Rossoni,"AO0092, PN1313"
 3209,,Rocha RG,Rodney Garcia Rocha,"PN0239, PN1438"
 27633,,Breseghelo RC,Rodolfo Cardoso Breseghelo,PI0023
@@ -6634,7 +6625,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 23263,,Fernández RAR,Rodrigo Alberto Restrepo Fernández,PN0628
 14774,,Alessandretti R,Rodrigo Alessandretti,PN1839
 7154,,Arthur RA,Rodrigo Alex Arthur,"HA012, PI0043, PI0448, PN0494, PN1635"
-12773,H2,Ribeiro RA,Rodrigo Alves Ribeiro,"PI0634, PI0836, PN0261, PN0305, PN0549, PN0563, PN1451, PN1755, PN1757"
+12773,H1,Ribeiro RA,Rodrigo Alves Ribeiro,"PI0634, PI0836, PN0261, PN0305, PN0549, PN0563, PN1451, PN1755, PN1757"
 17824,,Tubelo RA,Rodrigo Alves Tubelo,PE004
 21441,,Medeiros RA,Rodrigo Antonio de Medeiros,"HA018, PI0020, PI0633, PN0840, PN1529"
 72,,Rodrigues RA,Rodrigo Araújo Rodrigues,"PI0564, PI0578, PN1555"
@@ -6649,7 +6640,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 29690,,Pellegrini RS,rodrigo da silva pellegrini,PN0865
 10275,,Pereira RD,Rodrigo Dantas Pereira,"PN0110, PN0822, PN1257, PN1577, PN1585"
 26766,,Valentim RM,Rodrigo de Menezes Valentim,PI0038
-2846,H1,Pereira RP,Rodrigo de Paula Pereira,AO0205
+2846,H2,Pereira RP,Rodrigo de Paula Pereira,AO0205
 6013,,Nascimento RD,Rodrigo Dias Nascimento,PI0816
 28242,,Prado RD,Rodrigo Diniz do Prado,PN0452
 21529,,Macedo RF,Rodrigo Feliciano de Macedo,"PI0088, PN1508"
@@ -6663,7 +6654,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 28219,,Mendonça RJR,RODRIGO JOSE REICHE DE MENDONÇA,PN0932
 29420,,Faria RLAM,Rodrigo Lamounier Araújo de Melo Faria,"AO0031, PN1462"
 29548,,Assunção RL,Rodrigo leitão de Assunção,PN1441
-18544,H3,Lima RL,Rodrigo Lopes de Lima,"PI0606, PN0316"
+18544,H2,Lima RL,Rodrigo Lopes de Lima,"PI0606, PN0316"
 28092,,Franco RM,Rodrigo Maraccini Franco,PN0689
 5396,,Araújo RM,Rodrigo Maximo de Araújo,"PI0470, PN0210"
 28567,,Vieira RM,Rodrigo Monteiro Vieira,"PN0470, PN0824"
@@ -6718,7 +6709,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 29217,,Machry RV,Rômulo Vaz Machry,PI0856
 195,,Martins RJ,Ronald Jefferson Martins,"PN0910, PN1243"
 606,,Mariano RC,Ronaldo Célio Mariano,PN0300
-18732,H1,Ribeiro RA,Ronaldo de Albuquerque Ribeiro,"FC007, FC011, FC012"
+18732,H2,Ribeiro RA,Ronaldo de Albuquerque Ribeiro,"FC007, FC011, FC012"
 29182,,Raimundo RC,RONALDO DE CARVALHO RAIMUNDO,PN0629
 12578,,Carvalho RLA,Ronaldo Luís Almeida de Carvalho,"PI0724, PN0745"
 15663,,Cruz RS,Ronaldo Silva Cruz,"PI0321, PN0229, PN0230"
@@ -6839,7 +6830,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 20053,,Leite SAM,Sandra Augusta de Moura Leite,"FC010, PN1778"
 10446,,Chaves-Tarquinio SB,Sandra Beatriz Chaves-Tarquinio,PI0483
 29167,,Jova SB,Sandra Becerra Jova,PN0572
-2937,,Oliveira SHP,Sandra Helena Penha de Oliveira,"HA015, HA016, HA017, PI0765, PI0834, PN0055, PN0840, PN0857"
+2937,,Oliveira SHP,Sandra Helena Penha de Oliveira,"HA016, HA017, PI0765, PI0834, PN0055, PN0840, PN0857"
 3374,,Bussadori SK,Sandra Kalil Bussadori,"PN0150, PN0258, PN0262, PN0575, PN0881, PN1299, PN1322, PN1655, PN1723"
 2651,,Moura SK,SANDRA KISS MOURA,"PI0256, PN0086, PN0777, PN0793, COL013"
 12591,,Moraes SLD,Sandra Lúcia Dantas de Moraes,"PO022, PI0393, PI0706, PN1085, PN1514"
@@ -7112,7 +7103,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 4575,,Tera TM,Tábata de Mello Tera,PN0889
 27898,,Vila-Nova TEL,taciana emília leite vila-nova,"PI0393, PN1511"
 12644,,Silva TMC,Taciana Mara Couto da Silva,PN1701
-818,,Caneppele TMF,Taciana Marco Ferraz Caneppele,"AO0186, PI0104, PI0186, PI0272, PI0569, PN0106, PN0429, PN0430, PN0442"
+818,,Caneppele TMF,Taciana Marco Ferraz Caneppele,"AO0186, PI0104, PI0272, PI0569, PN0106, PN0429, PN0430, PN0442"
 24499,,Lyra TC,Tácio Candeia Lyra,PI0668
 22219,,Deps TD,Tahyná Duda Deps,AO0020
 5489,,Rezende TMB,Taia Maria Berto Rezende,"PI0029, PI0338, PN0066"
@@ -7169,7 +7160,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 29836,,Brito TCCA,Tânia Cristina Chicre Alcântara de Brito,PI0161
 10511,,Castro TES,Tânia Ecí Santi Castro,PN0504
 21144,,Uchida TH,TÂNIA HARUMI UCHIDA,PO018
-12766,H1,Silva TM,TÂNIA MARA DA SILVA,"AO0181, AO0186, PN0814"
+12766,H3,Silva TM,TÂNIA MARA DA SILVA,"AO0181, AO0186, PN0814"
 10742,,Amaral TMP,Tânia Mara Pimenta Amaral,PN0569
 2216,,Cestari TM,Tania Mary Cestari,PN1596
 27264,,Santos TPM,Tania Passarinho Martins Santos,PN0671
@@ -7268,7 +7259,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 15406,,Fernandes TMF,Thais Maria Freire Fernandes,"AO0009, PI0150, PI0759, PN0220, PN0713, PN1008, PN1334, PN1383, PN1704"
 28222,,Silva TMR,Thais Maria Ribeiro  da Silva,PI0155
 3062,,Gonçalves TMSV,Thaís Marques Simek Vega Gonçalves,"PN0280, PN0382"
-17899,H3,Silva TM,Thaís Medeiros da Silva,PN0067
+17899,H1,Silva TM,Thaís Medeiros da Silva,PN0067
 27236,,Almeida TMX,Thaís Miranda Xavier de Almeida,"PI0369, PI0625"
 12425,,Alves TP,Thais Pinto Alves,PN1647
 23225,,Leandrin TP,THAIS PIRAGINE LEANDRIN,PN1044
@@ -7356,7 +7347,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 22951,,Araújo TK,Thiara Karine de Araújo,"PI0052, PN0265"
 23951,H1,Dantas TS,Thinali Sousa Dantas,AO0112
 27544,,Arsego T,Thomas Arsego,PI0708
-8421,,Van-Dyke TE,Thomas E. Van-Dyke,"HA006, PN1487"
+8421,,Van-Dyke TE,Thomas E. Van-Dyke,PN1487
 21661,,Forte TM,Thomás Müller Forte,PI0619
 29006,,Castilho T,Thuanny Castilho,PI0748
 28446,,Coscrato TG,Thuany Galego Coscrato,PI0827
@@ -7426,7 +7417,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 27326,,Lima VN,Valthierre Nunes de Lima,PN0283
 18973,,Carneiro VSM,VANDA SANDERANA MACEDO CARNEIRO,"PI0337, PI0411, PI0486, PN1547"
 5971,,Bagnato VS,VANDERLEI SALVADOR BAGNATO,"PN0395, PN0518, PN1043, PN1132, PN1300, PN1621"
-15331,H1,Rodrigues VP,Vandilson Pinheiro Rodrigues,"FC010, AO0072, PI0271, PN0502, PN0556, PN1778"
+15331,H2,Rodrigues VP,Vandilson Pinheiro Rodrigues,"FC010, AO0072, PI0271, PN0502, PN0556, PN1778"
 25486,,Marco V,Vandressa De Marco,PI0328
 22829,,Marques VAS,Vanessa Abreu Sanches Marques,AO0067
 22950,,Rocha VAC,VANESSA ALVARES DE CASTRO ROCHA,PN0013
@@ -7496,7 +7487,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 23404,,Lima VHR,Victor Hugo Rocha Lima,PN0163
 28238,,Mosquim V,Victor Mosquim,"PI0554, PI0851"
 27940,,Nissen VP,Victor Paese Nissen,"PN0961, PN0992"
-9405,,Feitosa VP,Victor Pinheiro Feitosa,"HA013, AO0177, PN0744, PN0748, PN0753, PN1048, PN1101, PN1110"
+9405,,Feitosa VP,Victor Pinheiro Feitosa,"HA013, AO0177, PN0744, PN0748, PN1048, PN1101, PN1110"
 23805,,Gavina VP,Victor Pinheiro Gavina,"PO009, PO010, PN1227"
 29076,,Curvello VP,Victor Prado Curvello,PN1021
 19377,,Martins VRA,Victor Raposo de Assis Martins,PI0614
@@ -7545,8 +7536,7 @@ COD_AUTOR,HOMONIMO,FORMATO,NOME,RESUMOS
 3639,,Nakamura VC,Vitor Cesar Nakamura,PN0346
 29222,,Rodrigues VF,VITOR FRANCESCONI RODRIGUES,PN1364
 28889,,Carvalho VHM,Vitor Hugo Marçal de Carvalho,PN0803
-24632,,Spada VJ,vitor juliano spada,PN1779
-28824,H2,Rodrigues VP,Vitor Pereira Rodrigues,"AO0154, AO0164"
+28824,H1,Rodrigues VP,Vitor Pereira Rodrigues,"AO0154, AO0164"
 27618,,Bona VS,Vitor Schweigert Bona,"PN0109, PN0154"
 29415,,Ferraz VVB,Vitor Vieira Batista Ferraz,PI0165
 26569,,Tosta VB,Vitória Bombig Tosta,"PN0622, PN1854"
