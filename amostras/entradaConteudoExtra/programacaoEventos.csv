@@ -1,3 +1,7 @@
 REF_GRUPO;TITULO;DATA;HORA-INICIO;HORA-TERMINO;REF_LOCAL
-D01;Reunião da Pós Graduação - CAPES;03/09/2014;08:00;17:00;SL01
-D01;Reunião Comissão de Apoio;03/09/2014;16:00;;SL02
+D01;Reunião da Pós Graduação - CAPES;02/09/2014;08:00;17:00;SL01
+D01;Reunião Comissão de Apoio;02/09/2014;16:00;;SL02
+D02;Abertura da Secretaria;03/09/2014;07:00;;SL03
+D02;Apresentação e argüição dos Painéis INICIANTES (ISSAO), ASPIRANTES e EFETIVOS - SESSÃO A (PIa + PNa)+B30;03/09/2014;08:30;12:00;SL04
+D03;Abertura da Secretaria;03/09/2014;07:00;;SL03
+D03;Apresentação e argüição dos Painéis da Modalidade Hatton;03/09/2014;08:30;12:00;SL04
