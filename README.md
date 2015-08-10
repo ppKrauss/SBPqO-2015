@@ -17,7 +17,7 @@ Nomes de pastas:
 
 * [**`etc`**](./etc): outros materiais de uso geral, como a pasta `img` de imagens deste README.
 
-Ver  [mais detalhes nas convenções de sintaxe](https://github.com/ppKrauss/SBPqO-2015/wiki/Gloss%C3%A1rio-e-conven%C3%A7%C3%B5es).
+Ver  na Wiki [mais detalhes nas convenções de sintaxe](https://github.com/ppKrauss/SBPqO-2015/wiki/Gloss%C3%A1rio-e-conven%C3%A7%C3%B5es) e [regras de normalização aplicadas ao conteúdo dos resumos](https://github.com/ppKrauss/SBPqO-2015/wiki/Regras-de-normaliza%C3%A7%C3%A3o-aplicadas)
 
 ## Entregas
 No *workflow* os tipos de pacotes entregáveis são rotulados, uma entrega consiste do depósito de um ou mais desses pacotes, seguida de aviso em e-mail. Se os pocates forem integralmente aceitos, o Trello é atualizado. Apenas a entrega tipo *XML2* não se encontra ilustrada.  
@@ -60,7 +60,9 @@ Os [contratos referentes às entregas encontram-se na Wiki](https://github.com/p
 
 ### Notas
 
-Sobre *EP2.2 (HTM2)* e *EP2.3 (HTM3)*, e demais resumos convertidos e normalizados. As entregas entre Peter e Cristina serão ignoradas, visto que HTM2 e HTM3 serão praticamente idênticos a HTM1, o processo será apenas uma *homologação* de segurança. Optou-se também por realizar uma breve revisão e homologação sobre CSV1 (em `indiceAutores`) para normalização dos nomes. O HTM4 será mantido apenas como *dump* para eventuais verificações de bug na geração do XML. Concluindo: a entrega EP2.2 não será verificada, o que de fato terá valor de entregável é *EP2.5*.
+Os fluxos tipo *HTM2*, *HTM3* e  *HTM4*, ilustrados no workflow, podem ser ignorados para efeitos de entrega  &mdash; após a primeira amostragem de *EP1* (no inicio de agosto) concluiu-se que a qualidade de *HTM2* está satisfatória (ou seja *HTM2* e *HTM3* serão praticamente idênticos a *HTM1*). O *HTM4* será mantido apenas como *dump* para auditoria do XML. As entregas inicialmente previstas *EP2.2 (HTM2)* e *EP2.3 (HTM3)*, entre Peter e Cristina, consistirão apenas de uma *homologação* de segurança, não sendo mais assumidos como entregáveis do processo. O único entregável, resultante do bloco ilustrado em verde, é *EP2.5*.
+
+Quanto à normalização de nomes próprios no fluxo *CSV1* (planilha `indiceAutores`), conforme e-mail de 07/08/2015 da profa. Altair, optou-se por não realizar.
 
 ##Subsídios externos
 * http://www.SBPqO.org.br/ (cliente e evento relacionados ao presente projeto)

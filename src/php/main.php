@@ -37,8 +37,9 @@ if ( isset($io_options['in']) ) {
 		$OUT = '';
 		$LINE = ($isXML || $isRELAT)? "\n": '';
 		foreach(scandir($file) as $f) if (preg_match('/\.html?$/i',$f)) {
-				$OUT .= exec_cmd($cmd,"$file$f",$isRELAT) . $LINE;
+				$OUT .= preg_replace('|</?html>|','',  exec_cmd($cmd,"$file$f",$isRELAT) ) . $LINE ;
 		} // for if
+		$OUT = "\n<html>\n$OUT\n</html>";
 		$file ='';
 	} // if
 } // if
@@ -97,6 +98,9 @@ function exec_cmd($cmd,$file,$isRELAT,$rmHeader=1,$finalUTF8=true) {
 	}
 
 	if (isset($io_options['normaliza'])){ // normaliza texto do autor!
+
+// TRANSFORMAR EM FUNCAO E MANDAR COMO PARAMETRO!
+
 		// deveria parsear no XML ... Mas por hora tudo bem, pois não há risco em resumos simples.
 		$out = preg_replace('/(\d)(?:\s*±\s+|\s+±\s*)(\d)/us','$1±$2', $out); // sem &#8239;
 		$out = preg_replace('/±\s+/us','±', $out); // gruda a dirieta em "resultou em ± 2,5mm" ou "valores médios ± dp"

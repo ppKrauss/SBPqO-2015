@@ -32,11 +32,25 @@ $SECAO         = array( // na ordem
 	'PR'=>'PRONAC - Prêmio Incentivo A Pesquisa - Produtos Nacionais',	
 	'HA'=>'UNILEVER Travel Award (Hatton)',
 	'COL'=>'Prêmio COLGATE Odontologia Preventiva',
+    'JL'=>'Prêmio Joseph Lister',	
 	'AO'=>'Apresentação Oral',
 	'FC'=>'Fórum Científico',
 	'PI'=>'Painel Iniciante (prêmio Miyaki Issao)',	
 	'PN'=>'Painel Aspirante e Efetivo',
 );
+$FILTRO = function ($out) {  // conteudo do resumo
+	$out = preg_replace('/(\d)(?:\s*±\s+|\s+±\s*)(\d)/us','$1±$2', $out); // sem &#8239;
+	$out = preg_replace('/±\s+/us','±', $out); // gruda a dirieta em "resultou em ± 2,5mm" ou "valores médios ± dp"
+	$out = preg_replace('/(\d[º%]?)(?:\s*\-\s*)(\d)/us','$1&#8209;$2', $out);  // no break hyphen ERRO=MINUS SIGN ("−"=&#8722; não é "-")
+	$out = preg_replace('/(\d)\s+%\s+/us','$1% ', $out); // ex "entre 32,7 % e 33,5%"
+	$out = preg_replace('/([\dpn])\s*(&lt;|&gt;|=)\s*([\dpn])/ius','$1&#8239;$2&#8239;$3', $out);
+	$out = preg_replace('|<(su[bp])>(\s*)(.+?)(\s*)</\1>|is','$2<$1>$3</$1>$4', $out); // ex. <sub>10 </sub>
+	return $out;
+}
+
+
+
+
 
 
 define ('XML_HEADER1', '<?xml version="1.0" encoding="UTF-8"?>');
@@ -103,6 +117,8 @@ if (($handle = fopen($fileLocalHora, "r")) !== FALSE) {
     		$local = preg_replace('/([\-–])/u', ' $1 ', $tmp[3]);
     		$local = trim(preg_replace('/\s+/', ' ', $local));
     	$LocHora_byResumo[$rid] = array($tmp[1],$hini,$hfim,$local); // dia, hora-inicial, final, local
+
+//  revisar aqui, modamos para data-iso, usar dayFormat() em 2015-08    	
     	//print "--debug $tmp[0]";
     	//var_dump($LocHora_byResumo);
     	if (!isset($Resumos_byDia[$tmp[1]]))
@@ -508,6 +524,7 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 					if (strpos($hini,';')!==false) {
 						list($hini,$hini2) = explode(';',$hini);
 						list($hfim,$hfim2) = explode(';',$hfim);
+
 						$per2 = "<period><start day=\"$dia\">$hini2</start><end>$hfim2</end></period>";
 					}
 					$event2='';
@@ -714,6 +731,7 @@ EOD;
 		if ($xmlDom===NULL)
 			$xmlDom = $this->asStdXML('dom',$dayFilter);
 		$XSLfile = $dayFilter? 'resumosS1_toHtmlF1day': 'resumosS1_toHtmlF2all';
+// PERIGO, REVISAR PATH com configs		
 		$xmlDom = transformToDom("tools/xsl/$XSLfile.xsl",$xmlDom); // transformId_ToDom($XSL,$xmlDom);
 		$xmlDom->encoding = 'UTF-8'; // importante para saveXML nao usar entidades.
 		if ($MODO=='xml'){
@@ -846,10 +864,21 @@ function xsl_regRestore($type,$secid){
 	}
 }
 
-function xsl_dayFormat($s){
+function dayFormat($s){
 	$s2='';
-	if (preg_match('/(\d\d+)\-(\d+)\-(\d+)/',$s,$m))
+	if (preg_match('/(\d\d+)\-(\d*)\-(\d*)/',$s,$m))
 		$s2 = "$m[3]/$m[2]/$m[1]";
+	elseif (preg_match('|(\d)(\d?)/(\d)(\d?)/(\d\d+)|',$s,$m)) {
+		$s2 = $s;
+		$dia = $m[2]? "$m[1]$m[2]": "0$m[1]";
+		$mes = $m[4]? "$m[3]$m[4]": "0$m[3]";
+		$s = "$m[5]-$mes-$dia";
+	}
+    return array($s,$s2);
+}
+
+function xsl_dayFormat($s){
+	list($s,$s2) = dayFormat($s);
     return DOMDocument::loadXML("<day iso='$s'>$s2</day>");
 }
 
