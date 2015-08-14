@@ -1,155 +1,136 @@
-REF_GRUPO;TITULO;DATA;HORA-INICIO;HORA-TERMINO;REF_LOCAL,,
-D01;Reuni√£o da P√≥s Gradua√ß√£o - CAPES;03/09/2015;09:00;17:00;Audit√≥rio Carvalho I,,
-D01;Reuni√£o Comiss√£o de Apoio;03/09/2015;16:00;;Jequitib√°,,
-D01;Reuni√£o Avaliadores;03/09/2015;17:00;;Jequitib√°,,
-D02;Abertura da Secretaria;04/09/2015;07:00;;Hall Entrada,,
-D02;Instala√ß√£o dos Pain√©is,ASPIRANTES e EFETIVOS ‚Äì SESS√ÉO I ‚Äì PN0001-PN0311;04/09/2015;07:30;;Foyer I,
-D02;Instala√ß√£o dos Pain√©is INICIANTES - SESS√ÉO I ‚Äì PI0001-PI0152;04/09/2015;07:30;;Foyer II,,
-D02;Instala√ß√£o pain√©is Pesquisa em Ensino;04/09/2015;07:30;;Foyer III,,
-D02;Instala√ß√£o Joseph Lister;04/09/2015;07:30;;Hall Jacarand√°,,
-D02;Apresenta√ß√£o e argui√ß√£o Pain√©is INICIANTES,ASPIRANTES e EFETIVOS SESS√ÉO I;04/09/2015;08:00;11:30;Foyer II,
-D02;Apresenta√ß√£o e Argui√ß√£o ¬†F√≥rum Cient√≠fico FC001-FC005;04/09/2015;08:00;11:30;Sala Cerejeira,,
-D02;Apresenta√ß√£o Pesquisa em Ensino;04/09/2015;08:00;11:30;Foyer III,,
-D02;Apresenta√ß√£o dos Projetos de Pesquisa √°rea 4,8 e 9;04/09/2015;08:30;11:30;Sala Ac√°cia,
-D02;Apresenta√ß√£o Oral √°rea- 4 AO0001-AO0012;04/09/2015;08:00;11:30;Amoreira I,,
-D02;Apresenta√ß√£o Oral √°rea 8- AO0025-AO0035;04/09/2015;08:00;11:30;Amoreira II,,
-D02;Apresenta√ß√£o Oral √°rea 9- AO0036-AO0045;04/09/2015;08:00;11:30;Carvalho III,,
-"D02;""SIMP√ìSIO I - ¬†Regenera√ß√£o √ìssea e Osseointegra√ß√£o: Em Busca de Modelos Preditivos",,
-"Ministrador: Paulo Guilherme Coelho ‚Äì New York University College of Dentistry"";04/09/2015;08:30;11:30;Jequitib√°",,
-D02;Retirada dos Pain√©is ASPIRANTES e EFETIVOS - SESS√ÉO I;04/09/2015;11:30;11:45;Foyer I,,
-D02;Retirada dos Pain√©is INICIANTES - SESS√ÉO I;04/09/2015;11:30;11:45;Foyer II,,
-D02;LUNCH LEARNING;04/09/2015;11:45;13:00;Amoreira III,,
-D02;Instala√ß√£o dos Pain√©is ASPIRANTES e EFETIVOS - SESS√ÉO II- PN0312-PN0622;04/09/2015;12:45;;Foyer I,,
-D02;Instala√ß√£o dos Pain√©is INICIANTES -- SESS√ÉO II ‚Äì PI0153-PI0304;04/09/2015;12:45;;Foyer II,,
-D02;Apresenta√ß√£o e argui√ß√£o¬† Pain√©is ASPIRANTES e EFETIVOS - SESS√ÉO II;04/09/2015;13:00;16:30;¬†Foyer I,,
-D02;Apresenta√ß√£o e argui√ß√£o¬† Pain√©is INICIANTES;04/09/2015;13:00;16:30;¬†Foyer II,,
-D02;Apresenta√ß√£o e Argui√ß√£o¬† F√≥rum Cient√≠fico FC006-FC011;04/09/2015;13:00;16:30;Sala Cerejeira,,
-D02;Apresenta√ß√£o Oral √°rea 4 ‚Äì AO0013-AO0024;04/09/2015;13:00;16:45;Amoreira I,,
-D02;Apresenta√ß√£o Oral √°rea 9 ‚Äì AO0046-AO0056;04/09/2015;13:00;16:45;Carvalho III,,
-D02;Apresenta√ß√£o dos Projetos de Pesquisa √°rea 4 e 9;04/09/2015;13:30;16:30;Sala Ac√°cia,,
-D02;Apresenta√ß√£o Pesquisa em Ensino;04/09/2015;13:30;17:00;Foyer III,,
-D02;Apresenta√ß√£o Joseph Lister;04/09/2015;13:30;16:30;Sala Manac√°,,
-D02;Instala√ß√£o pain√©is HATTON;04/09/2015;14:00;;Hall Jacarand√°,,
-D02;SIMP√ìSIO II: REUNI√ÉO DE EDITORES CIENT√çFICOS;04/09/2015;13:30;16:30;Carvalho I,,
-D02;Retirada Pain√©is ASPIRANTES e EFETIVOS - SESS√ÉO II;04/09/2015;16:30;16:45;Foyer I,,
-D02;Retirada Pain√©is INICIANTES - SESS√ÉO II;04/09/2015;16:30;16:45;Foyer II,,
-D02;Retirada Pain√©is Pesquisa em Ensino;04/09/2015;17:30;17:30;Foyer III,,
-D02;Reuni√£o de Grupo SESS√ÉO I e II- √°rea 1;04/09/2015;17:00;18:30;Cerejeira ¬†,,
-D02;Reuni√£o de Grupo SESS√ÉO I e II - √°rea 2;04/09/2015;17:00;18:30;Amoreira I,,
-D02;Reuni√£o de Grupo SESS√ÉO I e II ‚Äì √°rea 3;04/09/2015;17:00;18:30;Amoreira II,,
-D02;Reuni√£o de Grupo SESS√ÉO I e II - √°rea 5;04/09/2015;17:00;18:30;Carvalho I,,
-D02;Reuni√£o de Grupo SESS√ÉO I e II - √°rea 6;04/09/2015;17:00;18:30;Carvalho III,,
-D02;Reuni√£o de Grupo SESS√ÉO I e II ‚Äì √°rea 7;04/09/2015;17:00;18:30;Carvalho II,,
-D02;Reuni√£o de Grupo SESS√ÉO I e II - √°rea 10;04/09/2015;17:00;18:30;Sala Seringueira,,
-"D02;""Abertura Solene da 32¬™ Reuni√£o Anual da SBPqO¬†",,
-Confer√™ncia: ‚ÄúGlobal Oral Health Research and the IADR‚Äù¬†,,
-"Ministrador: Christopher Fox- Diretor Executivo da IADR"";04/09/2015;19:00;;Audit√≥rio Jequitib√°",,
-D02;Coquetel de Boas-Vindas;04/09/2015;20:00;21:00;Audit√≥rio Jequitib√° - Hall,,
-D03;Abertura da secretaria;05/09/2015;07:00;;Hall Entrada,,
-D03;Instala√ß√£o Pain√©is ASPIRANTES e EFETIVOS ‚Äì SESS√ÉO III ‚Äì PN0623-PN0933;05/09/2015;07:30;;Foyer I,,
-D03;Instala√ß√£o Pain√©is INICIANTES - SESS√ÉO III ‚Äì PI0305-PI0456;05/09/2015;07:30;;Foyer II,,
-D03;Instala√ß√£o pain√©is POAC;05/09/2015;07:30;;Foyer III,,
-D03;Apresenta√ß√£o e argui√ß√£o dos Pain√©is ASPIRANTES e EFETIVOS - SESS√ÉO III;05/09/2015;08:00;11:30;Foyer I,,
-D03;Apresenta√ß√£o e argui√ß√£o dos Pain√©is INICIANTES - SESS√ÉO III;05/09/2015;08:00;11:30;Foyer II,,
-D03;Apresenta√ß√£o e argui√ß√£o Pain√©is HATTON;05/09/2015;08:00;11:30;Sala Jacarand√°,,
-D03;Apresenta√ß√£o e argui√ß√£o POAC;05/09/2015;08:00;11:30;Foyer III,,
-D03;Apresenta√ß√£o e Argui√ß√£o - F√≥rum Cient√≠fico FC012-FC016;05/09/2015;08:00;11:30;Cerejeira,,
-D03;Pr√™mio COL (Pr√™mio Colgate Odontologia Preventiva) COL01-COL05;05/09/2015;08:00;11:30;Manac√°,,
-D03;Apresenta√ß√£o dos Projetos de Pesquisa √°rea 2,3,7 e 10;05/09/2015;08:30;11:30;Ac√°cias
-"D03;""SIMP√ìSIO: PESQUISA CL√çNICA EM ODONTOLOGIA - Patroc√≠nio ORAL-B",,
-Ministradores:,,
-Claudio Mendes Pannuti - FOUSP,,
-Alessandro Dourado Loguercio ‚Äì UEPG,,
-"Marcio Zaffalon Casati - UNICAMP"";05/09/2015;08:30;11:30;Carvalho II",,
-D03;Apresenta√ß√£o Oral √°rea 2 ‚Äì AO057-AO068;05/09/2015;08:00;11:30;Amoreira I,,
-D03;Apresenta√ß√£o Oral √°rea 3 ‚Äì AO081-AO092;05/09/2015;08:00;11:30;Amoreira II,,
-D03;Apresenta√ß√£o Oral √°rea 7 ‚Äì AO106-AO116;05/09/2015;08:00;11:30;Carvalho I,,
-D03;Apresenta√ß√£o Oral √°rea 10 ‚Äì AO128-AO138;05/09/2015;08:00;11:30;Seringueira,,
-D03;Retirada dos Pain√©is,ASPIRANTES e EFETIVOS - SESS√ÉO III;05/09/2015;11:30;11:45;Foyer I,
-D03;Retirada dos Pain√©is INICIANTES - SESS√ÉO III;05/09/2015;11:30;11:45;Foyer II,,
-D03;Lunch Learning;05/09/2015;11:45;13:00;Amoreira III,,
-D03;Instala√ß√£o dos Pain√©is ASPIRANTES e EFETIVOS - SESS√ÉO IV ‚Äì PN0934-PN1244;05/09/2015;12:45;;Foyer I,,
-D03;Instala√ß√£o dos Pain√©is INICIANTES - SESS√ÉO IV ‚Äì PI0457-PI0608;05/09/2015;12:45;;Foyer II,,
-D03;Apresenta√ß√£o e argui√ß√£o Pain√©is ASPIRANTES e EFETIVOS - SESS√ÉO IV;05/09/2015;13:00;16:30;Foyer I,,
-D03;Apresenta√ß√£o e argui√ß√£o Pain√©is INICIANTES - SESS√ÉO IV;05/09/2015;13:00;16:30;Foyer II,,
-D03;Apresenta√ß√£o e Argui√ß√£o¬† do F√≥rum Cient√≠fico FC017-FC022;05/09/2015;13:00;16:30;Cerejeira,,
-D03;Pr√™mio COL (Pr√™mio Colgate Odontologia Preventiva) COL006-COL010;05/09/2015;13:00;16:30;Manac√°,,
-D03;Apresenta√ß√£o Oral √°rea 2 ‚Äì AO0069-AO0080;05/09/2015;13:00;16:45;Amoreira I ¬†,,
-D03;Apresenta√ß√£o Oral √°rea 3 ‚Äì AO0093-AO0105;05/09/2015;13:00;16:45;Amoreira II,,
-D03;Apresenta√ß√£o Oral √°rea 7- AO0117-AO0127;05/09/2015;13:00;16:45;Carvalho I,,
-D03;Apresenta√ß√£o Oral √°rea 10 ‚Äì AO0139-AO0150;05/09/2015;13:00;16:45;Seringueira,,
-D03;Apresenta√ß√£o e argui√ß√£o dos Pain√©is HATTON;05/09/2015;13:30;17:00;Sala Jacarand√°,,
-D03;Apresenta√ß√£o e argui√ß√£o¬† POAC;05/09/2015;13:30;17:00;Foyer III,,
-"D03;""SIMP√ìSIO: INOVA√á√ÉO NA ODONTOLOGIA: DEMANDAS E DESAFIOS ATUAIS",,
-Ministradores:,,
-Fabr√≠cio Ogliari - UFPel,,
-Henry Suzuki - Axonal,,
-Knud Sorensen - ABIMO,,
-Roberto Alc√¢ntara - Angelus,,
-"Vald√™nio Ara√∫jo - ABDI"";05/09/2015;13:30;16:45;Carvalho",,
-D03;Apresenta√ß√£o dos Projetos de Pesquisa¬† √°rea 3 e 10;05/09/2015;11:30;17:00;Sala Ac√°cias,,
-D03;Retirada¬† Pain√©is,ASPIRANTES e EFETIVOS - SESS√ÉO IV;05/09/2015;16:30;16:45;Foyer I¬†,
-D03;Retirada Pain√©is INICIANTES - SESS√ÉO IV;05/09/2015;16:30;16:45;Foyer II,,
-D03;Retirada Joseph Lister;05/09/2015;16:30;;Hall Jacarand√°,,
-D03;Retirada Pain√©is POAC;05/09/2015;17:30;;Foyer III,,
-D03;Retirada dos pain√©is HATTON - divulga√ß√£o 12 finalistas;05/09/2015;17:00;18:00;Hall Jacarand√°,,
-D03;Reuni√£o de Grupo SESS√ÉO III e IV- √°rea 1;05/09/2015;17:00;18:30;Cerejeira ¬†,,
-D03;Reuni√£o de Grupo SESS√ÉO III e IV - √°rea 4;05/09/2015;17:00;18:30;Carvalho II,,
-D03;Reuni√£o de Grupo SESS√ÉO III e IV - √°rea 5;05/09/2015;17:00;18:30;Carvalho III,,
-D03;Reuni√£o de Grupo SESS√ÉO¬† III e IV - √°rea 6;05/09/2015;17:00;18:30;Amoreira I,,
-D03;Reuni√£o de Grupo SESS√ÉO III e IV ‚Äì √°rea 8;05/09/2015;17:00;18:30;Carvalho I,,
-D03;Reuni√£o de Grupo SESS√ÉO III e IV ‚Äì √°rea 9;05/09/2015;17:00;18:30;Seringueira,,
-D03;Assembleia Ordin√°ria;05/09/2015;18:30;19:30;Jequitib√°,,
-D04;Abertura da secretaria;06/09/2015;07:00;;Hall de Entrada,,
-D04;Instala√ß√£o Pain√©is ASPIRANTES e EFETIVOS ‚Äì Sess√£o V ‚Äì PN1245-PN1555;06/09/2015;07:30;;Foyer I,,
-D04;Instala√ß√£o Pain√©is INICIANTES ‚Äì Sess√£o V ‚Äì PI0609-PI0760;06/09/2015;07:30;;Foyer II,,
-D04;Apresenta√ß√£o e argui√ß√£o Pain√©is ASPIRANTES e EFETIVOS ‚Äì SESS√ÉO V;06/09/2015;08:00;11:30;Foyer I,,
-D04;Apresenta√ß√£o e argui√ß√£o Pain√©is INICIANTES¬† ‚Äì SESS√ÉO V;06/09/2015;08:00;11:30;Foyer II,,
-D04;Apresenta√ß√£o e argui√ß√£o dos Pain√©is HATTON;06/09/2015;08:30;11:30;Hall Jacarand√°,,
-D04;Pr√™mio COL (Pr√™mio Colgate Odontologia Preventiva) COL11-COL15;06/09/2015;08:00;11:30;Sala Manac√°,,
-D04;Apresenta√ß√£o e Argui√ß√£o F√≥rum Cient√≠fico FC023-FC027;06/09/2015;08:00;11:30;Sala Cerejeira,,
-D04;Apresenta√ß√£o dos Projetos de Pesquisa √°rea 1,5 e 6;06/09/2015;08:30;11:30;Sala Ac√°cias,
-"D04;""SIMP√ìSIO: INOVA√á√ÉO E PESQUISA COM LASER- REALIDADE ATUAL E TEND√äNCIAS FUTURAS",,
-Ministradores:,,
-Carlos de Paula Eduardo - FOUSP,,
-Luciane Hiramatsu Azevedo - USP,,
-Manoel Dami√£o Sousa Neto - FORP - USP,,
-Vanderlei Salvador Bagnato - USP- IFSC,,
-Martha Sim√µes ‚Äì IPEN-USP,,
-Moderador: Sergio Eduardo Paiva Gon√ßalves - UNESP- SJC,,
-"Ativador: Jaime Cury ‚Äì UNICAMP"";06/09/2015;08:30;12:00;Carvalho II",,
-"D04;""CURSO: Novos fatores que explicam as falhas na osseointegra√ß√£o e como evitar a perda √≥ssea marginal.¬†",,
-"Ministrador: Luiz Meirelles - University of Rochester"";06/09/2015;08:30;11:30;Carvalho III",,
-D04;Apresenta√ß√£o Oral √°rea 1 ‚Äì AO0151-AO0158;06/09/2015;08:00;11:30;Carvalho I,,
-D04;Apresenta√ß√£o Oral √°rea 5 - AO0168-AO0179;06/09/2015;08:00;11:30;Amoreira II,,
-D04;Apresenta√ß√£o Oral √°rea 6 - AO0192-AO0203;06/09/2015;08:00;11:30;Amoreira I,,
-D04;Retirada Pain√©is,ASPIRANTES e EFETIVOS - SESS√ÉO V;06/09/2015;11:30;11:45;Foyer I,
-D04;Retirada Pain√©is INICIANTES - SESS√ÉO V;06/09/2015;11:30;11:45;Foyer II,,
-D04;LUNCH LEARNING;06/09/2015;11:45;13:00;Amoreira III,,
-D04;Instala√ß√£o Pain√©is ASPIRANTES e EFETIVOS - SESS√ÉO VI ‚Äì PN1556-PN1867;06/09/2015;12:45;12:45;Foyer I,,
-D04;Instala√ß√£o Pain√©is INICIANTES - ¬†SESS√ÉO VI ‚Äì PI0761-PI0911;06/09/2015;12:45;12:45;Foyer II,,
-D04;Apresenta√ß√£o e argui√ß√£o dos Pain√©is ASPIRANTES e EFETIVOS ‚Äì SESS√ÉO VI¬†¬†;06/09/2015;13:00;16:30;Foyer I,,
-D04;Apresenta√ß√£o e argui√ß√£o dos Pain√©is INICIANTES - SESS√ÉO VI¬†¬†;06/09/2015;13:00;16:30;Foyer II,,
-D04;Apresenta√ß√£o e argui√ß√£o dos Pain√©is HATTON;06/09/2015;13:30;17:00;Sala Jacarand√°,,
-"D04;""CURSO: Normas t√©cnicas: como fundamentar seu projeto de PESQUISA¬†",,
-"Ministrador: √Ålvaro Della Bona - UPF"";06/09/2015;13:30;15:30;Jequitib√°",,
-D04;Apresenta√ß√£o e argui√ß√£o dos Projetos de Pesquisa 5 e 6;06/09/2015;13:30;17:00;Sala Ac√°cias,,
-D04;Apresenta√ß√£o Oral √°rea 1 ‚Äì AO0159-AO0167;06/09/2015;13:00;16:45;Carvalho I,,
-D04;Apresenta√ß√£o Oral √°rea 5 ‚Äì AO0180-AO0191;06/09/2015;13:00;16:45;Amoreira II,,
-D04;Apresenta√ß√£o Oral √°rea 6 ‚Äì AO0204-AO0215;06/09/2015;13:00;16:45;Amoreira I,,
-D04;Retirada dos Pain√©is - ASPIRANTES e EFETIVOS ‚Äì Sess√£o VI;06/09/2015;16:30;16:45;Foyer I,,
-D04;Retirada dos Pain√©is INICIANTES (ISSAO),- Sess√£o VI;06/09/2015;16:30;16:45;Foyer II,
-D04;Retirada dos pain√©is HATTON- divulga√ß√£o 6 finalistas;06/09/2015;17:00;18:00;Hall Jacarand√°,,
-D04;Reuni√£o de Grupo SESS√ÉO V e VI - √°rea 2;06/09/2015;17:00;18:30;Carvalho II,,
-D04;Reuni√£o de Grupo¬† SESS√ÉO V e VI ‚Äì √°rea 3;06/09/2015;17:00;18:30;Amoreira I,,
-D04;Reuni√£o de Grupo¬† SESS√ÉO V e VI -¬† √°rea 4;06/09/2015;17:00;18:30;Amoreira II,,
-D04;Reuni√£o de Grupo SESS√ÉO V e VI - √°rea 7;06/09/2015;17:00;18:30;Carvalho III,,
-D04;Reuni√£o de Grupo SESS√ÉO V e VI - √°rea 8;06/09/2015;17:00;18:30;Carvalho I,,
-D04;Reuni√£o de Grupo SESS√ÉO V e VI - √°rea 9;06/09/2015;17:00;18:30;Cerejeira,,
-D04;Reuni√£o de Grupo SESS√ÉO V e VI - √°rea 10;06/09/2015;17:00;18:30;Seringueira,,
-D04;Reuni√µes Paralelas GRUPO PET;06/09/2015;19:00;20:30;Manac√°,,
-D04;Reuni√µes Paralelas GBPD;06/09/2015;;;Cerejeira,,
-D05;Abertura da secretaria;07/09/2015;07:30;;Hall de entrada,,
-D05;Apresenta√ß√£o dos 6 Pain√©is Selecionados HATTON;07/09/2015;08:00;11:00;Sala Jacarand√°¬†,,
-D05;Retirada pain√©is HATTON;07/09/2015;11:00;;Sala Jacarand√°¬†,,
-D05;Sess√£o de Premia√ß√£o e Encerramento Oficial da 32¬™ Reuni√£o Anual da SBPqO;07/09/2015;12:00;;Jequitib√°,,
+REF_GRUPO;TITULO;DATA;HORA-INICIO;HORA-TERMINO;REF_LOCAL
+D01;Reuni„o da PÛs GraduaÁ„o - CAPES;03/09/2015;09:00;17:00;AuditÛrio Carvalho I
+D01;Reuni„o Comiss„o de Apoio;03/09/2015;16:00;;Jequitib·
+D01;Reuni„o Avaliadores;03/09/2015;17:00;;Jequitib·
+D02;Abertura da Secretaria;04/09/2015;07:00;;Hall Entrada
+D02;InstalaÁ„o dos PainÈis, ASPIRANTES e EFETIVOS ñ SESS√O I ñ PN0001-PN0311;04/09/2015;07:30;;Foyer I
+D02;InstalaÁ„o dos PainÈis INICIANTES - SESS√O I ñ PI0001-PI0152;04/09/2015;07:30;;Foyer II
+D02;InstalaÁ„o painÈis Pesquisa em Ensino;04/09/2015;07:30;;Foyer III
+D02;InstalaÁ„o Joseph Lister;04/09/2015;07:30;;Hall Jacarand·
+D02;ApresentaÁ„o e arguiÁ„o PainÈis INICIANTES, ASPIRANTES e EFETIVOS SESS√O I;04/09/2015;08:00;11:30;Foyer II
+D02;ApresentaÁ„o e ArguiÁ„o †FÛrum CientÌfico FC001-FC005;04/09/2015;08:00;11:30;Sala Cerejeira
+D02;ApresentaÁ„o Pesquisa em Ensino;04/09/2015;08:00;11:30;Foyer III
+D02;ApresentaÁ„o dos Projetos de Pesquisa ·rea 4,8 e 9;04/09/2015;08:30;11:30;Sala Ac·cia
+D02;ApresentaÁ„o Oral ·rea- 4 AO0001-AO0012;04/09/2015;08:00;11:30;Amoreira I
+D02;ApresentaÁ„o Oral ·rea 8- AO0025-AO0035;04/09/2015;08:00;11:30;Amoreira II
+D02;ApresentaÁ„o Oral ·rea 9- AO0036-AO0045;04/09/2015;08:00;11:30;Carvalho III
+D02;SIMP”SIO I - †RegeneraÁ„o ”ssea e OsseointegraÁ„o: Em Busca de Modelos Preditivos<br>Ministrador: Paulo Guilherme Coelho ñ New York University College of Dentistry;04/09/2015;08:30;11:30;Jequitib·
+D02;Retirada dos PainÈis ASPIRANTES e EFETIVOS - SESS√O I;04/09/2015;11:30;11:45;Foyer I
+D02;Retirada dos PainÈis INICIANTES - SESS√O I;04/09/2015;11:30;11:45;Foyer II
+D02;LUNCH LEARNING;04/09/2015;11:45;13:00;Amoreira III
+D02;InstalaÁ„o dos PainÈis ASPIRANTES e EFETIVOS - SESS√O II- PN0312-PN0622;04/09/2015;12:45;;Foyer I
+D02;InstalaÁ„o dos PainÈis INICIANTES -- SESS√O II ñ PI0153-PI0304;04/09/2015;12:45;;Foyer II
+D02;ApresentaÁ„o e arguiÁ„o† PainÈis ASPIRANTES e EFETIVOS - SESS√O II;04/09/2015;13:00;16:30;†Foyer I
+D02;ApresentaÁ„o e arguiÁ„o† PainÈis INICIANTES;04/09/2015;13:00;16:30;†Foyer II
+D02;ApresentaÁ„o e ArguiÁ„o† FÛrum CientÌfico FC006-FC011;04/09/2015;13:00;16:30;Sala Cerejeira
+D02;ApresentaÁ„o Oral ·rea 4 ñ AO0013-AO0024;04/09/2015;13:00;16:45;Amoreira I
+D02;ApresentaÁ„o Oral ·rea 9 ñ AO0046-AO0056;04/09/2015;13:00;16:45;Carvalho III
+D02;ApresentaÁ„o dos Projetos de Pesquisa ·rea 4 e 9;04/09/2015;13:30;16:30;Sala Ac·cia
+D02;ApresentaÁ„o Pesquisa em Ensino;04/09/2015;13:30;17:00;Foyer III
+D02;ApresentaÁ„o Joseph Lister;04/09/2015;13:30;16:30;Sala Manac·
+D02;InstalaÁ„o painÈis HATTON;04/09/2015;14:00;;Hall Jacarand·
+D02;SIMP”SIO II: REUNI√O DE EDITORES CIENTÕFICOS;04/09/2015;13:30;16:30;Carvalho I
+D02;SimpÛsio: Eros„o do esmalte dental:†medidas preventivas para a eros„o do esmalte e mecanismo de aÁ„o de Regenerate. <br>PatrocÌnio Regenerate<br>Ministradores: <br>MarÌlia Afonso Rabelo Buzalaf†- FORP-USP Respons·vel por Pesquisa e Desenvolvimento Unilever;04/09/2015;13:30;14:30;Jequitib·
+D02;Retirada PainÈis ASPIRANTES e EFETIVOS - SESS√O II;04/09/2015;16:30;16:45;Foyer I
+D02;Retirada PainÈis INICIANTES - SESS√O II;04/09/2015;16:30;16:45;Foyer II
+D02;Retirada PainÈis Pesquisa em Ensino;04/09/2015;17:30;17:30;Foyer III
+D02;Reuni„o de Grupo SESS√O I e II- ·rea 1;04/09/2015;17:00;18:30;Cerejeira †
+D02;Reuni„o de Grupo SESS√O I e II - ·rea 2;04/09/2015;17:00;18:30;Amoreira I
+D02;Reuni„o de Grupo SESS√O I e II ñ ·rea 3;04/09/2015;17:00;18:30;Amoreira II
+D02;Reuni„o de Grupo SESS√O I e II - ·rea 5;04/09/2015;17:00;18:30;Carvalho I
+D02;Reuni„o de Grupo SESS√O I e II - ·rea 6;04/09/2015;17:00;18:30;Carvalho III
+D02;Reuni„o de Grupo SESS√O I e II ñ ·rea 7;04/09/2015;17:00;18:30;Carvalho II
+D02;Reuni„o de Grupo SESS√O I e II - ·rea 10;04/09/2015;17:00;18:30;Sala Seringueira
+D02;Abertura Solene da 32™ Reuni„o Anual da SBPqO†<br>ConferÍncia: ìGlobal Oral Health Research and the IADRî†<br>Ministrador: Christopher Fox- Diretor Executivo da IADR;04/09/2015;19:00;;AuditÛrio Jequitib·
+D02;Coquetel de Boas-Vindas;04/09/2015;20:00;21:00;AuditÛrio Jequitib· - Hall
+D03;Abertura da secretaria;05/09/2015;07:00;;Hall Entrada
+D03;InstalaÁ„o PainÈis ASPIRANTES e EFETIVOS ñ SESS√O III ñ PN0623-PN0933;05/09/2015;07:30;;Foyer I
+D03;InstalaÁ„o PainÈis INICIANTES - SESS√O III ñ PI0305-PI0456;05/09/2015;07:30;;Foyer II
+D03;InstalaÁ„o painÈis POAC;05/09/2015;07:30;;Foyer III
+D03;ApresentaÁ„o e arguiÁ„o dos PainÈis ASPIRANTES e EFETIVOS - SESS√O III;05/09/2015;08:00;11:30;Foyer I
+D03;ApresentaÁ„o e arguiÁ„o dos PainÈis INICIANTES - SESS√O III;05/09/2015;08:00;11:30;Foyer II
+D03;ApresentaÁ„o e arguiÁ„o PainÈis HATTON;05/09/2015;08:00;11:30;Sala Jacarand·
+D03;ApresentaÁ„o e arguiÁ„o POAC;05/09/2015;08:00;11:30;Foyer III
+D03;ApresentaÁ„o e ArguiÁ„o - FÛrum CientÌfico FC012-FC016;05/09/2015;08:00;11:30;Cerejeira
+D03;PrÍmio COL (PrÍmio Colgate Odontologia Preventiva) COL01-COL05;05/09/2015;08:00;11:30;Manac·
+D03;ApresentaÁ„o dos Projetos de Pesquisa ·rea 2,3,7 e 10;05/09/2015;08:30;11:30;Ac·cias
+D03;SIMP”SIO: PESQUISA CLÕNICA EM ODONTOLOGIA - PatrocÌnio ORAL-B<br>Ministradores: <br>Claudio Mendes Pannuti - FOUSP<br>Alessandro Dourado Loguercio ñ UEPG<br>Marcio Zaffalon Casati - UNICAMP;05/09/2015;08:30;11:30;Carvalho II
+D03;ApresentaÁ„o Oral ·rea 2 ñ AO057-AO068;05/09/2015;08:00;11:30;Amoreira I
+D03;ApresentaÁ„o Oral ·rea 3 ñ AO081-AO092;05/09/2015;08:00;11:30;Amoreira II
+D03;ApresentaÁ„o Oral ·rea 7 ñ AO106-AO116;05/09/2015;08:00;11:30;Carvalho I
+D03;ApresentaÁ„o Oral ·rea 10 ñ AO128-AO138;05/09/2015;08:00;11:30;Seringueira
+D03;Retirada dos PainÈis, ASPIRANTES e EFETIVOS - SESS√O III;05/09/2015;11:30;11:45;Foyer I
+D03;Retirada dos PainÈis INICIANTES - SESS√O III;05/09/2015;11:30;11:45;Foyer II
+D03;Lunch Learning;05/09/2015;11:45;13:00;Amoreira III
+D03;InstalaÁ„o dos PainÈis ASPIRANTES e EFETIVOS - SESS√O IV ñ PN0934-PN1244;05/09/2015;12:45;;Foyer I
+D03;InstalaÁ„o dos PainÈis INICIANTES - SESS√O IV ñ PI0457-PI0608;05/09/2015;12:45;;Foyer II
+D03;ApresentaÁ„o e arguiÁ„o PainÈis ASPIRANTES e EFETIVOS - SESS√O IV;05/09/2015;13:00;16:30;Foyer I
+D03;ApresentaÁ„o e arguiÁ„o PainÈis INICIANTES - SESS√O IV;05/09/2015;13:00;16:30;Foyer II
+D03;ApresentaÁ„o e ArguiÁ„o† do FÛrum CientÌfico FC017-FC022;05/09/2015;13:00;16:30;Cerejeira
+D03;PrÍmio COL (PrÍmio Colgate Odontologia Preventiva) COL006-COL010;05/09/2015;13:00;16:30;Manac·
+D03;ApresentaÁ„o Oral ·rea 2 ñ AO0069-AO0080;05/09/2015;13:00;16:45;Amoreira I †
+D03;ApresentaÁ„o Oral ·rea 3 ñ AO0093-AO0105;05/09/2015;13:00;16:45;Amoreira II
+D03;ApresentaÁ„o Oral ·rea 7- AO0117-AO0127;05/09/2015;13:00;16:45;Carvalho I
+D03;ApresentaÁ„o Oral ·rea 10 ñ AO0139-AO0150;05/09/2015;13:00;16:45;Seringueira
+D03;ApresentaÁ„o e arguiÁ„o dos PainÈis HATTON;05/09/2015;13:30;17:00;Sala Jacarand·
+D03;ApresentaÁ„o e arguiÁ„o† POAC;05/09/2015;13:30;17:00;Foyer III
+D03;SIMP”SIO: INOVA«√O NA ODONTOLOGIA: DEMANDAS E DESAFIOS ATUAIS<br>Ministradores:<br>FabrÌcio Ogliari - UFPel<br>Henry Suzuki - Axonal<br>Knud Sorensen - ABIMO<br>Roberto Alc‚ntara - Angelus<br>ValdÍnio Ara˙jo - ABDI;05/09/2015;13:30;16:45;Carvalho
+D03;CURSO: Bulk Fill ñ materiais sem qualquer d˙vida?<br>Ministrador: Siegward Heintze ñ Chefe do Departamento de Pesquisa PrÈ-ClÌnica da Ivoclar<br>Apoio: Ivoclar Vivadent;05/09/2015;13:30;17:00;Jequitib·
+D03;ApresentaÁ„o dos Projetos de Pesquisa† ·rea 3 e 10;05/09/2015;11:30;17:00;Sala Ac·cias
+D03;Retirada† PainÈis, ASPIRANTES e EFETIVOS - SESS√O IV;05/09/2015;16:30;16:45;Foyer I†
+D03;Retirada PainÈis INICIANTES - SESS√O IV;05/09/2015;16:30;16:45;Foyer II
+D03;Retirada Joseph Lister;05/09/2015;16:30;;Hall Jacarand·
+D03;Retirada PainÈis POAC;05/09/2015;17:30;;Foyer III
+D03;Retirada dos painÈis HATTON - divulgaÁ„o 12 finalistas;05/09/2015;17:00;18:00;Hall Jacarand·
+D03;Reuni„o de Grupo SESS√O III e IV- ·rea 1;05/09/2015;17:00;18:30;Cerejeira †
+D03;Reuni„o de Grupo SESS√O III e IV - ·rea 4;05/09/2015;17:00;18:30;Carvalho II
+D03;Reuni„o de Grupo SESS√O III e IV - ·rea 5;05/09/2015;17:00;18:30;Carvalho III
+D03;Reuni„o de Grupo SESS√O† III e IV - ·rea 6;05/09/2015;17:00;18:30;Amoreira I
+D03;Reuni„o de Grupo SESS√O III e IV ñ ·rea 8;05/09/2015;17:00;18:30;Carvalho I
+D03;Reuni„o de Grupo SESS√O III e IV ñ ·rea 9;05/09/2015;17:00;18:30;Seringueira
+D03;Assembleia Ordin·ria;05/09/2015;18:30;19:30;Jequitib·
+D04;Abertura da secretaria;06/09/2015;07:00;;Hall de Entrada
+D04;InstalaÁ„o PainÈis ASPIRANTES e EFETIVOS ñ Sess„o V ñ PN1245-PN1555;06/09/2015;07:30;;Foyer I
+D04;InstalaÁ„o PainÈis INICIANTES ñ Sess„o V ñ PI0609-PI0760;06/09/2015;07:30;;Foyer II
+D04;ApresentaÁ„o e arguiÁ„o PainÈis ASPIRANTES e EFETIVOS ñ SESS√O V;06/09/2015;08:00;11:30;Foyer I
+D04;ApresentaÁ„o e arguiÁ„o PainÈis INICIANTES† ñ SESS√O V;06/09/2015;08:00;11:30;Foyer II
+D04;ApresentaÁ„o e arguiÁ„o dos PainÈis HATTON;06/09/2015;08:30;11:30;Hall Jacarand·
+D04;PrÍmio COL (PrÍmio Colgate Odontologia Preventiva) COL11-COL15;06/09/2015;08:00;11:30;Sala Manac·
+D04;ApresentaÁ„o e ArguiÁ„o FÛrum CientÌfico FC023-FC027;06/09/2015;08:00;11:30;Sala Cerejeira
+D04;ApresentaÁ„o dos Projetos de Pesquisa ·rea 1, 5 e 6;06/09/2015;08:30;11:30;Sala Ac·cias
+D04;SIMP”SIO: INOVA«√O E PESQUISA COM LASER- REALIDADE ATUAL E TEND NCIAS FUTURAS<br>Ministradores:<br>Carlos de Paula Eduardo - FOUSP<br>Luciane Hiramatsu Azevedo - USP<br>Manoel Dami„o Sousa Neto - FORP - USP<br>Vanderlei Salvador Bagnato - USP- IFSC<br>Martha Simıes ñ IPEN-USP<br>Moderador: Sergio Eduardo Paiva GonÁalves - UNESP- SJC<br>Ativador: Jaime Cury ñ UNICAMP;06/09/2015;08:30;12:00;Carvalho II
+D04;CURSO: Novos fatores que explicam as falhas na osseointegraÁ„o e como evitar a perda Ûssea marginal.†<br>Ministrador: Luiz Meirelles - University of Rochester;06/09/2015;08:30;11:30;Carvalho III
+D04;ApresentaÁ„o Oral ·rea 1 ñ AO0151-AO0158;06/09/2015;08:00;11:30;Carvalho I
+D04;ApresentaÁ„o Oral ·rea 5 - AO0168-AO0179;06/09/2015;08:00;11:30;Amoreira II
+D04;ApresentaÁ„o Oral ·rea 6 - AO0192-AO0203;06/09/2015;08:00;11:30;Amoreira I
+D04;Retirada PainÈis, ASPIRANTES e EFETIVOS - SESS√O V;06/09/2015;11:30;11:45;Foyer I
+D04;Retirada PainÈis INICIANTES - SESS√O V;06/09/2015;11:30;11:45;Foyer II
+D04;LUNCH LEARNING;06/09/2015;11:45;13:00;Amoreira III
+D04;InstalaÁ„o PainÈis ASPIRANTES e EFETIVOS - SESS√O VI ñ PN1556-PN1867;06/09/2015;12:45;12:45;Foyer I
+D04;InstalaÁ„o PainÈis INICIANTES - †SESS√O VI ñ PI0761-PI0911;06/09/2015;12:45;12:45;Foyer II
+D04;ApresentaÁ„o e arguiÁ„o dos PainÈis ASPIRANTES e EFETIVOS ñ SESS√O VI††;06/09/2015;13:00;16:30;Foyer I
+D04;ApresentaÁ„o e arguiÁ„o dos PainÈis INICIANTES - SESS√O VI††;06/09/2015;13:00;16:30;Foyer II
+D04;ApresentaÁ„o e arguiÁ„o dos PainÈis HATTON;06/09/2015;13:30;17:00;Sala Jacarand·
+D04;CURSO: Normas tÈcnicas: como fundamentar seu projeto de PESQUISA†<br>Ministrador: ¡lvaro Della Bona - UPF;06/09/2015;13:30;15:30;Jequitib·
+D04;ApresentaÁ„o e arguiÁ„o dos Projetos de Pesquisa 5 e 6;06/09/2015;13:30;17:00;Sala Ac·cias
+D04;ApresentaÁ„o Oral ·rea 1 ñ AO0159-AO0167;06/09/2015;13:00;16:45;Carvalho I
+D04;ApresentaÁ„o Oral ·rea 5 ñ AO0180-AO0191;06/09/2015;13:00;16:45;Amoreira II
+D04;ApresentaÁ„o Oral ·rea 6 ñ AO0204-AO0215;06/09/2015;13:00;16:45;Amoreira I
+D04;Retirada dos PainÈis - ASPIRANTES e EFETIVOS ñ Sess„o VI;06/09/2015;16:30;16:45;Foyer I
+D04;Retirada dos PainÈis INICIANTES (ISSAO), - Sess„o VI;06/09/2015;16:30;16:45;Foyer II
+D04;Retirada dos painÈis HATTON- divulgaÁ„o 6 finalistas;06/09/2015;17:00;18:00;Hall Jacarand·
+D04;Reuni„o de Grupo SESS√O V e VI - ·rea 2;06/09/2015;17:00;18:30;Carvalho II
+D04;Reuni„o de Grupo† SESS√O V e VI ñ ·rea 3;06/09/2015;17:00;18:30;Amoreira I
+D04;Reuni„o de Grupo† SESS√O V e VI -† ·rea 4;06/09/2015;17:00;18:30;Amoreira II
+D04;Reuni„o de Grupo SESS√O V e VI - ·rea 7;06/09/2015;17:00;18:30;Carvalho III
+D04;Reuni„o de Grupo SESS√O V e VI - ·rea 8;06/09/2015;17:00;18:30;Carvalho I
+D04;Reuni„o de Grupo SESS√O V e VI - ·rea 9;06/09/2015;17:00;18:30;Cerejeira
+D04;Reuni„o de Grupo SESS√O V e VI - ·rea 10;06/09/2015;17:00;18:30;Seringueira
+D04;Reuniıes Paralelas GRUPO PET;06/09/2015;19:00;20:30;Manac·
+D04;Reuniıes Paralelas GBPD;06/09/2015;19:00;20:30;Cerejeira
+D04;Reuni„o Paralela:†GBMD;06/09/2015;19:00;20:30;Carvalho III
+D04;Reuni„o Paralela: SOBEP;06/09/2015;19:00;20:30;Seringueira
+D05;Abertura da secretaria;07/09/2015;07:30;;Hall de entrada
+D05;ApresentaÁ„o dos 6 PainÈis Selecionados HATTON;07/09/2015;08:00;11:00;Sala Jacarand·†
+D05;Retirada painÈis HATTON;07/09/2015;11:00;;Sala Jacarand·†
+D05;Sess„o de PremiaÁ„o e Encerramento Oficial da 32™ Reuni„o Anual da SBPqO;07/09/2015;12:00;;Jequitib·
