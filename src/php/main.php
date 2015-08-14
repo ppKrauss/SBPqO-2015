@@ -64,7 +64,7 @@ function print_byTPL($OUT,$isRELAT,$isXML,$tag='html') {
 			print XML_HEADER1.$OUT;
 	} elseif (!$isRELAT) {
 		$FP = (isset($io_options['firstpage']))? "body {counter-reset: page {$io_options['firstpage']};}": '';
-		$TPL = file_get_contents('tools/xsl/HTML_STANDARD_F1.html');
+		$TPL = file_get_contents('src/xsl/HTML_STANDARD_F1.html');
 		$TPL = str_replace(array('{_ALL_SECTIONS_}','{_FIRSTPAGE_}'), array($OUT,$FP), $TPL);
 		print $TPL;
 	} else
@@ -97,7 +97,7 @@ function exec_cmd($cmd,$file,$isRELAT,$rmHeader=1,$finalUTF8=true) {
 		$out = preg_replace("/[ \\t]*\n[ \\t]*/s","\n",$out); // trim nas quebras de linha 
 	}
 
-	if (isset($io_options['normaliza'])){ // normaliza texto do autor!
+	if (0 && isset($io_options['normaliza'])){ // normaliza texto do autor!
 
 // TRANSFORMAR EM FUNCAO E MANDAR COMO PARAMETRO!
 
