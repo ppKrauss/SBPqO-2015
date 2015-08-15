@@ -48,11 +48,12 @@ $FILTRO['regrasDefault'] = [ // CONFIGURAÇÃO DAS REGRAS DE NORMALIZAÇÃO:
 	'SBPqO-bugs1'=>TRUE,  // bugs de UTF8 remanescentes
 	'SBPqO-bugs2'=>FALSE, // bug do "apoio" duplicado
 ];
-$symbolBugs = array_map('html_entity_decode', [
+$symbol_PDFbugs = array_map('html_entity_decode', [ // relatório PDF com hexadecimais. 
  '&#x0327;', '&#x2082;', '&#x2070;', '&#x2076;', '&#xF0B0;', '&#x035E;', '&#x0327;', '&#xF0D4;',
  '&#xF067;', '&#xF062;', '&#x0190;', '&#x0263;', '&#x1D43;', '&#x1D47;', '&#x1D9C;', '&#x1D52;', 
  '&#xF063;', '&#x03F0;', '&#x025B;', ''
-]);
+]); // ... eliminar diacrilicos, deixar apenas falhas de fonte do PDF/CSS atual.
+//$symbol_PDFbugs = ['₂', '⁰', '⁶', '', '', '', '', 'Ɛ', 'ɣ', 'ᵃ', 'ᵇ', 'ᶜ', 'ᵒ', '', 'ϰ', 'ɛ', '' ];
 
 
 /**
@@ -77,11 +78,10 @@ $FILTRO['func'] = function ($out,$regrasTroca=NULL,$utfEncode=TRUE) use (&$FILTR
 		$NBHYP = html_entity_decode('&#8209;'); // no-breaking hyphen
 		$HNBSP = html_entity_decode('&#8239;'); // half NBSP
 		$NBSP  = html_entity_decode('&nbsp;');
-//$symbolBugs = ['̧', '₂', '⁰', '⁶', '', '͞', '̧', '', '', '', 'Ɛ', 'ɣ', 'ᵃ', 'ᵇ', 'ᶜ', 'ᵒ', '', 'ϰ', 'ɛ', '' ];
 
 		if ($RGA['SBPqO-bugs1']) $out = str_replace( // trocas para limpar falhas da submissão SBPqO
-			['́', '', '˂', '˃'],
-			["'", 'µ', '<', '>'],
+			['', '˂', '˃'],
+			['µ', '<', '>'],
 			$out
 		);
 		if ($RGA['eq1']) $out = preg_replace('/([\dpn])\s*(<|>|=)\s*([\dpn])/uis',"\$1$HNBSP\$2$HNBSP\$3",$out);
