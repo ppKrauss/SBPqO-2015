@@ -42,6 +42,7 @@ $SECAO         = array( // na ordem
 
 $FILTRO= [];
 $FILTRO['regrasDefault'] = [ // CONFIGURAÇÃO DAS REGRAS DE NORMALIZAÇÃO:
+	'NFC'=>FALSE, // por hora usar http://minaret.info/test/normalize.msp
 	'eq1'=>TRUE, 'fmt1'=>TRUE, 'pm1'=>TRUE, 'pm2'=>TRUE, 'nbhy1'=>TRUE, 
 	'perc1'=>TRUE, 'SBPqO-raiosx'=>TRUE, 'norm-sps'=>TRUE, 'SBPqO-apoio'=>1,
 	'SBPqO-bugs1'=>TRUE,  // bugs de UTF8 remanescentes
@@ -68,6 +69,8 @@ $FILTRO['func'] = function ($out,$regrasTroca=NULL,$utfEncode=TRUE) use (&$FILTR
 		$RGA = array_merge($RGA,$regrasTroca);
 		//var_dump($regrasTroca);
 	}
+	if ($RGA['NFC']) $out =  Normalizer::normalize($out); // normalize UTF8 diacrilics ("c+̧." to "ç")
+
 	if ($RGA['norm-sps']) $out = preg_replace('/\s+/us',' ',$out); // normalize spaces
 
 	if ($utfEncode) { // só funciona com tudo já convertido em UTF8, e #text sem tags XML
@@ -387,7 +390,7 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 	/**
 	 * Get HTML body from any HTML file. Use show_*() methods to check it before to use. 
 	 */
-	function getHtmlBody($fileOrString, $enforceUtf8=false, $rmLF=TRUE) {
+	function getHtmlBody($fileOrString, $enforceUtf8=FALSE, $rmLF=TRUE) {
 		$this->resolveExternals = true;
 		$this->preserveWhiteSpace = false;  // com false baixou de 1510 nodes para 1101, ou seja ~25% num JATS tipico.
 		// ver também DTD HTML e  xml:space="preserve"
@@ -413,8 +416,8 @@ if (0 && $enforceUtf8) {
 			$this->recover =true;
 			$fileOrString = str_replace('<0','&lt;0',$fileOrString); // GAMBI! Tidy!
 			// tratar demais casos de lt gt incorretos!		
-$this->loadHTML($fileOrString, LIBXML_NOWARNING | LIBXML_NOERROR);
-$this->encoding = 'UTF-8';
+			@$this->loadHTML($fileOrString, LIBXML_NOWARNING | LIBXML_NOERROR);
+			$this->encoding = 'UTF-8';
 
 			$this->css  =  	$this->getElementsByTagName('style')->length? 
 								$this->getElementsByTagName('style')->item(0)->textContent: 
