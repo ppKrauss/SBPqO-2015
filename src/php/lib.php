@@ -42,18 +42,19 @@ $SECAO         = array( // na ordem
 
 $FILTRO= [];
 $FILTRO['regrasDefault'] = [ // CONFIGURAÇÃO DAS REGRAS DE NORMALIZAÇÃO:
-	'NFC'=>FALSE, // por hora usar http://minaret.info/test/normalize.msp
+	'NFC'=>TRUE, // por hora usar http://minaret.info/test/normalize.msp
 	'eq1'=>TRUE, 'fmt1'=>TRUE, 'pm1'=>TRUE, 'pm2'=>TRUE, 'nbhy1'=>TRUE, 
 	'perc1'=>TRUE, 'SBPqO-raiosx'=>TRUE, 'norm-sps'=>TRUE, 'SBPqO-apoio'=>1,
-	'SBPqO-bugs1'=>TRUE,  // bugs de UTF8 remanescentes
-	'SBPqO-bugs2'=>FALSE, // bug do "apoio" duplicado
+	'SBPqO-bugs1'=>TRUE,  // bugs de UTF8 remanescentes, e da fonte no PDF!
+	'SBPqO-bugs2'=>FALSE, // bug do "Apoio:..." duplicado
 ];
-$symbol_PDFbugs = array_map('html_entity_decode', [ // relatório PDF com hexadecimais. 
- '&#x0327;', '&#x2082;', '&#x2070;', '&#x2076;', '&#xF0B0;', '&#x035E;', '&#x0327;', '&#xF0D4;',
+/**$symbol_PDFbugs = array_map('html_entity_decode', [ // relatório PDF com hexadecimais. 
+	// cairam apenas os diacrilicos, incluindo &#x0327;="̧"
+ '&#x2082;', '&#x2070;', '&#x2076;', '&#xF0B0;', '&#x035E;', '&#;', '&#xF0D4;',
  '&#xF067;', '&#xF062;', '&#x0190;', '&#x0263;', '&#x1D43;', '&#x1D47;', '&#x1D9C;', '&#x1D52;', 
  '&#xF063;', '&#x03F0;', '&#x025B;', ''
-]); // ... eliminar diacrilicos (ver NFC), deixar apenas falhas de fonte do PDF/CSS atual.
-//$symbol_PDFbugs = ['₂', '⁰', '⁶', '', '', '', '', 'Ɛ', 'ɣ', 'ᵃ', 'ᵇ', 'ᶜ', 'ᵒ', '', 'ϰ', 'ɛ', '' ];
+]);  // ... eliminar diacrilicos (ver NFC), deixar apenas falhas de fonte do PDF/CSS atual.
+*/
 
 
 /**
@@ -80,10 +81,17 @@ $FILTRO['func'] = function ($out,$regrasTroca=NULL,$utfEncode=TRUE) use (&$FILTR
 		$NBSP  = html_entity_decode('&nbsp;');
 
 		if ($RGA['SBPqO-bugs1']) $out = str_replace( // trocas para limpar falhas da submissão SBPqO
-			['', '˂', '˃'],
-			['µ', '<', '>'],
+			['', '˂', '˃', 'CO₂',           'ᵒC', 'C', '⁰',           'µƐ', 'µɛ',
+			 '⁶',           'ᵃ',           'ᵇ',            'ᶜ', 
+			 'ϰ',                  'ɛ',                  'Ɛ',               'ɣ'
+			],
+			['µ', '<', '>', 'CO<sub>2</sub>','°C', '°C', '<sup>0</sup>','µε', 'µε',
+			 '<sup>6</sup>','<sup>a</sup>','<sup>b</sup>','<sup>c</sup>',
+			 'χ','<SYMBOL>ɛ</SYMBOL>','<SYMBOL>Ɛ</SYMBOL>','<SYMBOL>ɣ</SYMBOL>'
+			],  //  &gamma;==γ não ɣ
 			$out
 		);
+
 		if ($RGA['eq1']) $out = preg_replace('/([\dpn])\s*(<|>|=)\s*([\dpn])/uis',"\$1$HNBSP\$2$HNBSP\$3",$out);
 	} else {// (!$utfEncode), só funciona com XML, APOSENTAR!
 		$NBHYP = '&#8209;'; // no-breaking hyphen
@@ -866,7 +874,11 @@ EOD;
 			} elseif ($MODO=='finalxml'){
 				if ($finalUTF8)
 					$xmlDom->encoding = 'UTF-8';
-				return $xmlDom->saveXML();
+				return str_replace(  // GAMBI!! mas ok
+					['&lt;SYMBOL&gt;','&lt;/SYMBOL&gt;'],
+					['<SYMBOL>','</SYMBOL>'],
+					$xmlDom->saveXML()
+				);
 
 			} else 
 				die("\nERRO2: MODO $MODO DESCONHECIDO\n");

@@ -35,6 +35,8 @@
 <xsl:template match="conclusion"><xsl:apply-templates/></xsl:template>
 <xsl:template match="funding-source"><span class="{name(.)}">(Apoio: <xsl:apply-templates/>)</span></xsl:template>
 
+<xsl:template match="SYMBOL"><span style="font-family:Verdana"><xsl:apply-templates/></span></xsl:template>
+<!--Times New Roman -->
 
 <xsl:template match="article">
 	<div class="article" id="{pubid}">
