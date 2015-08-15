@@ -52,7 +52,7 @@ $symbol_PDFbugs = array_map('html_entity_decode', [ // relatório PDF com hexade
  '&#x0327;', '&#x2082;', '&#x2070;', '&#x2076;', '&#xF0B0;', '&#x035E;', '&#x0327;', '&#xF0D4;',
  '&#xF067;', '&#xF062;', '&#x0190;', '&#x0263;', '&#x1D43;', '&#x1D47;', '&#x1D9C;', '&#x1D52;', 
  '&#xF063;', '&#x03F0;', '&#x025B;', ''
-]); // ... eliminar diacrilicos, deixar apenas falhas de fonte do PDF/CSS atual.
+]); // ... eliminar diacrilicos (ver NFC), deixar apenas falhas de fonte do PDF/CSS atual.
 //$symbol_PDFbugs = ['₂', '⁰', '⁶', '', '', '', '', 'Ɛ', 'ɣ', 'ᵃ', 'ᵇ', 'ᶜ', 'ᵒ', '', 'ϰ', 'ɛ', '' ];
 
 
@@ -208,7 +208,7 @@ list($io_options,$io_usage,$io_options_cmd,$io_params) = getopt_FULLCONFIG(
 	    "3|relat3*"=>	'shows a ID list',
 	    "l|local"=>     'shows all local ids',
 
-	    "r|raw*"=>     	 'outputs RAW input HTML',	
+	    "r|raw*"=>     	 'outputs RAW input HTML',	// use http://www.w3.org/TR/html-polyglot/
 	    "x|xml*"=>     	 '(default) outputs a raw (non-standard) XML format, for debug',	
 	    "m|finalXml*"=>	 'outputs a final (standard) XML JATS-like format',	
 	    "l|finalHtml*"=> 'outputs a final (standard) XHTML format',	
@@ -851,6 +851,7 @@ EOD;
 			$this->preserveWhiteSpace=FALSE;
 			$this->formatOutput=TRUE;
 			$this->encoding = 'UTF-8';
+			// falta template HTML5 http://www.w3.org/TR/html-polyglot/
 			return $this->saveXML();
 
 		} elseif ($MODO=='xml')
