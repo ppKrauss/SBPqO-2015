@@ -373,7 +373,8 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 	public $contentArray=array();
 	public $css;
 	public $newDom = NULL;
-	public $isXML_step1 = false; // se true significa que não é HTML
+	public $isXML_step1 = FALSE; // se true significa que não é HTML
+	public $showDomWarnings = TRUE; // ativa/desativa @
 
 	private $nodePathes = array(
 		'BRs'=>'//br',
@@ -405,7 +406,7 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 
 	  	if ((strlen($fileOrString) < 300) && (strpos($fileOrString,'<') === false))
 	  		$fileOrString = file_get_contents($fileOrString);
-if (0 && $enforceUtf8) {
+		if (0 && $enforceUtf8) { // 0=debug-protection against UTF8error
 			$enc = mb_detect_encoding($fileOrString,'ASCII,UTF-8,UTF-16,ISO-8859-1,ISO-8859-5,ISO-8859-15,Windows-1251,Windows-1252,ISO-8859-2');
 			if ($enc!='UTF-8') // ex. ISO-8859-1  Windows-1251,Windows-1252
 				$fileOrString = mb_convert_encoding($fileOrString,'UTF-8',$enc); //$enc);
@@ -423,8 +424,11 @@ if (0 && $enforceUtf8) {
 			    $fileOrString = '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />'.$fileOrString;
 			$this->recover =true;
 			$fileOrString = str_replace('<0','&lt;0',$fileOrString); // GAMBI! Tidy!
-			// tratar demais casos de lt gt incorretos!		
-			@$this->loadHTML($fileOrString, LIBXML_NOWARNING | LIBXML_NOERROR);
+			// tratar demais casos de lt gt incorretos!
+			if ($this->showDomWarnings)
+				$this->loadHTML($fileOrString, LIBXML_NOWARNING | LIBXML_NOERROR);
+			else
+				@$this->loadHTML($fileOrString, LIBXML_NOWARNING | LIBXML_NOERROR);
 			$this->encoding = 'UTF-8';
 
 			$this->css  =  	$this->getElementsByTagName('style')->length? 
