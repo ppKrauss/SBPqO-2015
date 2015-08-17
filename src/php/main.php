@@ -3,6 +3,7 @@
  * RESUMOS, parser e analisador.
  * USO:
  *  $ cd projeto
+ *  $ php src/php/main.php  --raw --in=entregas/HTM1 > entregas/HTM2/resumosOriginais.html
  *  $ php src/php/main.php  --finalXml --in=entregas/HTM1 > all1.xml
  *  $ php src/php/main.php  --finalHtml < all1.xml > all1.htm
  *  $ php tools/main.php --finalXml --day=2014-09-03  --in=material/originais-UTF8/ > SBPqO_dia09-03.xml
