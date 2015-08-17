@@ -1,4 +1,4 @@
-ID,EVENTO,DIA,HORA,LOCAL
+ID,EVENTO,DIA,HORA_INI,HORA_FIM,LOCAL
 D01,"Reunião da Pós Graduação - CAPES",03/09/2015,09:00,17:00,"Auditório Carvalho I"
 D01,"Reunião Comissão de Apoio",03/09/2015,16:00,,Jequitibá
 D01,"Reunião Avaliadores",03/09/2015,17:00,,Jequitibá
