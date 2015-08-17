@@ -215,6 +215,7 @@ list($io_options,$io_usage,$io_options_cmd,$io_params) = getopt_FULLCONFIG(
 	    "2|relat2*"=>	'shows a input analysis complete relatory, listing elements',
 	    "3|relat3*"=>	'shows a ID list',
 	    "l|local"=>     'shows all local ids',
+	    "c|convCsv*"=>   'converts semi-comma to real comma-CSV',
 
 	    "r|raw*"=>     	 'outputs RAW input HTML',	// use http://www.w3.org/TR/html-polyglot/
 	    "x|xml*"=>     	 '(default) outputs a raw (non-standard) XML format, for debug',	
@@ -1046,10 +1047,10 @@ function csv_get($fileDescr,$fileField00,$funcGet,$testaLen=0,$check00=false) {
     global $CSV_SEP;
 	if (($handle = fopen($fileDescr, "r")) !== FALSE) {
 		$tmp = fgetcsv( $handle, $buffsize, $CSV_SEP);
-		if ( $tmp[0]!=$fileField00 )
+		if ( $fileField00 && $tmp[0]!=$fileField00 )
 			die("\nERRO343 em $fileDescr, campo nao esperasdo {$tmp[0]}\n");
 	    while (($tmp = fgetcsv($handle, $buffsize, $CSV_SEP)) !== FALSE)
-	    	if ( (!$testaLen ||strlen($tmp[0])>$testaLen) && (!$check00 || $tmp[0]!=$fileField00) )
+	    	if ( (!$testaLen ||strlen($tmp[0])>$testaLen) && (!$check00 || ($fileField00 && $tmp[0]!=$fileField00)) )
 	    		$funcGet($tmp);
 	    fclose($handle);
 		return 1;
@@ -1155,4 +1156,26 @@ function utf2html($utf8_string) {
 function showerr($cod,$msg=''){
 	return file_put_contents('php://stderr', "\n\tERR-$cod".($msg? ": $msg": ''),FILE_APPEND);
 }
+
+
+
+/**
+ * SSV to CSV, a util tool.
+ */
+function convCsv($fileIn) {
+	global $CSV_SEP;
+	$CSV_SEP = ';'; // PERIGO
+	$fp2 = fopen("$fileIn.csv", 'w');
+	if (csv_get(
+		$fileIn
+		,''
+		,function ($tmp) use (&$fp2) {
+			fputcsv($fp2, $tmp);
+		} // func
+	))
+		fclose($fp2);
+	else
+		die("\nERRO ao abrir arquivo '$fileIn'\n");
+}
+
 ?>
