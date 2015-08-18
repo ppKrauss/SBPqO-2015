@@ -1221,8 +1221,6 @@ function csv2xmlByHead($fileIn,$valPreserve=FALSE) {
 	$CSV_HEAD = $out='';
 	$fconv = function ($tmp) use (&$out,$valPreserve) {
 		global $CSV_HEAD;
-		// tratar parse HTML do campo 1, EVENTO
-		//debug $tmp[1]="nonono nonononnoo";
 		$out .= "\n<tr>".array_xml($CSV_HEAD,$tmp,$valPreserve)."</tr>";
 	};
 	if ( csv_get($fileIn,'',$fconv) ) 
@@ -1240,7 +1238,7 @@ function array_xml($tags,$vals,$valPreserve=TRUE,$line='') {
 	$out = '';
 	for($i=0; $i<count($tags); $i++)
 		$out.="$line<$tags[$i]>"
-			.( ($valPreserve===TRUE || ($valPreserve!==TRUE && $valPreserve==$tags[$i]) )? 
+			.( ($valPreserve===TRUE || ($valPreserve!==TRUE && $valPreserve===$tags[$i]) )? 
 				$vals[$i]: 
 				str_replace(['>','<','&'],['&gt;','&gt;','&amp;'],$vals[$i]))
 			."</$tags[$i]>";

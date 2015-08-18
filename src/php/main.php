@@ -32,7 +32,7 @@ $isRELAT = (substr($cmd,0,5)=='relat');
 $file = 'php://stdin';
 
 if ( isset($io_options['tpl1']) ) {   // cmd tpl1
-	$xml = csv2xmlByHead(isset($io_options['in'])? $io_options['in']: $file);
+	$xml = csv2xmlByHead(isset($io_options['in'])? $io_options['in']: $file, 'EVENTO');
 	if ( isset($io_options['xsltFile']) ) {
 		$xsl2 = $io_options['xsltFile'];
 		$xsl1 = str_replace('.xsl','_pre.xsl',$xsl2);
