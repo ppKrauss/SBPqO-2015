@@ -37,7 +37,15 @@ if ( isset($io_options['tpl1']) ) {   // cmd tpl1
 		$xsl2 = $io_options['xsltFile'];
 		$xsl1 = str_replace('.xsl','_pre.xsl',$xsl2);
 		$sdoc = new SimpleXMLElement($xml);
-		$sdoc = transformToDom($xsl1, $sdoc); 		//die($sdoc->saveXML());
+
+		/// GAMBI pelo bug de XSLT com xsl_getCsvRow()
+		$sdoc = transformToDom($xsl1, $sdoc);
+		$tmp = $sdoc->saveXML();
+		$tmp = preg_replace_callback('#<DIA id="([^"]+)">#s', function ($m) {
+			return $m[0]."<infoGrupo>".gambi_getCsvRow('programacaoGrupoDia',$m[1])."</infoGrupo>";
+		}, $tmp);
+		$sdoc = new SimpleXMLElement($tmp);
+		
 		$xml  = transformToXML( $xsl2, $sdoc );		
 	}
 	die("$xml\n");

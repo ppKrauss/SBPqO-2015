@@ -43,7 +43,9 @@
 
 	<div class="panel panel-default menu gray-border-accordion">
 	    <div class="remote list-group-item accordion-button" data-toggle="collapse" data-parent="#accordion" href="#{$day}">
-	        <p class="panel-title"><xsl:value-of select="data_br"/></p>
+	        <p class="panel-title"><xsl:value-of select="infoGrupo/DESCRICAO"/> 
+	        	<!-- | <xsl:value-of select="data_br"/>-->
+	    	</p>
 	    </div>
 	    <div id="day1" class="panel-collapse collapse gray-border-accordion-content">
 	        <div class="panel-body">
@@ -55,8 +57,8 @@
 
 <xsl:template match="ITEM">
     <section id="{@id}">
-		<p><strong>PROGRAMACAO</strong>&#160; <xsl:value-of select="EVENTO"/></p>
-		<p><strong>Horário: </strong><xsl:value-of select="HORA_INI"/>h - <xsl:value-of select="HORA_FIM"/>h</p>
+		<p><strong><xsl:value-of select="EVENTO"/></strong></p>
+		<p><strong>Horário: </strong><xsl:value-of select="HORA_INI"/>h <xsl:if test="normalize-space(HORA_FIM)">- <xsl:value-of select="HORA_FIM"/>h</xsl:if></p>
 		<p><strong>Local: </strong><span class="location1" idref="loc?"><xsl:value-of select="LOCAL"/></span></p>
         <hr/>
     </section>

@@ -7,7 +7,7 @@
  * FUTURO: armazenar itens no PostgreSQL 9.3+ (JSON!) e gerencia-los por lá.
  *   Por hora fazendo o possível com xsl_nRegister().
  */
-$LIBVERS = '1.5.3'; // v1.5.2 de 2015-08; v1.5.0 de 2015-07; v1.4 de 2014-08-24; v1.3 de 2014-08-12; v1.2 de 2014-08-03; v1.1 de 2014-08-02; v1.0 de 2014-08-01.
+$LIBVERS = '1.5.4'; // v1.5.2 de 2015-08; v1.5.0 de 2015-07; v1.4 de 2014-08-24; v1.3 de 2014-08-12; v1.2 de 2014-08-03; v1.1 de 2014-08-02; v1.0 de 2014-08-01.
 
 ///////  ///////  ///////  /////// 
 /////// I/O INICIALIZATION ///////
@@ -138,6 +138,25 @@ $ctrl_idnames     = array(); // cria e controla IDs
 $Locs 			  = array();
 
 //////////////
+
+
+/**
+ *  CARGA DE CONTEUDO-EXTRA:	
+ */
+$csvFiles_rowByKey=[
+'programacaoGrupoDia'=>['entregas/conteudoExtra/programacaoGrupoDia.csv', 0,[]] //key=ID
+];
+foreach($csvFiles_rowByKey as $name=>$rec) {
+	$f = $rec[0];
+	$key = $rec[1];
+	if ( csv_get($f,'',function ($tmp) use (&$csvFiles_rowByKey,$name,$key) {
+		$csvFiles_rowByKey[$name][2][$tmp[$key]] = $tmp; // repete key em tmp
+	}) )
+		$csvFiles_rowByKey[$name][2]['CSV_HEAD'] = $CSV_HEAD; // transforma tudo em hash
+	else 
+		die("\n ERRO AO cARREGAR '$name'\n");
+
+}
 
 /**
  *  CARGA DOS DESCRITORES DE CADA RESUMO:	
@@ -305,7 +324,7 @@ function getopt_FULLCONFIG(
 	}
 	foreach ($io_options as $k=>$v) // preserva apenas os comandos
 		if (in_array($k,$io_isCmd))
-			$io_options_cmd[] = $k;	
+			$io_options_cmd[] = $k;
 	return array($io_options,$io_usage,$io_options_cmd,$io_params);
 }
 
@@ -542,7 +561,6 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 	}
 
 	function joinMarkId($lst, $idname='loc', $elename='location', $errUse=TRUE, $SEP='', $errTag='error') {
-		global $ctrl_idnames;
 		$outLst = array();
 		if (count($lst)) {
 			foreach($lst as $item) {
@@ -703,13 +721,15 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 			$title = isset($SECAO[$sec])? $SECAO[$sec]: 'ERROR';			
 			$sord = isset($SECAO_ordem[$sec])? $SECAO_ordem[$sec]: 'ERROR';
 			//if ($subsec) $title.=", Parte \"$subsec\"";
+			global $ctrl_idnames;
 			$err = ($n!=$nOk)? "<ERRO-GRAVE>lidos $n paragrafos, usados $nOk!</ERRO>":'';
 			$XML = "<sec id=\"$sec$subsec\" label=\"$sec\" sec-order=\"$sord\" subsec=\"$subsec\" sec-type=\"modalidade\">
 				$err
 				<title>$sec$subsec - $title</title>
 				<days n='$ndias'>$dia</days>
 				<locations>$local</locations>
-				\n$XML\n</sec>\n";
+				\n$XML\n
+			</sec>\n";  //  ".'<dump_ids>'. var_export($ctrl_idnames['loc'], true).'</dump_ids>'."
 			return $XML;
 
 		//} elseif ($dayFilter) { // já é XML, falta só grep por dia
@@ -985,10 +1005,26 @@ function dayFormat($s){
 	}
     return array($s,$s2);
 }
-
+function dayIso($s){
+	list($s,$s2) = dayFormat($s);
+	return $s;
+}
 function xsl_dayFormat($s){
 	list($s,$s2) = dayFormat($s);
     return DOMDocument::loadXML("<day iso='$s'>$s2</day>");
+}
+
+
+function gambi_getCsvRow($csvName,$key){
+	global $csvFiles_rowByKey;
+	return  
+		isset($csvFiles_rowByKey[$csvName][2][$key])?
+			array_xml($csvFiles_rowByKey[$csvName][2]['CSV_HEAD'],$csvFiles_rowByKey[$csvName][2][$key],FALSE):
+			"<error name='$csvName' key='$key'/>" 
+	;
+}
+function xsl_getCsvRow($csvName,$key){
+	return DOMDocument::loadXML( gambi_getCsvRow($csvName,$key) );
 }
 
 
@@ -1212,7 +1248,6 @@ function csv2htable($fileIn) {
 	else
 		die("\nERRO ao abrir arquivo '$fileIn'\n");
 }
-
 
 /**
  * CSV to XML with tags by CSV_HEAD.
