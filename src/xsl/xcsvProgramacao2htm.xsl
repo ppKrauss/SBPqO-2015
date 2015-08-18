@@ -59,7 +59,7 @@
     <section id="{@id}">
 		<p><strong><xsl:value-of select="EVENTO"/></strong></p>
 		<p><strong>Horário: </strong><xsl:value-of select="HORA_INI"/>h <xsl:if test="normalize-space(HORA_FIM)">- <xsl:value-of select="HORA_FIM"/>h</xsl:if></p>
-		<p><strong>Local: </strong><span class="location1" idref="loc?"><xsl:value-of select="LOCAL"/></span></p>
+		<p><strong>Local: </strong><span class="location1" idref="{@idref-loc}"><xsl:value-of select="LOCAL"/></span></p>
         <hr/>
     </section>
 </xsl:template>

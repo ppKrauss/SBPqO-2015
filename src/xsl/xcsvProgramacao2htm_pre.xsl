@@ -24,7 +24,7 @@
       xsl:copy-of select="fn:function('xsl_getCsvRow','programacaoGrupoDia',string(ID))/node()"/ -->
       <data_br iso="{fn:function('dayIso',string(DIA))}"><xsl:value-of select="DIA"/></data_br>
       <xsl:for-each select="key('groups', DIA)">
-        <ITEM id="i{ID}_{position()}">
+        <ITEM id="i{ID}_{position()}" idref-loc="{fn:function('localValido',string(LOCAL),1)}">
           <xsl:copy-of select="EVENTO|HORA_INI|HORA_FIM|LOCAL"/>
         </ITEM>
       </xsl:for-each>

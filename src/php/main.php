@@ -45,7 +45,6 @@ if ( isset($io_options['tpl1']) ) {   // cmd tpl1
 			return $m[0]."<infoGrupo>".gambi_getCsvRow('programacaoGrupoDia',$m[1])."</infoGrupo>";
 		}, $tmp);
 		$sdoc = new SimpleXMLElement($tmp);
-		
 		$xml  = transformToXML( $xsl2, $sdoc );		
 	}
 	die("$xml\n");

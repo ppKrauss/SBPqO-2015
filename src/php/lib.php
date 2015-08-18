@@ -19,6 +19,7 @@ $pastaDados    = $modoAmostra? 'amostras': 'entregas';
 $fileAutores   = "$io_baseDir/../$pastaDados/CSV1-3/indiceAutores.csv"; // fora de uso, falta usar com resoluçao de homonimos!
 $fileDescr     = "$io_baseDir/../$pastaDados/CSV1-3/indiceDescritores.csv";
 $fileLocalHora = "$io_baseDir/../$pastaDados/CSV1-3/localHorario.csv";
+$fileLocal     = "$io_baseDir/../$pastaDados/CSV1-3/local.csv";
 $CSV_SEP=',';
 $CSV_SEPaux = '/[\s,]+/s'; // sub-separador (auxiliar), ignorando subcampos vazios 
 $fileFieldAu   = 'COD_AUTOR';
@@ -135,16 +136,16 @@ $LocHora_byResumo = array();
 $Resumos_byDia    = array();
 $dayLocais_bySec  = array();
 $ctrl_idnames     = array(); // cria e controla IDs
-$Locs 			  = array();
 
 //////////////
 
 
 /**
- *  CARGA DE CONTEUDO-EXTRA:	
+ *  CARGA DE IDs e CONTEUDO-EXTRA:	
  */
 $csvFiles_rowByKey=[
-'programacaoGrupoDia'=>['entregas/conteudoExtra/programacaoGrupoDia.csv', 0,[]] //key=ID
+'programacaoGrupoDia'=>['entregas/conteudoExtra/programacaoGrupoDia.csv', 0,[]], //key=ID
+'local'=>['entregas/CSV1-3/local.csv', 0,[]], //key=LOCAL
 ];
 foreach($csvFiles_rowByKey as $name=>$rec) {
 	$f = $rec[0];
@@ -155,8 +156,8 @@ foreach($csvFiles_rowByKey as $name=>$rec) {
 		$csvFiles_rowByKey[$name][2]['CSV_HEAD'] = $CSV_HEAD; // transforma tudo em hash
 	else 
 		die("\n ERRO AO cARREGAR '$name'\n");
-
 }
+$idLoc = array_column( $csvFiles_rowByKey['local'][2], 1,0);
 
 /**
  *  CARGA DOS DESCRITORES DE CADA RESUMO:	
@@ -182,13 +183,14 @@ if (csv_get(
     }
 }
 
+
 /**
  * CARGA DE LOCAL E HORA DE CADA RESUMO:	
  */
 if (csv_get(
 	$fileLocalHora
 	,'SIGLA'
-	,function ($tmp) use (&$Locs,&$LocHora_byResumo,&$Resumos_byDia,&$dayLocais_bySec) {
+	,function ($tmp) use (&$LocHora_byResumo,&$Resumos_byDia,&$dayLocais_bySec,&$idLoc) {
     	//  0=rid; 1=dia;     2=intervalo;    3=local		
     	//Exemplo:
     	// AO0002,9/4/2015,8:00 - 11:30 h,Sala Amoreira I
@@ -203,9 +205,11 @@ if (csv_get(
 			$hfim = "$hfim;$hfim2";
     	} elseif (preg_match('/^\s*([\d:]+)[^\d:]+([\d:]+)[ hs]*$/su', $tmp[2], $m))
     		list($hini,$hfim) = array($m[1],$m[2]);  // caso usual
-    		$local = preg_replace('/([\-–])/u', ' $1 ', $tmp[3]);
-    		$local = trim(preg_replace('/\s+/', ' ', $local));
-    	$Locs[$local]=1;
+
+		$local = localValido($tmp[3]);
+    	if (!$local)
+    		die("\n ERRO 232: $fileLocalHora com local desconhecido, '$local'.\n");
+
 		list($dayISO,$dayOrig)=dayFormat($tmp[1]);    		
     	$LocHora_byResumo[$rid] = array($dayISO,$hini,$hfim,$local); // dia, hora-inicial, final, local
     	if (!isset($Resumos_byDia[$dayISO]))
@@ -224,8 +228,6 @@ if (csv_get(
     foreach($dayLocais_bySec as $daysec=>$a)
     	$dayLocais_bySec[$daysec] = join('; ',array_keys($a));
 }
-
-// var_dump($dayLocais_bySec);  var_dump($LocHora_byResumo); var_dump($Locs); die("\ndebug22\n");
 
 /**
  * CARGA DE OPTIONS:	
@@ -549,6 +551,9 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 
 	function setIdname($idname,$item,$withPrefix=TRUE) {
 		global $ctrl_idnames;
+		if ($idname=='loc')
+			return localValido($item,TRUE);
+		
 		if (!array_key_exists($idname,$ctrl_idnames))
 			$ctrl_idnames[$idname] = array(1,array()); // contador e lista de ocorrências
 		if (isset($ctrl_idnames[$idname][1][$item])) 
@@ -1278,6 +1283,26 @@ function array_xml($tags,$vals,$valPreserve=TRUE,$line='') {
 				str_replace(['>','<','&'],['&gt;','&gt;','&amp;'],$vals[$i]))
 			."</$tags[$i]>";
 	return $out;
+}
+
+function localValido($s,$retID=FALSE){
+	global $idLoc;
+	$local = preg_replace('/([\-–])/u', ' $1 ', $s);
+	$local = trim(preg_replace('/\s+/u', ' ', $local));
+	if (!isset($idLoc[$local])) {
+		$local = str_replace(['3','2','1'],['III','II', 'I'],$local);
+	}
+	if (!isset($idLoc[$local])) {
+		$local = str_replace(['Auditório ', 'sala ', 'Sala ', 'auditório ', 'Auditorio '],'',$local);
+		$c=0;
+		$local = preg_replace('/[\-\s]+Hall|Hall de /si','',$local,1,$c);
+		$local = str_replace('entrada','Entrada',$local);
+		$local = $c? "Hall $local": "Sala $local";
+	}
+	if (!isset($idLoc[$local]))
+		$local = "$local I";
+	//if (!isset($idLoc[$local])) die("SEM '$s'=$local");
+    return isset($idLoc[$local])? ($retID? $idLoc[$local]: $local): '';
 }
 
 ?>

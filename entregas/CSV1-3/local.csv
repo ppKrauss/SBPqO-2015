@@ -6,9 +6,9 @@ Sala Carvalho III,loc3
 Sala Seringueira,loc6
 Sala Manacá,loc7
 Sala Cerejeira,loc8
-Foyer 3,loc9
-Foyer 2,loc10
-Foyer 1,loc11
+Foyer III,loc9
+Foyer II,loc10
+Foyer I,loc11
 Salão Monumentalle,loc12
 Sala Ipê,loc13
 Sala Acácia,loc14
@@ -16,3 +16,7 @@ Sala Jacarandá,loc15
 Sala Jequitibá,loc16
 Sala Amoreira III,loc17
 Sala Carvalho II,loc18
+Hall Entrada,loc19
+Hall Jacarandá,loc20
+Hall Jequitibá,loc21
+Sala Acácias,loc22
