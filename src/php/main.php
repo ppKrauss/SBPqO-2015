@@ -8,6 +8,7 @@
  *  $ php src/php/main.php  --finalHtml < all1.xml > all1.htm
  *  $ php tools/main.php --finalXml --day=2014-09-03  --in=material/originais-UTF8/ > SBPqO_dia09-03.xml
  *  $ php tools/main.php -h
+ *  $ php src/php/main.php --tpl1 --in=entregas/conteudoExtra/programacaoEventos.csv --xsltFile=src/xsl/xcsvProgramacao2htm.xsl
  */
 
 include('lib.php');
@@ -29,12 +30,23 @@ $isRELAT = (substr($cmd,0,5)=='relat');
 
 
 $file = 'php://stdin';
-if ( isset($io_options['convCsv']) ) {
-	//die("\nOK! conv ".$io_options['convCsv']." - ".$io_options['in']."\n");
+
+if ( isset($io_options['tpl1']) ) {   // cmd tpl1
+	$xml = csv2xmlByHead(isset($io_options['in'])? $io_options['in']: $file);
+	if ( isset($io_options['xsltFile']) ) {
+		$xsl2 = $io_options['xsltFile'];
+		$xsl1 = str_replace('.xsl','_pre.xsl',$xsl2);
+		$sdoc = new SimpleXMLElement($xml);
+		$sdoc = transformToDom($xsl1, $sdoc); 		//die($sdoc->saveXML());
+		$xml  = transformToXML( $xsl2, $sdoc );		
+	}
+	die("$xml\n");
+
+} elseif ( isset($io_options['convCsv']) ) {   // cmd convCsv
 	convCsv($io_options['in']);
 	die("\n");
 
-} elseif ( isset($io_options['in']) ) {
+} elseif ( isset($io_options['in']) ) {    // demais cmd's
 	$file = $io_options['in'];
 	if (is_dir($file)) {
 		$file = trim($file);

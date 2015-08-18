@@ -206,6 +206,8 @@ if (csv_get(
     	$dayLocais_bySec[$daysec] = join('; ',array_keys($a));
 }
 
+// var_dump($dayLocais_bySec);  var_dump($LocHora_byResumo); var_dump($Locs); die("\ndebug22\n");
+
 /**
  * CARGA DE OPTIONS:	
  */
@@ -214,8 +216,11 @@ list($io_options,$io_usage,$io_options_cmd,$io_params) = getopt_FULLCONFIG(
 	    "1|relat1*"=>	'shows a input analysis partial relatory',
 	    "2|relat2*"=>	'shows a input analysis complete relatory, listing elements',
 	    "3|relat3*"=>	'shows a ID list',
-	    "l|local"=>     'shows all local ids',
-	    "c|convCsv*"=>   'converts semi-comma to real comma-CSV',
+	    "l|local"=>     'shows all local ids', // command??
+
+	    "c|convCsv*"=>  'converts semi-comma to real comma-CSV',
+	    "t|tpl1*"=>   	'converts CSV to XML',
+	    "s|xsltFile:file"=> 'use a XSLT file with tpl1',
 
 	    "r|raw*"=>     	 'outputs RAW input HTML',	// use http://www.w3.org/TR/html-polyglot/
 	    "x|xml*"=>     	 '(default) outputs a raw (non-standard) XML format, for debug',	
@@ -1045,13 +1050,14 @@ function xsl_markCorresp($m) {
 function csv_get($fileDescr,$fileField00,$funcGet,$testaLen=0,$check00=false) {
     global $buffsize;
     global $CSV_SEP;
+    global $CSV_HEAD;
 	if (($handle = fopen($fileDescr, "r")) !== FALSE) {
-		$tmp = fgetcsv( $handle, $buffsize, $CSV_SEP);
-		if ( $fileField00 && $tmp[0]!=$fileField00 )
-			die("\nERRO343 em $fileDescr, campo nao esperasdo {$tmp[0]}\n");
+		$CSV_HEAD = fgetcsv( $handle, $buffsize, $CSV_SEP);
+		if ( $fileField00 && $CSV_HEAD[0]!=$fileField00 )
+			die("\nERRO343 em $fileDescr, campo nao esperasdo {$CSV_HEAD[0]}\n");
 	    while (($tmp = fgetcsv($handle, $buffsize, $CSV_SEP)) !== FALSE)
 	    	if ( (!$testaLen ||strlen($tmp[0])>$testaLen) && (!$check00 || ($fileField00 && $tmp[0]!=$fileField00)) )
-	    		$funcGet($tmp);
+	    		$funcGet($tmp); // tratar retorno?
 	    fclose($handle);
 		return 1;
 	} else
@@ -1077,8 +1083,8 @@ function transformToDom($xsl, &$dom, $enforceUtf8=false) {
   	global $dayLocais; // idem
 
   	$xsldom = new DOMDocument('1.0','UTF-8');
-  	if ( strlen($xsl)<300 && strpos($xsl,'<')===FALSE )
-  		$xsl = file_get_contents($xsl); // por hora nao precisa converter para UTF8, sempre estará!
+  	if ( strlen($xsl)<350 && strpos($xsl,'<')===FALSE )
+  		$xsl = file_get_contents($xsl); // ignore enforceUtf8, suppose file UTF8
 	$xsldom->loadXML($xsl);
 	$xsldom->encoding = 'UTF-8';
 	$xproc = new XSLTProcessor();
@@ -1094,6 +1100,17 @@ function transformToDom($xsl, &$dom, $enforceUtf8=false) {
 	// return $this; 
 }
 
+function transformToXML($xsl, &$dom) {
+  	$xsldom = new DOMDocument('1.0','UTF-8');
+  	if ( strlen($xsl)<350 && strpos($xsl,'<')===FALSE )
+  		$xsl = file_get_contents($xsl);
+	$xsldom->loadXML($xsl);
+	$xsldom->encoding = 'UTF-8';
+	$xproc = new XSLTProcessor();
+	$xproc->registerPHPFunctions(); // custom
+	$xproc->importStylesheet($xsldom);
+	return  $xproc->transformToXML($dom);
+}
 
  /**
   * Wrap for transformToDom() adding a standard XSLT-header.
@@ -1176,6 +1193,58 @@ function convCsv($fileIn) {
 		fclose($fp2);
 	else
 		die("\nERRO ao abrir arquivo '$fileIn'\n");
+}
+
+
+
+/**
+ * CSV to HTML-table.
+ */
+function csv2htable($fileIn) {
+	global $CSV_HEAD;
+	$out='';
+	$fconv = function ($tmp, $ret=false) use (&$out) {
+		$s = "\n<tr><td>".join('</td><td>',$tmp)."</td></tr>";
+		if ($ret) return $s; else $out.=$s;
+	};
+	if ( csv_get($fileIn,'',$fconv) ) 
+		return "<table>".$fconv($CSV_HEAD,1)."$out\n</table>\n";
+	else
+		die("\nERRO ao abrir arquivo '$fileIn'\n");
+}
+
+
+/**
+ * CSV to XML with tags by CSV_HEAD.
+ */
+function csv2xmlByHead($fileIn,$valPreserve=FALSE) {
+	$CSV_HEAD = $out='';
+	$fconv = function ($tmp) use (&$out,$valPreserve) {
+		global $CSV_HEAD;
+		// tratar parse HTML do campo 1, EVENTO
+		//debug $tmp[1]="nonono nonononnoo";
+		$out .= "\n<tr>".array_xml($CSV_HEAD,$tmp,$valPreserve)."</tr>";
+	};
+	if ( csv_get($fileIn,'',$fconv) ) 
+		return "<table>\n$out\n</table>\n";
+	else
+		die("\nERRO ao abrir arquivo '$fileIn'\n");
+}
+
+/**
+ * A kind of array_combine for simple and secure XML production.
+ * @param $valPreserve boolean or strint, true (no effect), false (convert all), 'tag' (converts all except that field)
+ * @return XML fragment.
+ */
+function array_xml($tags,$vals,$valPreserve=TRUE,$line='') {
+	$out = '';
+	for($i=0; $i<count($tags); $i++)
+		$out.="$line<$tags[$i]>"
+			.( ($valPreserve===TRUE || ($valPreserve!==TRUE && $valPreserve==$tags[$i]) )? 
+				$vals[$i]: 
+				str_replace(['>','<','&'],['&gt;','&gt;','&amp;'],$vals[$i]))
+			."</$tags[$i]>";
+	return $out;
 }
 
 ?>
