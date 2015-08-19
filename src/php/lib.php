@@ -158,6 +158,8 @@ foreach($csvFiles_rowByKey as $name=>$rec) {
 		die("\n ERRO AO cARREGAR '$name'\n");
 }
 $idLoc = array_column( $csvFiles_rowByKey['local'][2], 1,0);
+$valiDia = array_flip( array_column( $csvFiles_rowByKey['programacaoGrupoDia'][2], 3,1) );
+
 
 /**
  *  CARGA DOS DESCRITORES DE CADA RESUMO:	
@@ -190,7 +192,7 @@ if (csv_get(
 if (csv_get(
 	$fileLocalHora
 	,'SIGLA'
-	,function ($tmp) use (&$LocHora_byResumo,&$Resumos_byDia,&$dayLocais_bySec,&$idLoc) {
+	,function ($tmp) use (&$LocHora_byResumo,&$Resumos_byDia,&$dayLocais_bySec,&$idLoc,&$valiDia) {
     	//  0=rid; 1=dia;     2=intervalo;    3=local		
     	//Exemplo:
     	// AO0002,9/4/2015,8:00 - 11:30 h,Sala Amoreira I
@@ -208,9 +210,12 @@ if (csv_get(
 
 		$local = localValido($tmp[3]);
     	if (!$local)
-    		die("\n ERRO 232: $fileLocalHora com local desconhecido, '$local'.\n");
+    		die("\n ERRO 232 no resumo $rid: $fileLocalHora com local desconhecido, '$local'.\n");
 
-		list($dayISO,$dayOrig)=dayFormat($tmp[1]);    		
+		list($dayISO,$dayOrig)=dayFormat($tmp[1]);
+		if (!isset($valiDia[$dayISO]))
+    		die("\n ERRO 233 no resumo $rid: $dayISO invalida.\n");
+
     	$LocHora_byResumo[$rid] = array($dayISO,$hini,$hfim,$local); // dia, hora-inicial, final, local
     	if (!isset($Resumos_byDia[$dayISO]))
     		$Resumos_byDia[$dayISO]=array();
@@ -237,6 +242,8 @@ list($io_options,$io_usage,$io_options_cmd,$io_params) = getopt_FULLCONFIG(
 	    "1|relat1*"=>	'shows a input analysis partial relatory',
 	    "2|relat2*"=>	'shows a input analysis complete relatory, listing elements',
 	    "3|relat3*"=>	'shows a ID list',
+	    "4|relat4*"=>	'shows a IDs by ranges',
+	    
 	    "l|local"=>     'shows all local ids', // command??
 
 	    "c|convCsv*"=>  'converts semi-comma to real comma-CSV',
@@ -515,7 +522,7 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 			print "\n\t".trim($line);
 	}
 
-	function show_extractionSumary($onlyIds=false) {
+	function show_extractionSumary($onlyIds=false,$MODO='relat3') {
 		$IDs = array();
 		$RELAT = "{$this->CRLFs}---- show_extractionSumary: ---";
 		$xp = new DOMXpath($this);
@@ -543,7 +550,34 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 			} else 
 				$RELAT.= "\n\t!paragraph $n ERROR! content of 30 firsts: '".substr($txt,0,30)."'";
 		}
-		print $onlyIds? ("\n".join('; ',$IDs)."\n TOTAL $n\n") : $RELAT;
+		if ($MODO=='relat4') { // onlyIds
+			$onlyIds=TRUE;
+			$id0=0;
+			$sec0 = '';
+			foreach ($IDs as $id) if (preg_match('/^([A-Z]+)(\d+)$/',$id,$m)) {
+				$sec = $m[1];
+				$idC = (int) $m[2];
+				if (!$sec0) {
+					$sec0 = $sec;
+					print "\nSec-$sec0: $idC";
+				} elseif ($sec0!=$sec) {
+					print "-$id0";				
+					$sec0 = $sec;
+					$id0 = $idC;
+					print ".\nSec-$sec0: $idC";
+				} elseif (!$id0)
+					$id0=$idC;
+				elseif ($idC==($id0+1))
+					$id0++;
+				else {
+					print "-$id0; $idC";
+					$id0 = $idC;
+				}
+			} else 
+				die("\nERRO: ID $id inválido. \n");
+			print "-$idC.\n";
+		} else
+			print $onlyIds? ("\n".join('; ',$IDs)."\n TOTAL $n\n") : $RELAT;
 		global $NTOTAL;
 		$NTOTAL+=$n;
 		return '';
@@ -553,7 +587,8 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 		global $ctrl_idnames;
 		if ($idname=='loc')
 			return localValido($item,TRUE);
-		
+		//elseif ($idname=='k')  COD_CHAVE (field 0)!
+
 		if (!array_key_exists($idname,$ctrl_idnames))
 			$ctrl_idnames[$idname] = array(1,array()); // contador e lista de ocorrências
 		if (isset($ctrl_idnames[$idname][1][$item])) 
@@ -568,9 +603,9 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 	function joinMarkId($lst, $idname='loc', $elename='location', $errUse=TRUE, $SEP='', $errTag='error') {
 		$outLst = array();
 		if (count($lst)) {
-			foreach($lst as $item) {
+			foreach($lst as $item) if ($item) {
 				$idr = domParser::setIdname($idname,$item,TRUE);
-				if ($item=='err') showerr(32,"joinMarkId() recebeu erro em idr=$idr.");
+				if ($item=='err') showerr(32,"joinMarkId($idname,$item) recebeu erro em idr=$idr.");
 				$out[] = "<$elename idref='$idr'>$item</$elename>";
 			}
 			return join($SEP,$out);
@@ -606,7 +641,8 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 			foreach($xp->query('//p') as $node) {
 				$id='';
 				$n++;
-				if (  preg_match('/^\s*(([A-Z]+)(\-?[a-z]?)[0-9]{1,5})/su',$node->nodeValue,$m) 
+				//  || (preg_match('/^\s*(([A-Z]+)(\-?[a-z]?)\d{1,5})/su',$node->textContent,$m) 
+				if (  preg_match('/^\s*(([A-Z]+)(\-?[a-z]?)\d{3,4})/s',$node->firstChild->nodeValue,$m) 
 					  && ($id=$m[1])
 					) {
 					// fora de uso && (!$dayFilter || in_array($id,$Resumos_byDia[$dayFilter]))
@@ -616,7 +652,8 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 					$nOk++;
 					$DESCR = isset($DESCR_byResumo[$id])? $DESCR_byResumo[$id]:  array("(sem descritor de assunto)");
 					if (!isset($LocHora_byResumo[$id]))
-						list($dia,$hini,$hfim,$local) =  array('err','err','err','err');
+						//list($dia,$hini,$hfim,$local) = array("err-$id","err-$id","err-$id","err-$id"); 
+						array('err','err','err','err');
 					else
 						list($dia,$hini,$hfim,$local) = $LocHora_byResumo[$id]; // 0=dia, 1=hora-inicial, 2=final, 3=local
 					$dias[$dia] = 1;
@@ -879,8 +916,8 @@ EOD;
 
 	function output($MODO,$finalUTF8=true,$dayFilter) {
 		$MODO = strtolower($MODO);
-		if ($MODO=='relat3')
-			return $this->show_extractionSumary(true); // faz print
+		if ($MODO=='relat3' || $MODO=='relat4')
+			return $this->show_extractionSumary(true,$MODO); // faz print
 
 		elseif ($MODO=='relat1' || $MODO=='relat2') {
 			$this->show_nodePathes();
@@ -976,9 +1013,12 @@ function xsl_nRegister($type,$pubid,$items) {
  */
 function xsl_regRestore($type,$secid){
 	global $registerLists;
-	$tsid = "$type#$secid";	
-	$keys = array_unique( array_keys($registerLists[$tsid]) );
-	usort($keys,'strcoll');
+	$tsid = "$type#$secid";	// pode ser "key#ERROR"
+	if (isset($registerLists[$tsid])) {
+		$keys = array_unique( array_keys($registerLists[$tsid]) );
+		usort($keys,'strcoll');		
+	} else
+		$keys = [];
 	$k= array();
 	switch ($type) {
 	case 'key': // keys
@@ -1000,7 +1040,10 @@ function xsl_regRestore($type,$secid){
 
 function dayFormat($s){
 	$s2='';
-	if (preg_match('/(\d\d+)\-(\d*)\-(\d*)/',$s,$m))
+	$s0=$s;
+	if (!trim($s))
+		return array("ERR_DAY0-iso","ERR_DAY0-ext");
+	if (preg_match('/(\d\d+)\-?(\d*)\-?(\d*)/',$s,$m))
 		$s2 = "$m[3]/$m[2]/$m[1]";
 	elseif (preg_match('|(\d)(\d?)/(\d)(\d?)/(\d\d+)|',$s,$m)) {
 		$s2 = $s;
@@ -1008,7 +1051,12 @@ function dayFormat($s){
 		$mes = $m[4]? "$m[3]$m[4]": "0$m[3]";
 		$s = "$m[5]-$mes-$dia";
 	}
-    return array($s,$s2);
+	global $valiDia;
+	if (!isset($valiDia[$s]))
+		return array("ERR_DAY2-iso $s","ERR_DAY2-br $s0");
+    	// die("\n ERRO 233 no resumo $rid: $dayISO invalida.\n");  
+	else
+	    return array($s,$s2);
 }
 function dayIso($s){
 	list($s,$s2) = dayFormat($s);
