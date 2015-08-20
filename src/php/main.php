@@ -27,7 +27,8 @@ elseif ($cmd=='version')
 
 $isXML = ($cmd=='xml' || $cmd=='finalXml' || $cmd=='raw');
 $isRELAT = (substr($cmd,0,5)=='relat');
-
+$isMultiSec = isset($io_options['multisec']);
+$showDomWarnings = isset($io_options['warnings']);
 
 $file = 'php://stdin';
 
@@ -61,15 +62,14 @@ if ( isset($io_options['tpl1']) ) {   // cmd tpl1
 			$file.='/';
 		$OUT = '';
 		$LINE = ($isXML || $isRELAT)? "\n": '';
-		foreach(scandir($file) as $f) if (preg_match('/\.html?$/i',$f)) {
-				$OUT .= preg_replace('|</?html>|','',  exec_cmd($cmd,"$file$f",$isRELAT) ) . $LINE ;
-		} // for if
+		foreach(scandir($file) as $f) if ( preg_match('/\.html?$/i',$f) )
+			$OUT .= preg_replace( '|</?html>|','',  exec_cmd($cmd,"$file$f",$isRELAT,$isMultiSec) ).$LINE ;
 		$OUT = "\n<html>\n$OUT\n</html>";
 		$file ='';
 	} // if
 } // if
 if ($file)
-	$OUT = exec_cmd($cmd,$file,$isRELAT);
+	$OUT = exec_cmd($cmd,$file,$isRELAT,$isMultiSec);
 
 print_byTPL($OUT,$isRELAT,$isXML);
 if ($isRELAT)
@@ -96,7 +96,7 @@ function print_byTPL($OUT,$isRELAT,$isXML,$tag='html') {
 		print $OUT;
 }
 
-function exec_cmd($cmd,$file,$isRELAT,$rmHeader=1,$finalUTF8=true) {
+function exec_cmd($cmd,$file,$isRELAT,$isMultiSec=FALSE,$rmHeader=1,$finalUTF8=TRUE) {
 	global $io_options;
 	global $dayFilter;
 
@@ -109,7 +109,7 @@ function exec_cmd($cmd,$file,$isRELAT,$rmHeader=1,$finalUTF8=true) {
 	// FALTA usar a  $io_options['normaliza'] pro XML na lib.php 
 
 	$doc->getHtmlBody($file, isset($io_options['utf8']) && $io_options['utf8']);
-	$out = $doc->output($cmd,$finalUTF8,$dayFilter);
+	$out = $doc->output($cmd,$finalUTF8,$dayFilter,$isMultiSec);
 	
 	if (!$isRELAT)	{
 		if ($rmHeader) $out = str_replace(XML_HEADER1,'',$out);

@@ -1,0 +1,209 @@
+
+--- section-dump(PN0001 | tem range | tem location) 
+	Modalidade: PAINEL ASPIRANTE / EFETIVO - Sessão I PN0001 - PN0311
+	Instalação: Sexta-Feira (04/09) 07:30h
+	Local: Foyer 1
+	Apresentação e arguição: período manhã 08:00 - 11:30h
+	Retirada: Sexta-Feira (04/09) 11:30 - 11:45h
+--- section-dump(PN0001 | tem range | tem location) 
+	Localize seu grupo observando a área e o n. do painel:
+	Reunião de Grupo Sessão I área 1 (PN 01 - PN 17) e Sessão II área 1 (PN 312 - PN 329)
+	Sala Cerejeira
+	Reunião de Grupo Sessão I área 2 (PN 18 - PN 67) e Sessão II área 2 (PN 330 - PN 378)
+	Sala Amoreira I
+	Reunião de Grupo Sessão I área 3 (PN 68 - PN 97) e Sessão II área 3 (PN 379 - PN 408)
+	Sala Amoreira II
+	Reunião de Grupo Sessão I área 5 (PN 98 - PN 194) e Sessão II área 5 (PN 409 - PN 505)
+	Sala Carvalho I
+	Reunião de Grupo Sessão I área 6 (PN 195 - PN 231) e Sessão II área 6 (PN 506 - PN 542)
+	Sala Carvalho III
+	Reunião de Grupo Sessão I área 7 (PN 232 - PN 277) e Sessão II área 7 (PN 543 - PN 588)
+	Sala Carvalho II
+	Reunião de Grupo Sessão I área 10 (PN 278 - PN 311) e Sessão II área 10 (PN 589 - PN 622)
+	Sala Seringueira
+--- td-dump(PN0001 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 1 (PN 01 - PN 17) e Sessão II área 1 (PN 312 - PN 329)
+--- td-dump(PN0018 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 2 (PN 18 - PN 67) e Sessão II área 2 (PN 330 - PN 378)
+--- td-dump(PN0068 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 3 (PN 68 - PN 97) e Sessão II área 3 (PN 379 - PN 408)
+--- td-dump(PN0098 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 5 (PN 98 - PN 194) e Sessão II área 5 (PN 409 - PN 505)
+--- td-dump(PN0195 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 6 (PN 195 - PN 231) e Sessão II área 6 (PN 506 - PN 542)
+--- td-dump(PN0232 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 7 (PN 232 - PN 277) e Sessão II área 7 (PN 543 - PN 588)
+--- td-dump(PN0278 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 10 (PN 278 - PN 311) e Sessão II área 10 (PN 589 - PN 622)
+--- section-dump(PN0312 | tem range | tem location) 
+	Modalidade: PAINEL ASPIRANTE / EFETIVO - Sessão II PN0312 - PN0622
+	Instalação: Sexta-Feira (04/09) 12:45h
+	Local: Foyer 1
+	Apresentação e arguição: período tarde 13:00 - 16:30h
+	Retirada: Sexta-Feira (04/09) 16:30 - 16:45h
+--- section-dump(PN0001 | tem range | tem location) 
+	Localize seu grupo observando a área e o n. do painel:
+	Reunião de Grupo Sessão I área 1 (PN 01 - PN 17) e Sessão II área 1 (PN 312 - PN 329)
+	Sala Cerejeira
+	Reunião de Grupo Sessão I área 2 (PN 18 - PN 67) e Sessão II área 2 (PN 330 - PN 378)
+	Sala Amoreira I
+	Reunião de Grupo Sessão I área 3 (PN 68 - PN 97) e Sessão II área 3 (PN 379 - PN 408)
+	Sala Amoreira II
+	Reunião de Grupo Sessão I área 5 (PN 98 - PN 194) e Sessão II área 5 (PN 409 - PN 505)
+	Sala Carvalho I
+	Reunião de Grupo Sessão I área 6 (PN 195 - PN 231) e Sessão II área 6 (PN 506 - PN 542)
+	Sala Carvalho III
+	Reunião de Grupo Sessão I área 7 (PN 232 - PN 277) e Sessão II área 7 (PN 543 - PN 588)
+	Sala Carvalho II
+	Reunião de Grupo Sessão I área 10 (PN 278 - PN 311) e Sessão II área 10 (PN 589 - PN 622)
+	Sala Seringueira
+--- td-dump(PN0001 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 1 (PN 01 - PN 17) e Sessão II área 1 (PN 312 - PN 329)
+--- td-dump(PN0018 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 2 (PN 18 - PN 67) e Sessão II área 2 (PN 330 - PN 378)
+--- td-dump(PN0068 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 3 (PN 68 - PN 97) e Sessão II área 3 (PN 379 - PN 408)
+--- td-dump(PN0098 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 5 (PN 98 - PN 194) e Sessão II área 5 (PN 409 - PN 505)
+--- td-dump(PN0195 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 6 (PN 195 - PN 231) e Sessão II área 6 (PN 506 - PN 542)
+--- td-dump(PN0232 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 7 (PN 232 - PN 277) e Sessão II área 7 (PN 543 - PN 588)
+--- td-dump(PN0278 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 10 (PN 278 - PN 311) e Sessão II área 10 (PN 589 - PN 622)
+--- section-dump(PN0623 | tem range | tem location) 
+	Modalidade: PAINEL ASPIRANTE / EFETIVO - III PN0623 - PN0933
+	Instalação: Sábado (05/09) 07:30h
+	Local: Foyer 1
+	Apresentação e arguição: período manhã 08:00 - 11:30h
+	Retirada: Sábado (05/09) 11:30 - 11:45h
+--- section-dump(PN0623 | tem range | tem location) 
+	Localize seu grupo observando a área e o n. do painel:
+	Reunião de Grupo Sessão III área 1 (PN 623 - PN 640) e Sessão IV área 1 (PN 934 - PN 951)
+	Sala Cerejeira
+	Reunião de Grupo Sessão III área 4 (PN 641 - PN 730) e Sessão IV área 1 (PN 952 - PN 1042)
+	Sala Carvalho II
+	Reunião de Grupo Sessão III área 5 (PN 731 - PN 828) e Sessão IV área 5 (PN 1043 - PN 1140)
+	Sala Carvalho III
+	Reunião de Grupo Sessão III área 6 (PN 829 - PN 867) e Sessão IV área 6 (PN 1141 - PN 1178)
+	Sala Amoreira I
+	Reunião de Grupo Sessão III área 8 (PN 868 - PN 898) e Sessão IV área 8 (PN 1179 - PN 1209)
+	Sala Carvalho I
+	Reunião de Grupo Sessão III área 9 (PN 899 - PN 933) e Sessão IV área 9 (PN 1210 - PN 1244)
+	Sala Seringueira
+--- td-dump(PN0623 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 1 (PN 623 - PN 640) e Sessão IV área 1 (PN 934 - PN 951)
+--- td-dump(PN0641 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 4 (PN 641 - PN 730) e Sessão IV área 1 (PN 952 - PN 1042)
+--- td-dump(PN0731 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 5 (PN 731 - PN 828) e Sessão IV área 5 (PN 1043 - PN 1140)
+--- td-dump(PN0829 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 6 (PN 829 - PN 867) e Sessão IV área 6 (PN 1141 - PN 1178)
+--- td-dump(PN0868 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 8 (PN 868 - PN 898) e Sessão IV área 8 (PN 1179 - PN 1209)
+--- td-dump(PN0899 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 9 (PN 899 - PN 933) e Sessão IV área 9 (PN 1210 - PN 1244)
+--- section-dump(PN0934 | tem range | tem location) 
+	Modalidade: PAINEL ASPIRANTE / EFETIVO - Sessão IV PN0934 - PN1244
+	Instalação: Sábado (05/09) 12:45h
+	Local: Foyer 1
+	Apresentação e arguição: período tarde 13:00 - 16:30h
+	Retirada: Sábado (05/09) 16:30 - 16:45h
+--- section-dump(PN0623 | tem range | tem location) 
+	Localize seu grupo observando a área e o n. do painel:
+	Reunião de Grupo Sessão III área 1 (PN 623 - PN 640) e Sessão IV área 1 (PN 934 - PN 951)
+	Sala Cerejeira
+	Reunião de Grupo Sessão III área 4 (PN 641 - PN 730) e Sessão IV área 1 (PN 952 - PN 1042)
+	Sala Carvalho II
+	Reunião de Grupo Sessão III área 5 (PN 731 - PN 828) e Sessão IV área 5 (PN 1043 - PN 1140)
+	Sala Carvalho III
+	Reunião de Grupo Sessão III área 6 (PN 829 - PN 867) e Sessão IV área 6 (PN 1141 - PN 1178)
+	Sala Amoreira I
+	Reunião de Grupo Sessão III área 8 (PN 868 - PN 898) e Sessão IV área 8 (PN 1179 - PN 1209)
+	Sala Carvalho I
+	Reunião de Grupo Sessão III área 9 (PN 899 - PN 933) e Sessão IV área 9 (PN 1210 - PN 1244)
+	Sala Seringueira
+--- td-dump(PN0623 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 1 (PN 623 - PN 640) e Sessão IV área 1 (PN 934 - PN 951)
+--- td-dump(PN0641 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 4 (PN 641 - PN 730) e Sessão IV área 1 (PN 952 - PN 1042)
+--- td-dump(PN0731 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 5 (PN 731 - PN 828) e Sessão IV área 5 (PN 1043 - PN 1140)
+--- td-dump(PN0829 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 6 (PN 829 - PN 867) e Sessão IV área 6 (PN 1141 - PN 1178)
+--- td-dump(PN0868 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 8 (PN 868 - PN 898) e Sessão IV área 8 (PN 1179 - PN 1209)
+--- td-dump(PN0899 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 9 (PN 899 - PN 933) e Sessão IV área 9 (PN 1210 - PN 1244)
+--- section-dump(PN1245 | tem range | tem location) 
+	Modalidade: PAINEL ASPIRANTE / EFETIVO - Sessão V PN1245 - PN1555
+	Instalação: Domingo  (06/09) 07:30h
+	Local: Foyer 1
+	Apresentação e arguição: período manhã 08:00 - 11:30h
+	Retirada: Domingo (06/09) 11:30 - 11:45h
+--- section-dump(PN1245 | tem range | tem location) 
+	Localize seu grupo observando a área e o n. do painel:
+	Reunião de Grupo Sessão V área 2 (PN 1245 - PN 1293) e Sessão VI área 2 (PN 1556 - PN 1604)
+	Sala Carvalho II
+	Reunião de Grupo Sessão V área 3 (PN 1294 - PN 1323) e Sessão VI área 3 (PN 1605 - PN 1635)
+	Sala Amoreira I
+	Reunião de Grupo Sessão V área 4 ( PN 1324 - PN 1412) e Sessão VI área 4 (PN 1636 - PN 1724)
+	Sala Amoreira II
+	Reunião de Grupo Sessão V área 7 ( PN 1413 - PN 1459) e Sessão VI área 7 (PN 1725 - PN 1771)
+	Sala Carvalho III
+	Reunião de Grupo Sessão V área 8 ( PN 1460 - PN 1488) e Sessão VI área 8 (PN 1772 - PN 1800)
+	Sala Carvalho I
+	Reunião de Grupo Sessão V área 9 ( PN 1489 - PN 1521) e Sessão VI área 9 (PN 1801 - PN 1834)
+	Sala Cerejeira
+	Reunião de Grupo Sessão V área 10 ( PN 1522 - PN 1555) e Sessão VI área 10 (PN 1835 - PN 1867)
+	Sala Seringueira
+--- td-dump(PN1245 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 2 (PN 1245 - PN 1293) e Sessão VI área 2 (PN 1556 - PN 1604)
+--- td-dump(PN1294 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 3 (PN 1294 - PN 1323) e Sessão VI área 3 (PN 1605 - PN 1635)
+--- td-dump(PN1324 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 4 ( PN 1324 - PN 1412) e Sessão VI área 4 (PN 1636 - PN 1724)
+--- td-dump(PN1413 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 7 ( PN 1413 - PN 1459) e Sessão VI área 7 (PN 1725 - PN 1771)
+--- td-dump(PN1460 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 8 ( PN 1460 - PN 1488) e Sessão VI área 8 (PN 1772 - PN 1800)
+--- td-dump(PN1489 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 9 ( PN 1489 - PN 1521) e Sessão VI área 9 (PN 1801 - PN 1834)
+--- td-dump(PN1522 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 10 ( PN 1522 - PN 1555) e Sessão VI área 10 (PN 1835 - PN 1867)
+--- section-dump(PN1556 | tem range | tem location) 
+	Modalidade: PAINEL ASPIRANTE / EFETIVO - Sessão VI PN1556 - PN1867
+	Instalação: Domingo  (06/09) 12:45h
+	Local: Foyer 1
+	Apresentação e arguição: período tarde 13:00 - 16:30h
+	Retirada: Domingo (06/09) 16:30 - 16:45h
+--- section-dump(PN1245 | tem range | tem location) 
+	Localize seu grupo observando a área e o n. do painel:
+	Reunião de Grupo Sessão V área 2 (PN 1245 - PN 1293) e Sessão VI área 2 (PN 1556 - PN 1604)
+	Sala Carvalho II
+	Reunião de Grupo Sessão V área 3 (PN 1294 - PN 1323) e Sessão VI área 3 (PN 1605 - PN 1635)
+	Sala Amoreira I
+	Reunião de Grupo Sessão V área 4 ( PN 1324 - PN 1412) e Sessão VI área 4 (PN 1636 - PN 1724)
+	Sala Amoreira II
+	Reunião de Grupo Sessão V área 7 ( PN 1413 - PN 1459) e Sessão VI área 7 (PN 1725 - PN 1771)
+	Sala Carvalho III
+	Reunião de Grupo Sessão V área 8 ( PN 1460 - PN 1488) e Sessão VI área 8 (PN 1772 - PN 1800)
+	Sala Carvalho I
+	Reunião de Grupo Sessão V área 9 ( PN 1489 - PN 1521) e Sessão VI área 9 (PN 1801 - PN 1834)
+	Sala Cerejeira
+	Reunião de Grupo Sessão V área 10 ( PN 1522 - PN 1555) e Sessão VI área 10 (PN 1835 - PN 1867)
+	Sala Seringueira
+--- td-dump(PN1245 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 2 (PN 1245 - PN 1293) e Sessão VI área 2 (PN 1556 - PN 1604)
+--- td-dump(PN1294 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 3 (PN 1294 - PN 1323) e Sessão VI área 3 (PN 1605 - PN 1635)
+--- td-dump(PN1324 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 4 ( PN 1324 - PN 1412) e Sessão VI área 4 (PN 1636 - PN 1724)
+--- td-dump(PN1413 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 7 ( PN 1413 - PN 1459) e Sessão VI área 7 (PN 1725 - PN 1771)
+--- td-dump(PN1460 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 8 ( PN 1460 - PN 1488) e Sessão VI área 8 (PN 1772 - PN 1800)
+--- td-dump(PN1489 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 9 ( PN 1489 - PN 1521) e Sessão VI área 9 (PN 1801 - PN 1834)
+--- td-dump(PN1522 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 10 ( PN 1522 - PN 1555) e Sessão VI área 10 (PN 1835 - PN 1867)

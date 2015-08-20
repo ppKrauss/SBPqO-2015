@@ -27,6 +27,7 @@ $fileField00   = 'COD_CHAVE';
 $buffsize      = 3000;
 $MODO          = 'extract';
 $finalUTF8     = TRUE;
+$isMultiSec    = FALSE;  // por default é uma seção por arquivo
 
 $SECAO         = array( // na ordem
 	'PE'=> 'Pesquisa em Ensino',
@@ -243,7 +244,8 @@ list($io_options,$io_usage,$io_options_cmd,$io_params) = getopt_FULLCONFIG(
 	    "2|relat2*"=>	'shows a input analysis complete relatory, listing elements',
 	    "3|relat3*"=>	'shows a ID list',
 	    "4|relat4*"=>	'shows a IDs by ranges',
-	    
+	    "w|warnings"=>  'show dom-parser warnings',
+
 	    "l|local"=>     'shows all local ids', // command??
 
 	    "c|convCsv*"=>  'converts semi-comma to real comma-CSV',
@@ -676,9 +678,15 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 					}
 					$event2='';
 					$idloc = domParser::setIdname('loc',$local,TRUE);
+					// DESATIVANDO A CONDIÇÂO PN!
 					if 	($sec=='PN') { // faz uso de dois locais!
-						$event2 = "<event2><summary>Reunião de Grupo</summary><period><start day=\"$dia\">17:30</start><end>19:00</end></period><location idref='$idloc'>$local</location></event2>";
-						$local = "Salão Monumentalle";
+						$event2 = "
+						<event2>
+							<summary>Reunião de Grupo</summary>
+							<period><start day=\"$dia\">#HORA#</start><end>#HORA#</end></period>
+							<location idref='#IDLOC#'>#SALAX#</location>
+						</event2>";
+						//$local = "#SALA-X#";
 						$idloc = domParser::setIdname('loc',$local,TRUE);	
 					}
 					$ele2->appendXML(
@@ -914,7 +922,7 @@ EOD;
 	}
 
 
-	function output($MODO,$finalUTF8=true,$dayFilter) {
+	function output($MODO,$finalUTF8=TRUE,$dayFilter='',$isMultiSec=FALSE) {
 		$MODO = strtolower($MODO);
 		if ($MODO=='relat3' || $MODO=='relat4')
 			return $this->show_extractionSumary(true,$MODO); // faz print
