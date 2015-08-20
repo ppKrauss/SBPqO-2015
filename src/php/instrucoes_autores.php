@@ -6,6 +6,7 @@
  * @param -n      normaliza, ALTERA conforme dados atuais.
  * @param -w      mostra no terminal as falhas do HTML
  * @param -h      help
+ Falta flag limpar para passar para Paula
  * USO:
  *  $ cd projeto
  *  $ php src/php/instrucoes_autores.php -r
