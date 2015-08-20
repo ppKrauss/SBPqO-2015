@@ -7,7 +7,7 @@
  * FUTURO: armazenar itens no PostgreSQL 9.3+ (JSON!) e gerencia-los por lá.
  *   Por hora fazendo o possível com xsl_nRegister().
  */
-$LIBVERS = '1.5.4'; // v1.5.2 de 2015-08; v1.5.0 de 2015-07; v1.4 de 2014-08-24; v1.3 de 2014-08-12; v1.2 de 2014-08-03; v1.1 de 2014-08-02; v1.0 de 2014-08-01.
+$LIBVERS = '1.5.5'; // v1.5.2 de 2015-08; v1.5.0 de 2015-07; v1.4 de 2014-08-24; v1.3 de 2014-08-12; v1.2 de 2014-08-03; v1.1 de 2014-08-02; v1.0 de 2014-08-01.
 
 ///////  ///////  ///////  /////// 
 /////// I/O INICIALIZATION ///////
@@ -620,27 +620,41 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 	// gera step1
 	// NAO USA MAIS dayFilter, arrumar
 // PERIGO, tem dados de 2014 forçados (ver sec=='PN')
-	function asXML($dayFilter='') {
+	function asXML($dayFilter='',$isMultiSec=FALSE) {
 		global $Resumos_byDia;
 		global $DESCR_byResumo;
 		global $LocHora_byResumo;
 		global $FILTRO;
 		if (!$this->isXML_step1) {
-			$XML = "\n";
-			// DEPOIS AINDA PASSAR POR UM NORMALIZADOR XSLT!
-			$replacElements = array('pubid','title','contribs','aff','corresp','abstract','conclusion','ERRO');
-			$replacElements_n = count($replacElements);
+			$XML_FINAL = '';
+
+			// LIXO? ou inicialização global?
 			$this->newDom = new DOMDocument();
 			$root = $this->newDom->createElement('root');
 			$this->preserveWhiteSpace = false; // XML_PARSE_NOBLANKS
 			$xp = new DOMXpath($this);
-			$n=0;
-			$nOk=0;
-			$secs = array();
-			$subsecs = array();
-			$dias = array();
-			$locais = array();		
-			foreach($xp->query('//p') as $node) {
+
+			$replacElements = array('pubid','title','contribs','aff','corresp','abstract','conclusion','ERRO');
+			$replacElements_n = count($replacElements);
+
+			$SECLOOP = [];
+			foreach($xp->query('//p') as $node) if (preg_match('/^\s*([A-Z]{2,3})/s',$node->firstChild->nodeValue,$m)) {
+				$node->setAttribute('sec',$m[1]);
+				if (!isset($SECLOOP[$m[1]])) $SECLOOP[$m[1]]="//p[@sec='$m[1]']";
+			}
+			//lixo var_dump(array_values($SECLOOP));die("\nsdhsjdhsjdh\n");
+			foreach($SECLOOP as $sec=>$xqSec) {
+			  $XML = "\n";
+		  	  // DEPOIS AINDA PASSAR POR UM NORMALIZADOR XSLT!
+			  $xp = new DOMXpath($this);
+			  $n       = 0;
+			  $nOk     = 0;
+			  $secs    = [];
+			  $subsecs = [];
+			  $dias    = [];
+			  $locais  = [];
+
+			  foreach($xp->query($xqSec) as $node) {
 				$id='';
 				$n++;
 				//  || (preg_match('/^\s*(([A-Z]+)(\-?[a-z]?)\d{1,5})/su',$node->textContent,$m) 
@@ -648,7 +662,7 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 					  && ($id=$m[1])
 					) {
 					// fora de uso && (!$dayFilter || in_array($id,$Resumos_byDia[$dayFilter]))
-					$sec = $m[2];
+					if($m[2]!=$sec) die("\nERRO 3472: $sec nao corresponde ao prefixo de $id.\n");
 					$secs[$sec] = 1;
 					$subsecs[$m[3]] = 1;
 					$nOk++;
@@ -753,7 +767,7 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 					}
 					$XML.= "\n\n$P";
 				} // if
-			} //for
+			} //for-node
 
 			$locais = array_keys($locais);
 			$local = domParser::joinMarkId($locais,'loc','location',1); // xml
@@ -763,6 +777,7 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 			$dia = domParser::joinMarkId($dias,'d','day',1); // nao precisa id-sequencial (!) pois iso é ref. 
 
 			$secs = array_keys($secs);
+// aqui tratamento de secs, não SEC0
 			$sec = (!count($secs) || count($secs)>1)? 'ERROR': $secs[0];
 			$subsecs = array_keys($subsecs);		
 			$subsec = (count($subsecs))? $subsecs[0]: '';	
@@ -780,7 +795,10 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 				<locations>$local</locations>
 				\n$XML\n
 			</sec>\n";  //  ".'<dump_ids>'. var_export($ctrl_idnames['loc'], true).'</dump_ids>'."
-			return $XML;
+		  	$XML_FINAL .= $XML;
+		  } // for1
+
+		  return "<html>$XML_FINAL</html>"; // talvez precise de um <html> envolvendo para nao dar pau
 
 		//} elseif ($dayFilter) { // já é XML, falta só grep por dia
 			// nao precisou pois finalXml faz grep!
@@ -796,7 +814,7 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 	 * @param $MODO string 'dom' ou 'xml', designa o tipo de retorno.
 	 * @param $p_dayFilter string empty or selected day (ISO format?).
 	 */
-	function asStdXML($MODO='dom',$p_dayFilter='') {
+	function asStdXML($MODO='dom',$p_dayFilter='',$isMultiSec=FALSE) {
 		// criar boolean para match="article[fn:useThisId(string(@id),local,dia, keys)]"
 		// vai listar em array apenas os resumos e seu local e dia
 		$XSL = "<xsl:param name=\"dayFilter\">$p_dayFilter</xsl:param>\n";
@@ -864,7 +882,9 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 EOD;
 		// <vcalendar xmlns='urn:ietf:params:xml:ns:xcal'>  ver https://tools.ietf.org/html/rfc6321 
 		$xmlDom = new DOMDocument('1.0', 'UTF-8');
-		$xmlDom->loadXML( $this->asXML($p_dayFilter) );  // redundancia se já no this.
+
+		//die ($this->asXML($p_dayFilter,$isMultiSec));
+		$xmlDom->loadXML( $this->asXML($p_dayFilter,$isMultiSec) );  // redundancia se já no this.
 		$xmlDom->encoding = 'UTF-8';
 		$xmlDom = transformId_ToDom($XSL,$xmlDom);
 		$xmlDom->encoding = 'UTF-8';
@@ -943,10 +963,10 @@ EOD;
 			return $this->saveXML();
 
 		} elseif ($MODO=='xml')
-			return $this->asXML($dayFilter);
+			return $this->asXML($dayFilter,$isMultiSec);
 
 		else {
-			$xmlDom = $this->asStdXML('dom',$dayFilter);
+			$xmlDom = $this->asStdXML('dom',$dayFilter,$isMultiSec);
 
 			if ($MODO=='finalhtml') {
 				return $this->asStdHtml('xml',$xmlDom, true, $dayFilter);
