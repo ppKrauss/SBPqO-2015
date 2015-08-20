@@ -6,6 +6,7 @@
  * @param -n      normaliza, ALTERA conforme dados atuais.
  * @param -w      mostra no terminal as falhas do HTML
  * @param -h      help
+ Falta flag limpar para passar para Paula
  * USO:
  *  $ cd projeto
  *  $ php src/php/instrucoes_autores.php -r
@@ -40,8 +41,9 @@ $doc->encoding = 'UTF-8';
 $xp = new DOMXpath($doc);
 $xq_sec = "//section"; //[.//p[@class='range-resumos'] and .//span[@class='location1']]
 $xq_td = "//td";  //
-foreach($xp->query("$xq_sec | $xq_td") as $node) if (  preg_match('/PN\s*(\d{1,4})/s',$node->textContent,$m) ) {
-		$id0 = sprintf("PN%04d", $m[1]);
+foreach($xp->query("$xq_sec | $xq_td") as $node) if (  preg_match('/(PE|PO|HA|COL|JL|AO|FC|PI|PN)\s*(\d{1,4})/s',$node->textContent,$m) ) {
+		$sec0 = $m[1];
+		$id0 = sprintf("$sec0%04d", $m[2]);
 		$tipo = $node->nodeName;
 
 		if ($tipo=='td')
