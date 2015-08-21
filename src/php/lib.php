@@ -245,8 +245,8 @@ if (convCsv(
 	// 4-Sep, 11:30 - 11:45h,Retirada,Foyer 2,ISSAO ,Sessão I,PI0001 - PI0152,PI
 	,function ($tmp) use (&$instrGAMBI) {
 		if (preg_match('/^\s*(\d+)/',$tmp[0],$m)) {
-			$tmp[0] = sprintf("%02d-09-2015",$m[1]);
-			$tmp[3] = localValido($tmp[3]);		
+			$tmp[0] = sprintf("2015-09-%02d",$m[1]); // %02d-09-2015 ERRADO! PAU NAS INSTRUCOES!
+			$tmp[3] = localValido($tmp[3]);
 			if (preg_match('/([\d:]+)h?[\s\-]*([\d:]+)?h?/s',$tmp[1],$m)) {
 				$tmp[1] = "$m[1]h".(isset($m[2])?" - $m[2]h":'');
 			}
@@ -763,12 +763,10 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 					if (strpos($hini,';')!==false) {
 						list($hini,$hini2) = explode(';',$hini);
 						list($hfim,$hfim2) = explode(';',$hfim);
-
 						$per2 = "<period><start day=\"$dia\">$hini2</start><end>$hfim2</end></period>";
 					}
 					$event2='';
 					$idloc = domParser::setIdname('loc',$local,TRUE);
-					// DESATIVANDO A CONDIÇÂO PN!
 					if 	($sec=='PN') { // faz uso de dois locais!
 						global $PNgrupo;
 						if (isset($PNgrupo[$id])) {
@@ -790,7 +788,7 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 								<period>ERRO334 em $id</period><location>ERRO335</location>
 							</event2>";	
 						$idloc = domParser::setIdname('loc',$local,TRUE);	
-					}
+					} // PN
 					$ele2->appendXML(
 						"<vcalendar><components>"
 						."<period><start day=\"$dia\">$hini</start><end>$hfim</end></period>"
@@ -1161,7 +1159,8 @@ function dayFormat($s){
 	$s2='';
 	$s=trim($s);
 	$s0=$s;
-
+	if (preg_match('|(\d+)/(\d+)/(\d\d+)|s',$s,$m)) // força para data válida
+		return [sprintf('2015-09-%02d',$m[1]), sprintf('%02d/09/2015',$m[1])];
 	if ($s=='4/9/2015')
 		return ['2015-09-06','04/09/2015'];
 	elseif ($s=='3/9/2015')
