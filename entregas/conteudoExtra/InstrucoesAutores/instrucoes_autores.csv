@@ -1,0 +1,226 @@
+Data,hora,Atividade,Local,sessao,area,res_ini,res_fim,sec
+4/9/2015,08:00h - 11:30h,Apresentação,Sala Cerejeira,Fórum Científico,,FC0001,FC0005,FC
+4/9/2015,11:30h - 11:45h,Retirada,Foyer II,ISSAO ,Sessão I,PI0001,PI0152,PI
+4/9/2015,11:30h - 11:45h,Retirada,Foyer I,Sessão I,área 1,PN0001,PN0017,PN
+4/9/2015,11:30h - 11:45h,Retirada,Foyer I,Sessão I,área 2,PN0018,PN0067,PN
+4/9/2015,11:30h - 11:45h,Retirada,Foyer I,Sessão I,área 6,PN0195,PN0231,PN
+4/9/2015,11:30h - 11:45h,Retirada,Foyer I,Sessão I,área 7,PN0232,PN0277,PN
+4/9/2015,11:30h - 11:45h,Retirada,Foyer I,Sessão I,área 10,PN0278,PN0311,PN
+4/9/2015,11:30h - 11:45h,Retirada,Foyer I,Sessão I,área 3,PN0068,PN0097,PN
+4/9/2015,11:30h - 11:45h,Retirada,Foyer I,Sessão I,área 5,PN0098,PN0194,PN
+4/9/2015,12:45h,instalação,Foyer I,Sessão II,área 1,PN0312,PN0329,PN
+4/9/2015,12:45h,instalação,Foyer I,Sessão II,área 2,PN0330,PN0378,PN
+4/9/2015,12:45h,instalação,Foyer I,Sessão II,área 3,PN0379,PN0408,PN
+4/9/2015,12:45h,instalação,Foyer I,Sessão II,área 5,PN0409,PN0505,PN
+4/9/2015,12:45h,instalação,Foyer I,Sessão II,área 6,PN0506,PN0542,PN
+4/9/2015,12:45h,instalação,Foyer I,Sessão II,área 7,PN0543,PN0588,PN
+4/9/2015,12:45h,instalação,Foyer I,Sessão II,área 10,PN0589,PN0622,PN
+4/9/2015,16:30h - 16:45h,Retirada,Foyer II,ISSAO ,Sessão II,PI0153,PI0304,PI
+4/9/2015,16:30h - 16:45h,Retirada,Foyer I,Sessão II,área 2,PN0330,PN0378,PN
+4/9/2015,16:30h - 16:45h,Retirada,Foyer I,Sessão II,área 3,PN0379,PN0408,PN
+4/9/2015,16:30h - 16:45h,Retirada,Foyer I,Sessão II,área 5,PN0409,PN0505,PN
+4/9/2015,16:30h - 16:45h,Retirada,Foyer I,Sessão II,área 6,PN0506,PN0542,PN
+4/9/2015,16:30h - 16:45h,Retirada,Foyer I,Sessão II,área 10,PN0589,PN0622,PN
+4/9/2015,07:30h,instalação,Hall Jacarandá,Prêmio Joseph Lister 2015,,,,JL
+4/9/2015,07:30h,instalação,Foyer III,Pesquisa em Ensino,,,,PE
+4/9/2015,07:30h,instalação,Foyer II,ISSAO ,Sessão I,PI0001,PI0152,PI
+4/9/2015,07:30h,instalação,Foyer I,Sessão I,área 1,PN0001,PN0017,PN
+4/9/2015,07:30h,instalação,Foyer I,Sessão I,área 2,PN0018,PN0067,PN
+4/9/2015,07:30h,instalação,Foyer I,Sessão I,área 6,PN0195,PN0231,PN
+4/9/2015,07:30h,instalação,Foyer I,Sessão I,área 7,PN0232,PN0277,PN
+4/9/2015,07:30h,instalação,Foyer I,Sessão I,área 10,PN0278,PN0311,PN
+4/9/2015,07:30h,instalação,Foyer I,Sessão I,área 3,PN0068,PN0097,PN
+4/9/2015,07:30h,instalação,Foyer I,Sessão I,área 5,PN0098,PN0194,PN
+4/9/2015,08:00h - 11:30h,Apresentação oral,Sala Amoreira I,,área 4,AO0001,AO0012,AO
+4/9/2015,08:00h - 11:30h,Apresentação oral,Sala Amoreira II,,área 8,AO0025,AO0035,AO
+4/9/2015,08:00h - 11:30h,Apresentação oral,Sala Carvalho III,,área 9,AO0036,AO0045,AO
+4/9/2015,08:00h - 11:30h,Apresentação,Foyer III,Pesquisa em Ensino,,,,PE
+4/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer II,ISSAO ,Sessão I,PI0001,PI0152,PI
+4/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer I,Sessão I,área 1,PN0001,PN0017,PN
+4/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer I,Sessão I,área 2,PN0018,PN0067,PN
+4/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer I,Sessão I,área 6,PN0195,PN0231,PN
+4/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer I,Sessão I,área 7,PN0232,PN0277,PN
+4/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer I,Sessão I,área 10,PN0278,PN0311,PN
+4/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer I,Sessão I,área 3,PN0068,PN0097,PN
+4/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer I,Sessão I,área 5,PN0098,PN0194,PN
+4/9/2015,12:45h,instalação,Foyer II,ISSAO ,Sessão II,PI0153,PI0304,PI
+4/9/2015,13:00h - 16:30h,Apresentação,Sala Cerejeira,Fórum Científico,,FC0006,FC0011,FC
+4/9/2015,13:00h - 16:30h,Apresentação,Sala Manacá,Prêmio Joseph Lister 2015,,,,JL
+4/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer II,ISSAO ,Sessão II,PI0153,PI0304,PI
+4/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer I,Sessão II,área 1,PN0312,PN0329,PN
+4/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer I,Sessão II,área 2,PN0330,PN0378,PN
+4/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer I,Sessão II,área 3,PN0379,PN0408,PN
+4/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer I,Sessão II,área 5,PN0409,PN0505,PN
+4/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer I,Sessão II,área 6,PN0506,PN0542,PN
+4/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer I,Sessão II,área 7,PN0543,PN0588,PN
+4/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer I,Sessão II,área 10,PN0589,PN0622,PN
+4/9/2015,13:00h - 16:45h,Apresentação oral,Sala Amoreira I,,área 4,AO0013,AO0024,AO
+4/9/2015,13:00h - 16:45h,Apresentação oral,Sala Carvalho III,,área 9,AO0046,AO0056,AO
+4/9/2015,13:30h - 17:00h,Apresentação,Foyer III,Pesquisa em Ensino,,,,PE
+4/9/2015,14:00h,instalação,Hall Jacarandá,24 trabalhos,,HA0001,HA0012,HA
+4/9/2015,16:30h - 16:45h,Retirada,Foyer I,Sessão II,área 1,PN0312,PN0329,PN
+4/9/2015,16:30h - 16:45h,Retirada,Foyer I,Sessão II,área 7,PN0543,PN0588,PN
+4/9/2015,17:00h - 18:30h,Orientações para Reunião de grupos,Sala Cerejeira,Sessão I,área 1,PN0001,PN0017,PN
+4/9/2015,17:00h - 18:30h,Orientações para Reunião de grupos,Sala Amoreira I,Sessão I,área 2,PN0018,PN0067,PN
+4/9/2015,17:00h - 18:30h,Orientações para Reunião de grupos,Sala Carvalho III,Sessão I,área 6,PN0195,PN0231,PN
+4/9/2015,17:00h - 18:30h,Orientações para Reunião de grupos,Sala Carvalho II,Sessão I,área 7,PN0232,PN0277,PN
+4/9/2015,17:00h - 18:30h,Orientações para Reunião de grupos,Sala Seringueira,Sessão I,área 10,PN0278,PN0311,PN
+4/9/2015,17:00h - 18:30h,Orientações para Reunião de grupos,Sala Cerejeira,Sessão II,área 1,PN0312,PN0329,PN
+4/9/2015,17:00h - 18:30h,Orientações para Reunião de grupos,Sala Amoreira I,Sessão II,área 2,PN0330,PN0378,PN
+4/9/2015,17:00h - 18:30h,Orientações para Reunião de grupos,Sala Amoreira II,Sessão II,área 3,PN0379,PN0408,PN
+4/9/2015,17:00h - 18:30h,Orientações para Reunião de grupos,Sala Carvalho I,Sessão II,área 5,PN0409,PN0505,PN
+4/9/2015,17:00h - 18:30h,Orientações para Reunião de grupos,Sala Carvalho III,Sessão II,área 6,PN0506,PN0542,PN
+4/9/2015,17:00h - 18:30h,Orientações para Reunião de grupos,Sala Carvalho II,Sessão II,área 7,PN0543,PN0588,PN
+4/9/2015,17:00h - 18:30h,Orientações para Reunião de grupos,Sala Seringueira,Sessão II,área 10,PN0589,PN0622,PN
+4/9/2015,17:00h - 18:30h,Orientações para Reunião de grupos,Sala Amoreira II,Sessão I,área 3,PN0068,PN0097,PN
+4/9/2015,17:00h - 18:30h,Orientações para Reunião de grupos,Sala Carvalho I,Sessão I,área 5,PN0098,PN0194,PN
+4/9/2015,17:30h,Retirada,Foyer III,Pesquisa em Ensino,,,,PE
+5/9/2015,08:00h - 11:30h,Apresentação,Sala Cerejeira,Fórum Científico,,FC0012,FC0016,FC
+5/9/2015,11:30h - 11:45h,Retirada,Foyer II,ISSAO ,Sessão III,PI0305,PI0456,PI
+5/9/2015,11:30h - 11:45h,Retirada,Foyer I,Sessão III,área 1,PN0623,PN0640,PN
+5/9/2015,11:30h - 11:45h,Retirada,Foyer I,Sessão III,área 4,PN0641,PN0730,PN
+5/9/2015,11:30h - 11:45h,Retirada,Foyer I,Sessão III,área 5,PN0731,PN0828,PN
+5/9/2015,11:30h - 11:45h,Retirada,Foyer I,Sessão III,área 6,PN0829,PN0867,PN
+5/9/2015,11:30h - 11:45h,Retirada,Foyer I,Sessão III,área 8,PN0868,PN0898,PN
+5/9/2015,11:30h - 11:45h,Retirada,Foyer I,Sessão III,área 9,PN0899,PN0933,PN
+5/9/2015,12:45h,instalação,Foyer I,Sessão IV,área 5,PN1043,PN1140,PN
+5/9/2015,12:45h,instalação,Foyer I,Sessão IV,área 6,PN1141,PN1178,PN
+5/9/2015,12:45h,instalação,Foyer I,Sessão IV,área 8,PN1179,PN1209,PN
+5/9/2015,12:45h,instalação,Foyer I,Sessão IV,área 9,PN1210,PN1244,PN
+5/9/2015,12:45h,instalação,Foyer I,Sessão IV,área 1,PN0934,PN0951,PN
+5/9/2015,12:45h,instalação,Foyer I,Sessão IV,área 1,PN0952,PN1042,PN
+5/9/2015,16:30h - 16:45h,Retirada,Foyer II,ISSAO ,Sessão IV,PI0457,PI0608,PI
+5/9/2015,16:30h - 16:45h,Retirada,Foyer I,Sessão IV,área 5,PN1043,PN1140,PN
+5/9/2015,16:30h - 16:45h,Retirada,Foyer I,Sessão IV,área 8,PN1179,PN1209,PN
+5/9/2015,16:30h,instalação,Hall Jacarandá,Prêmio Joseph Lister 2015,,,,JL
+5/9/2015,07:30h,instalação,Foyer II,ISSAO ,Sessão III,PI0305,PI0456,PI
+5/9/2015,07:30h,instalação,Foyer I,Sessão III,área 1,PN0623,PN0640,PN
+5/9/2015,07:30h,instalação,Foyer I,Sessão III,área 4,PN0641,PN0730,PN
+5/9/2015,07:30h,instalação,Foyer I,Sessão III,área 5,PN0731,PN0828,PN
+5/9/2015,07:30h,instalação,Foyer I,Sessão III,área 6,PN0829,PN0867,PN
+5/9/2015,07:30h,instalação,Foyer I,Sessão III,área 8,PN0868,PN0898,PN
+5/9/2015,07:30h,instalação,Foyer I,Sessão III,área 9,PN0899,PN0933,PN
+5/9/2015,07:30h,instalação,Foyer III,Pesquisa Odontológica em Ação Coletiva,,,,PO
+5/9/2015,08:00h - 11:30h,Apresentação oral,Sala Amoreira I,,área 2,AO0057,AO0068,AO
+5/9/2015,08:00h - 11:30h,Apresentação oral,Sala Amoreira II,,área 3,AO0081,AO0092,AO
+5/9/2015,08:00h - 11:30h,Apresentação oral,Sala Carvalho I,,área 7,AO0106,AO0116,AO
+5/9/2015,08:00h - 11:30h,Apresentação oral,Sala Seringueira,,área 10,AO0128,AO0138,AO
+5/9/2015,08:00h - 11:30h,Apresentação,Sala Manacá,Prêmio Colgate Odontologia Preventiva,,COL0001,COL0005,COL
+5/9/2015,08:00h - 11:30h,Apresentação e arguição,Hall Jacarandá,,,HA0001,HA0012,HA
+5/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer II,ISSAO ,Sessão III,PI0305,PI0456,PI
+5/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer I,Sessão III,área 1,PN0623,PN0640,PN
+5/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer I,Sessão III,área 4,PN0641,PN0730,PN
+5/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer I,Sessão III,área 5,PN0731,PN0828,PN
+5/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer I,Sessão III,área 6,PN0829,PN0867,PN
+5/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer I,Sessão III,área 8,PN0868,PN0898,PN
+5/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer I,Sessão III,área 9,PN0899,PN0933,PN
+5/9/2015,08:00h - 11:30h,Apresentação,Foyer III,Pesquisa Odontológica em Ação Coletiva,,,,PO
+5/9/2015,12:45h,instalação,Foyer II,ISSAO ,Sessão IV,PI0457,PI0608,PI
+5/9/2015,13:00h - 16:30h,Apresentação,Sala Manacá,Prêmio Colgate Odontologia Preventiva,,COL0006,COL0010,COL
+5/9/2015,13:00h - 16:30h,Apresentação,Sala Cerejeira,Fórum Científico,,FC0017,FC0022,FC
+5/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer II,ISSAO ,Sessão IV,PI0457,PI0608,PI
+5/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer I,Sessão IV,área 5,PN1043,PN1140,PN
+5/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer I,Sessão IV,área 6,PN1141,PN1178,PN
+5/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer I,Sessão IV,área 8,PN1179,PN1209,PN
+5/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer I,Sessão IV,área 9,PN1210,PN1244,PN
+5/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer I,Sessão IV,área 1,PN0934,PN0951,PN
+5/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer I,Sessão IV,área 1,PN0952,PN1042,PN
+5/9/2015,13:00h - 16:45h,Apresentação oral,Sala Amoreira I,,área 2,AO0069,AO0080,AO
+5/9/2015,13:00h - 16:45h,Apresentação oral,Sala Amoreira II,,área 3,AO0093,AO0105,AO
+5/9/2015,13:00h - 16:45h,Apresentação oral,Sala Carvalho I,,área 7,AO0117,AO0127,AO
+5/9/2015,13:00h - 16:45h,Apresentação oral,Sala Seringueira,,área 10,AO0139,AO0150,AO
+5/9/2015,13:30h - 17:00h,Apresentação e arguição,Hall Jacarandá,,,HA0013,HA0024,HA
+5/9/2015,13:30h - 17:00h,Apresentação,Foyer III,Pesquisa Odontológica em Ação Coletiva,,,,PO
+5/9/2015,16:30h - 16:45h,Retirada,Foyer I,Sessão IV,área 6,PN1141,PN1178,PN
+5/9/2015,16:30h - 16:45h,Retirada,Foyer I,Sessão IV,área 9,PN1210,PN1244,PN
+5/9/2015,16:30h - 16:45h,Retirada,Foyer I,Sessão IV,área 1,PN0934,PN0951,PN
+5/9/2015,16:30h - 16:45h,Retirada,Foyer I,Sessão IV,área 1,PN0952,PN1042,PN
+5/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Carvalho III,Sessão IV,área 5,PN1043,PN1140,PN
+5/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Amoreira I,Sessão IV,área 6,PN1141,PN1178,PN
+5/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Carvalho I,Sessão IV,área 8,PN1179,PN1209,PN
+5/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Seringueira,Sessão IV,área 9,PN1210,PN1244,PN
+5/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Cerejeira,Sessão III,área 1,PN0623,PN0640,PN
+5/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Carvalho II,Sessão III,área 4,PN0641,PN0730,PN
+5/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Carvalho III,Sessão III,área 5,PN0731,PN0828,PN
+5/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Amoreira I,Sessão III,área 6,PN0829,PN0867,PN
+5/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Carvalho I,Sessão III,área 8,PN0868,PN0898,PN
+5/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Seringueira,Sessão III,área 9,PN0899,PN0933,PN
+5/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Cerejeira,Sessão IV,área 1,PN0934,PN0951,PN
+5/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Carvalho II,Sessão IV,área 1,PN0952,PN1042,PN
+5/9/2015,17:00h,Retirada e divulgação 12 finalistas,Hall Jacarandá,,,HA0001,HA0012,HA
+5/9/2015,17:30h,Retirada,Foyer III,Pesquisa Odontológica em Ação Coletiva,,,,PO
+6/9/2015,08:00h - 11:30h,Apresentação,Sala Cerejeira,Fórum Científico,,FC0023,FC0027,FC
+6/9/2015,11:30h - 11:45h,Retirada,Foyer II,ISSAO ,Sessão V,PI0609,PI0760,PI
+6/9/2015,11:30h - 11:45h,Retirada,Foyer I,Sessão V,área 2,PN1245,PN1293,PN
+6/9/2015,11:30h - 11:45h,Retirada,Foyer I,Sessão V,área 3,PN1294,PN1323,PN
+6/9/2015,11:30h - 11:45h,Retirada,Foyer I,Sessão V,área 4,PN1324,PN1412,PN
+6/9/2015,11:30h - 11:45h,Retirada,Foyer I,Sessão V,área 7,PN1413,PN1459,PN
+6/9/2015,11:30h - 11:45h,Retirada,Foyer I,Sessão V,área 8,PN1460,PN1488,PN
+6/9/2015,11:30h - 11:45h,Retirada,Foyer I,Sessão V,área 9,PN1489,PN1521,PN
+6/9/2015,11:30h - 11:45h,Retirada,Foyer I,Sessão V,área 10,PN1522,PN1555,PN
+6/9/2015,12:45h,instalação,Foyer I,Sessão VI,área 2,PN1556,PN1604,PN
+6/9/2015,12:45h,instalação,Foyer I,Sessão VI,área 3,PN1605,PN1635,PN
+6/9/2015,12:45h,instalação,Foyer I,Sessão VI,área 4,PN1636,PN1724,PN
+6/9/2015,12:45h,instalação,Foyer I,Sessão VI,área 7,PN1725,PN1771,PN
+6/9/2015,12:45h,instalação,Foyer I,Sessão VI,área 8,PN1772,PN1800,PN
+6/9/2015,12:45h,instalação,Foyer I,Sessão VI,área 9,PN1801,PN1834,PN
+6/9/2015,12:45h,instalação,Foyer I,Sessão VI,área 10,PN1835,PN1867,PN
+6/9/2015,16:30h - 16:45h,Retirada,Foyer II,ISSAO ,Sessão VI,PI0761,PI0911,PI
+6/9/2015,16:30h - 16:45h,Retirada,Foyer I,Sessão VI,área 2,PN1556,PN1604,PN
+6/9/2015,07:30h,instalação,Foyer II,ISSAO ,Sessão V,PI0609,PI0760,PI
+6/9/2015,07:30h,instalação,Foyer I,Sessão V,área 2,PN1245,PN1293,PN
+6/9/2015,07:30h,instalação,Foyer I,Sessão V,área 3,PN1294,PN1323,PN
+6/9/2015,07:30h,instalação,Foyer I,Sessão V,área 4,PN1324,PN1412,PN
+6/9/2015,07:30h,instalação,Foyer I,Sessão V,área 7,PN1413,PN1459,PN
+6/9/2015,07:30h,instalação,Foyer I,Sessão V,área 8,PN1460,PN1488,PN
+6/9/2015,07:30h,instalação,Foyer I,Sessão V,área 9,PN1489,PN1521,PN
+6/9/2015,07:30h,instalação,Foyer I,Sessão V,área 10,PN1522,PN1555,PN
+6/9/2015,08:00h - 11:30h,Apresentação oral,Sala Carvalho I,,área 1 ,AO0151,AO0158,AO
+6/9/2015,08:00h - 11:30h,Apresentação oral,Sala Amoreira II,,área 5 ,AO0168,AO0179,AO
+6/9/2015,08:00h - 11:30h,Apresentação oral,Sala Amoreira I,,área 6 ,AO0192,AO0203,AO
+6/9/2015,08:00h - 11:30h,Apresentação,Sala Manacá,Prêmio Colgate Odontologia Preventiva,,COL0011,COL0015,COL
+6/9/2015,08:00h - 11:30h,Apresentação e arguição,Hall Jacarandá,6 trabalhos,,,,HA
+6/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer II,ISSAO ,Sessão V,PI0609,PI0760,PI
+6/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer I,Sessão V,área 2,PN1245,PN1293,PN
+6/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer I,Sessão V,área 3,PN1294,PN1323,PN
+6/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer I,Sessão V,área 4,PN1324,PN1412,PN
+6/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer I,Sessão V,área 7,PN1413,PN1459,PN
+6/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer I,Sessão V,área 8,PN1460,PN1488,PN
+6/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer I,Sessão V,área 9,PN1489,PN1521,PN
+6/9/2015,08:00h - 11:30h,Apresentação e arguição,Foyer I,Sessão V,área 10,PN1522,PN1555,PN
+6/9/2015,12:45h,instalação,Foyer II,ISSAO ,Sessão VI,PI0761,PI0911,PI
+6/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer II,ISSAO ,Sessão VI,PI0761,PI0911,PI
+6/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer I,Sessão VI,área 2,PN1556,PN1604,PN
+6/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer I,Sessão VI,área 3,PN1605,PN1635,PN
+6/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer I,Sessão VI,área 4,PN1636,PN1724,PN
+6/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer I,Sessão VI,área 7,PN1725,PN1771,PN
+6/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer I,Sessão VI,área 8,PN1772,PN1800,PN
+6/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer I,Sessão VI,área 9,PN1801,PN1834,PN
+6/9/2015,13:00h - 16:30h,Apresentação e arguição,Foyer I,Sessão VI,área 10,PN1835,PN1867,PN
+6/9/2015,13:00h - 16:45h,Apresentação oral,Sala Carvalho I,,área 1 ,AO0159,AO0167,AO
+6/9/2015,13:00h - 16:45h,Apresentação oral,Sala Amoreira II,,área 5,AO0180,AO0191,AO
+6/9/2015,13:00h - 16:45h,Apresentação oral,Sala Amoreira I,,área 6 ,AO0204,AO0215,AO
+6/9/2015,13:30h - 17:00h,Apresentação e arguição,Hall Jacarandá,6 trabalhos,,,,HA
+6/9/2015,16:30h - 16:45h,Retirada,Foyer I,Sessão VI,área 3,PN1605,PN1635,PN
+6/9/2015,16:30h - 16:45h,Retirada,Foyer I,Sessão VI,área 4,PN1636,PN1724,PN
+6/9/2015,16:30h - 16:45h,Retirada,Foyer I,Sessão VI,área 7,PN1725,PN1771,PN
+6/9/2015,16:30h - 16:45h,Retirada,Foyer I,Sessão VI,área 8,PN1772,PN1800,PN
+6/9/2015,16:30h - 16:45h,Retirada,Foyer I,Sessão VI,área 9,PN1801,PN1834,PN
+6/9/2015,16:30h - 16:45h,Retirada,Foyer I,Sessão VI,área 10,PN1835,PN1867,PN
+6/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Carvalho II,Sessão V,área 2,PN1245,PN1293,PN
+6/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Amoreira I,Sessão V,área 3,PN1294,PN1323,PN
+6/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Amoreira II,Sessão V,área 4,PN1324,PN1412,PN
+6/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Carvalho III,Sessão V,área 7,PN1413,PN1459,PN
+6/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Carvalho I,Sessão V,área 8,PN1460,PN1488,PN
+6/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Cerejeira,Sessão V,área 9,PN1489,PN1521,PN
+6/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Seringueira,Sessão V,área 10,PN1522,PN1555,PN
+6/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Carvalho II,Sessão VI,área 2,PN1556,PN1604,PN
+6/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Amoreira I,Sessão VI,área 3,PN1605,PN1635,PN
+6/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Amoreira II,Sessão VI,área 4,PN1636,PN1724,PN
+6/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Carvalho III,Sessão VI,área 7,PN1725,PN1771,PN
+6/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Carvalho I,Sessão VI,área 8,PN1772,PN1800,PN
+6/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Cerejeira,Sessão VI,área 9,PN1801,PN1834,PN
+6/9/2015,17:00h - 18:30h, Reunião de grupo,Sala Seringueira,Sessão VI,área 10,PN1835,PN1867,PN
+6/9/2015,17:00h,Retirada e divulgação 6 finalistas,Hall Jacarandá,,,,,HA
+7/9/2015,08:00h - 11:00h,Apresentação e arguição,Hall Jacarandá,,,,,HA
+7/9/2015,11:00h,Retirada,Hall Jacarandá,,,,,HA

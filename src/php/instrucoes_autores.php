@@ -41,36 +41,23 @@ $doc->encoding = 'UTF-8';
 $xp = new DOMXpath($doc);
 $xq_sec = "//section"; //[.//p[@class='range-resumos'] and .//span[@class='location1']]
 $xq_td = "//td";  //
-foreach($xp->query("$xq_sec | $xq_td") as $node) if (  preg_match('/(PE|PO|HA|COL|JL|AO|FC|PI|PN)\s*(\d{1,4})/s',$node->textContent,$m) ) {
-		$sec0 = $m[1];
-		$id0 = sprintf("$sec0%04d", $m[2]);
-		$tipo = $node->nodeName;
 
-		if ($tipo=='td')
-			$hasRangeClass = ($node->getAttribute('class') == 'range-resumos');
-		else
-			$hasRangeClass = $xp->evaluate("boolean(.//*[@class='range-resumos'])",$node);
-		$hasLocationClass = $xp->evaluate("boolean(.//span[@class='location1'])",$node);
-
-		$dump = preg_replace('/\n\s+/',"\n\t",$node->textContent);
-		$dump = "\n\t".trim($dump);
-		if (isset($io_options['normaliza'])){
-			if ($hasRangeClass) {
-				if ($tipo=='td')
-					$node->nodeValue='#MUDARIA1_RANGE_AQUI#';
-				else
-					$xp->query(".//*[@class='range-resumos']",$node)->item(0)->nodeValue='#MUDARIA2_RANGE_AQUI#';
-			}
-			if ($hasLocationClass) //&& $spanode->length)
-				$xp->query(".//span[@class='location1']",$node)->item(0)->nodeValue='#MUDARIA3_LOCAL_AQUI#';
-
-		} else {
-			$h1 = $hasRangeClass?    'tem range':    'SEM range';			
-			$h2 = $hasLocationClass? 'tem location': 'SEM location';			
-			print "\n--- $tipo-dump($id0 | $h1 | $h2) $dump";
-		}
-	}
 if (isset($io_options['normaliza'])) {
+	foreach($xp->query("//span[@class='location1']") as $node) {
+		$span = $node;
+		list($idloc,$name) = localValido($span->nodeValue,2);
+		$span->setAttribute('idref',$idloc);
+		if ($name) $span->nodeValue = $name;
+	}
+	foreach($xp->query("//td[@class='range-resumos']") as $node) {
+		$val = $node->nodeValue;
+		$val = preg_replace_callback(
+			'/PN\s*(\d+)[\s\-a]+(?:PN)?\s*(\d+)/su'
+			,function ($m){return sprintf("PN%04d - PN%04d",$m[1],$m[2]);}
+			,$val
+		);
+		$node->nodeValue=$val;
+	}
 	$doc->encoding = 'UTF-8';
 	print $doc->saveHTML();
 }

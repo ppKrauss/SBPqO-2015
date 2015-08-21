@@ -33,7 +33,9 @@ $showDomWarnings = isset($io_options['warnings']);
 $file = 'php://stdin';
 
 if ( isset($io_options['tpl1']) ) {   // cmd tpl1
-	$xml = csv2xmlByHead(isset($io_options['in'])? $io_options['in']: $file, 'EVENTO');
+	$xml = csv2xmlByHead(isset($io_options['in'])? $io_options['in']: $file, 'EVENTO',1);
+	$xml = XML_HEADER1.str_replace('<br>','<br/>',$xml);
+	//die($xml);
 	if ( isset($io_options['xsltFile']) ) {
 		$xsl2 = $io_options['xsltFile'];
 		$xsl1 = str_replace('.xsl','_pre.xsl',$xsl2);

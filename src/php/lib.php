@@ -160,7 +160,7 @@ foreach($csvFiles_rowByKey as $name=>$rec) {
 }
 $idLoc = array_column( $csvFiles_rowByKey['local'][2], 1,0);
 $valiDia = array_flip( array_column( $csvFiles_rowByKey['programacaoGrupoDia'][2], 3,1) );
-
+//var_dump($valiDia);
 
 /**
  *  CARGA DOS DESCRITORES DE CADA RESUMO:	
@@ -234,6 +234,82 @@ if (csv_get(
     foreach($dayLocais_bySec as $daysec=>$a)
     	$dayLocais_bySec[$daysec] = join('; ',array_keys($a));
 }
+
+
+/*
+ *  CARGA GAMBI de instrucoes:	
+$instrGAMBI = [];
+if (convCsv(
+	"$io_baseDir/../$pastaDados/conteudoExtra/InstrucoesAutores/instrucoes_claudio.csv"
+	//0='Data',1=hora,2=Atividade,3=Local,4=sessao,5=area,6=range,sec
+	// 4-Sep, 11:30 - 11:45h,Retirada,Foyer 2,ISSAO ,Sessão I,PI0001 - PI0152,PI
+	,function ($tmp) use (&$instrGAMBI) {
+		if (preg_match('/^\s*(\d+)/',$tmp[0],$m)) {
+			$tmp[0] = sprintf("%02d-09-2015",$m[1]);
+			$tmp[3] = localValido($tmp[3]);		
+			if (preg_match('/([\d:]+)h?[\s\-]*([\d:]+)?h?/s',$tmp[1],$m)) {
+				$tmp[1] = "$m[1]h".(isset($m[2])?" - $m[2]h":'');
+			}
+			$sec = '';
+			if (preg_match('/([A-Z]{2,3})\s*(\d+)[\s\-a]+([A-Z]{2,3})\s*(\d+)/s',$tmp[6],$m)) {
+				$sec = $m[1];
+				$tmp[6] = sprintf("%s%04d",$sec,$m[2]);
+				$tmp[7] = sprintf("%s%04d",$m[3],$m[4]);
+			}	
+			$tmp[] = $sec;
+		}
+		return $tmp;
+	} // func
+	,','
+)) die("\nFIM\n");
+*/
+
+/**
+ *  CARGA DOS DESCRITORES DE CADA RESUMO:	
+ */
+$instrucoes_autores = [];
+$PNgrupo = [];
+if (!csv_get(
+	"$io_baseDir/../$pastaDados/conteudoExtra/InstrucoesAutores/instrucoes_autores.csv"
+	,'Data'
+	,function ($tmp) use (&$instrucoes_autores, &$PNgrupo) {
+		// Data,hora,Atividade,Local,sessao,area,res_ini,res_fim,sec
+		list($diaIso,$dia) = dayFormat($tmp[0]);
+		$idr1 = $tmp[6]; // primeiro resumo do range
+		$hora0 = substr($tmp[1],0,5);
+		$horario = $tmp[1];
+    	$instrucoes_autores["$idr1 $diaIso $hora0"] = [
+    		'dia'=>$dia, 'horario'=>$horario, 'range'=>"$tmp[6] - $tmp[7]", 'local'=>$tmp[3],
+    		'r0'=>$tmp[6], 'r1'=>$tmp[7], 
+    	];
+    	if (preg_match('/\sgrupos?/si', $tmp[2])) { // REUNIOES DE GRUPO
+    		$sec = substr($tmp[6],0,2);
+    		if ($sec=='PN') {
+	    		$r1 = (int) substr($tmp[6],2);
+	    		$r2 = (int) substr($tmp[7],2);
+				list($idloc,$locname) = localValido($tmp[3],2);
+				list($h1,$h2) = preg_split('/[\s\-]+/s', $horario);
+//print "\n-- skdjs $tmp[6] - $r1 $r2";
+	    		for($i=$r1; $i<=$r2; $i++) {// scan all resumos
+					$PNgrupo[sprintf("PN%04d",$i)] = [
+						'dia'=>$dia,     'horario'=>$horario, 'h1'=>$h1, 'h2'=>$h2,
+						'idloc'=>$idloc, 'local'=>$locname 
+					];
+					//print " - ".sprintf("PN%04d",$i);
+				}
+    		}
+	    	$instrucoes_autores["$idr1 grupo"] = [
+	    		'dia'=>$dia, 'horario'=>$horario, 'range'=>"$tmp[6] - $tmp[7]", 'local'=>$tmp[3],
+	    		'r0'=>$tmp[6], 'r1'=>$tmp[7], 
+	    	];    		
+    	}
+	} // func
+)) {
+   die("\nERRO 34341\n");
+}
+
+//var_dump($PNgrupo); die("\nDEBHGjsdhdhs");
+
 
 /**
  * CARGA DE OPTIONS:	
@@ -694,13 +770,25 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 					$idloc = domParser::setIdname('loc',$local,TRUE);
 					// DESATIVANDO A CONDIÇÂO PN!
 					if 	($sec=='PN') { // faz uso de dois locais!
-						$event2 = "
-						<event2>
-							<summary>Reunião de Grupo</summary>
-							<period><start day=\"$dia\">#HORA#</start><end>#HORA#</end></period>
-							<location idref='#IDLOC#'>#SALAX#</location>
-						</event2>";
-						//$local = "#SALA-X#";
+						global $PNgrupo;
+						if (isset($PNgrupo[$id])) {
+							$dia2 = $PNgrupo[$id]['dia'];
+							$hora1 = $PNgrupo[$id]['h1'];
+							$hora2 = $PNgrupo[$id]['h2'];
+							$local2 = $PNgrupo[$id]['local'];
+							$idloc2 = $PNgrupo[$id]['idloc'];
+							$event2 = "
+							<event2>
+								<summary>Reunião de Grupo</summary>
+								<period><start day=\"$dia2\">$hora1</start><end>$hora2</end></period>
+								<location idref='$idloc2'>$local2</location>
+							</event2>";							
+						} else
+							$event2 = "
+							<event2>
+								<summary>Reunião de Grupo</summary>
+								<period>ERRO334 em $id</period><location>ERRO335</location>
+							</event2>";	
 						$idloc = domParser::setIdname('loc',$local,TRUE);	
 					}
 					$ele2->appendXML(
@@ -711,6 +799,8 @@ class domParser extends DOMDocument { // refazer separando DOM como no RapiDOM!
 						.$event2
 						."</components></vcalendar>"
 					);
+					//var_dump($idloc,$local); die("\n-- AQUIDEBUG\n");
+
 					$art->appendChild($ele2); // o primeiro já é iniciado
 
 					$ele2 = $auxDom->createDocumentFragment();
@@ -1067,19 +1157,33 @@ function xsl_regRestore($type,$secid){
 }
 
 function dayFormat($s){
+	global $valiDia;	
 	$s2='';
+	$s=trim($s);
 	$s0=$s;
-	if (!trim($s))
+
+	if ($s=='4/9/2015')
+		return ['2015-09-06','04/09/2015'];
+	elseif ($s=='3/9/2015')
+		return ['2015-09-03','03/09/2015'];	 // data de preparo do evento
+	elseif ($s=='5/9/2015')
+		return ['2015-09-05','05/09/2015'];
+	elseif ($s=='6/9/2015')
+		return ['2015-09-06','06/09/2015'];
+	elseif ($s=='7/9/2015')
+		return ['2015-09-07','07/09/2015'];
+	elseif (!trim($s))
 		return array("ERR_DAY0-iso","ERR_DAY0-ext");
+
 	if (preg_match('/(\d\d+)\-?(\d*)\-?(\d*)/',$s,$m))
 		$s2 = "$m[3]/$m[2]/$m[1]";
-	elseif (preg_match('|(\d)(\d?)/(\d)(\d?)/(\d\d+)|',$s,$m)) {
+	elseif (preg_match('|(\d)(\d?)/(\d)(\d?)/(\d\d+)|',$s,$m)) { // 6/9/2015, //2015,
 		$s2 = $s;
 		$dia = $m[2]? "$m[1]$m[2]": "0$m[1]";
 		$mes = $m[4]? "$m[3]$m[4]": "0$m[3]";
 		$s = "$m[5]-$mes-$dia";
 	}
-	global $valiDia;
+	if (!isset($valiDia[$s])) print "\n--- $s, $s2, ";
 	if (!isset($valiDia[$s]))
 		return array("ERR_DAY2-iso $s","ERR_DAY2-br $s0");
     	// die("\n ERRO 233 no resumo $rid: $dayISO invalida.\n");  
@@ -1292,24 +1396,28 @@ function showerr($cod,$msg=''){
 }
 
 
-
 /**
  * SSV to CSV, a util tool.
  */
-function convCsv($fileIn) {
+function convCsv($fileIn,$func=NULL,$SEP_IN=';') {
 	global $CSV_SEP;
-	$CSV_SEP = ';'; // PERIGO
-	$fp2 = fopen("$fileIn.csv", 'w');
+	$CSV_SEP0 = $CSV_SEP;
+	$CSV_SEP = $SEP_IN; // afeta csv_get()
+	$fp2 = fopen("$fileIn.CSV", 'w');
 	if (csv_get(
 		$fileIn
 		,''
-		,function ($tmp) use (&$fp2) {
+		,function ($tmp) use (&$fp2,$func) {
+			if ($func!==NULL)
+				$tmp=$func($tmp);
 			fputcsv($fp2, $tmp);
-		} // func
+		}
 	))
 		fclose($fp2);
 	else
 		die("\nERRO ao abrir arquivo '$fileIn'\n");
+	$CSV_SEP = $CSV_SEP0;
+	return 1;
 }
 
 
@@ -1333,10 +1441,12 @@ function csv2htable($fileIn) {
 /**
  * CSV to XML with tags by CSV_HEAD.
  */
-function csv2xmlByHead($fileIn,$valPreserve=FALSE) {
+function csv2xmlByHead($fileIn,$valPreserve=FALSE,$gambi=false) {
 	$CSV_HEAD = $out='';
-	$fconv = function ($tmp) use (&$out,$valPreserve) {
+	$fconv = function ($tmp) use (&$out,$valPreserve,$gambi) {
 		global $CSV_HEAD;
+		if ($gambi)
+			$tmp[5] = localValido($tmp[5]);
 		$out .= "\n<tr>".array_xml($CSV_HEAD,$tmp,$valPreserve)."</tr>";
 	};
 	if ( csv_get($fileIn,'',$fconv) ) 
@@ -1361,8 +1471,12 @@ function array_xml($tags,$vals,$valPreserve=TRUE,$line='') {
 	return $out;
 }
 
+/**
+ * Normaliza nome de local. $retID true, retorna ID do local, retID==2 retorna array ambos, senao só nome.
+ */
 function localValido($s,$retID=FALSE){
 	global $idLoc;
+	//if ($retID) print "\n -- debug local: $retID.";
 	$local = preg_replace('/([\-–])/u', ' $1 ', $s);
 	$local = trim(preg_replace('/\s+/u', ' ', $local));
 	if (!isset($idLoc[$local])) {
@@ -1378,7 +1492,11 @@ function localValido($s,$retID=FALSE){
 	if (!isset($idLoc[$local]))
 		$local = "$local I";
 	//if (!isset($idLoc[$local])) die("SEM '$s'=$local");
-    return isset($idLoc[$local])? ($retID? $idLoc[$local]: $local): '';
+	$ret = isset($idLoc[$local])? ($retID? $idLoc[$local]: $local): '';
+	if ($ret)
+		return ($retID===2)? array($ret,$local): $ret;
+	else
+		return ($retID===2)? array('',''): '';
 }
 
 ?>
