@@ -42,12 +42,14 @@
 	<xsl:variable name="day" select="@id"/>
 
 	<div class="panel panel-default menu gray-border-accordion">
-	    <div class="remote list-group-item accordion-button" data-toggle="collapse" data-parent="#accordion" href="#{$day}">
-	        <p class="panel-title"><xsl:value-of select="infoGrupo/DESCRICAO"/> 
-	        	<!-- | <xsl:value-of select="data_br"/>-->
-	    	</p>
-	    </div>
-	    <div id="day1" class="panel-collapse collapse gray-border-accordion-content">
+	    <a data-toggle="collapse" data-parent="#accordion" href="#{$day}">
+			<div class="remote list-group-item accordion-button">
+				<p class="panel-title"><xsl:value-of select="infoGrupo/DESCRICAO"/>
+					<!-- | <xsl:value-of select="data_br"/>-->
+				</p>
+			</div>
+		</a>
+	    <div id="{$day}" class="panel-collapse collapse gray-border-accordion-content">
 	        <div class="panel-body">
 	        	<xsl:apply-templates select="ITEM"/>
 	        </div>
@@ -59,7 +61,7 @@
     <section id="{@id}">
 		<p><strong><xsl:value-of select="EVENTO"/></strong></p>
 		<p><strong>Horário: </strong><xsl:value-of select="HORA_INI"/>h <xsl:if test="normalize-space(HORA_FIM)">- <xsl:value-of select="HORA_FIM"/>h</xsl:if></p>
-		<p><strong>Local: </strong><span class="location1" idref="{@idref-loc}"><xsl:value-of select="LOCAL"/></span></p>
+		<p><strong>Local: </strong><a class="location1" href="#" idref="{@idref-loc}"><xsl:value-of select="LOCAL"/></a></p>
         <hr/>
     </section>
 </xsl:template>
