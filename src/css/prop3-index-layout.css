@@ -1,0 +1,339 @@
+/*----------------------------------------Formato da página--------------------------------------------------*/
+@page { 
+	size: A4;
+}
+
+
+@page:left{
+    margin: 5mm 0 10mm 5mm;
+}
+
+/*par*/
+@page:right{
+   margin: 5mm 0 10mm 5mm;
+}
+
+/*-------------------------------------------------paginação---------------------------------------------------------*/
+body {
+    display: block;
+    page: table-of-contents;
+    counter-reset: page 18;
+}
+
+/* impares */
+@page:left{
+    
+    @bottom-left{      
+        content: "Proceedings of the 30th SBPqO Annual Meeting    ";
+        font-family:SabonLTStd-Roman;
+        font-size: 6pt;
+        text-align: right;  
+
+        padding-right: 1%; 
+
+        padding-bottom: 80%;
+
+    }
+    @bottom-right{
+        margin-top: 0;
+        content:counter(page);
+         border-left: solid 1pt #9b9d9f;
+        font-family:FuturaBT-Heavy;
+        font-size: 7pt; 
+        font-weight: bold;
+        text-align: left;
+        padding-bottom: 80%;
+
+
+        /* custom ANP 
+        margin-left: 10mm;
+        margin-bottom: 7mm;
+        */
+
+    }
+}
+/* pares */
+@page:right{
+    
+    @bottom-right{      
+        content: "Proceedings of the 30th SBPqO Annual Meeting";
+        font-family:SabonLTStd-Roman;
+        font-size: 6pt;
+        text-align: left;   
+
+        border-left: solid 1pt #9b9d9f;
+        margin-right: 40%;
+
+        padding-bottom: 80%;
+        padding-left: 1%;
+
+        padding-right: 20%; 
+    }
+    @bottom-left{
+        margin-top: 0;
+        content:counter(page);
+        font-family:FuturaBT-Heavy;
+        font-size: 7pt; 
+        font-weight: bold;
+        text-align: left;
+
+        margin-bottom: 80%;
+
+
+        /* custom ANP 
+        margin-left: 10mm;
+        margin-bottom: 7mm;
+        */
+
+    }
+}
+/*----------------------------------------------------------fonts------------------------------------------------------*/
+@font-face {
+    font-family: FuturaBT-Heavy;
+    src: url(./fonts/FuturaBT-Heavy.ttf);
+}
+@font-face {
+    font-family:  FuturaBT-HeavyItalic;
+    src: url(./fonts/FuturaBT-HeavyItalic.ttf);
+}
+@font-face {
+    font-family:  FuturaBT-Light;
+    src: url(./fonts/FuturaBT-Light.otf);
+}
+@font-face {
+    font-family:  FuturaBT-LightItalic;
+    src: url(./fonts/FuturaBT-LightItalic.ttf);
+}
+@font-face {
+    font-family:  SabonLTStd-Roman;
+    src: url(./fonts/SabonLTStd-Roman.otf);
+}
+
+
+@font-face {
+    font-family:  SabonLTStd-Italic;
+    src: url(./fonts/SabonLTStd-Italic.otf);
+}
+/*----------------------------------------------------------------------------------------------------------------*/
+
+.sec { page-break-after: always;
+
+}
+
+p.secTitle{
+    background-color: #9b9d9f;
+    color: #fff;
+    width: 97.2%;
+    height: 7mm;
+    text-align: center;
+
+    padding-top: 3mm;
+
+    font-family: FuturaBT-Heavy;
+    font-size: 10pt;
+
+    margin-bottom: 2mm;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+div.title-block{
+    width: 85%;
+
+   padding-top: .5pt;
+}
+
+span+div{
+    margin-left: 12.5mm;
+}
+
+div>p{
+    margin-bottom: 2pt;
+    margin-top: 2pt;
+}
+
+hr{
+    display: block; 
+    width: 100%;
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #9b9d9f;
+
+}
+hr+span{
+    margin: -1pt 0;
+}
+div.aux{
+    display: block;
+    background-color: black;
+
+    margin-bottom: 0;
+    padding: 0 0;
+
+}
+
+span.pubid{
+
+    float: left;
+
+    color: #fff;
+    background-color: #9b9d9f;
+
+
+    padding: 2pt 2pt; 
+
+    font-family: FuturaBT-Heavy;
+    font-size: 7pt;
+    
+    /*margin-right: 88%;*/
+
+    text-align: center;
+    text-transform:uppercase;
+    text-indent: 0;
+
+    margin-right: 5pt;
+}
+
+/*
+div.section {
+    width:100%;
+    max-width:800px;    
+    text-align:left;    
+  
+    font-family: sans-serif;
+    font-size: 6pt;
+
+}
+
+div.article {
+    display: inline-block;
+    overflow:auto;    
+    height: 86mm;   
+    width: 83mm;         
+    margin: 4pt;          
+    vertical-align: top; 
+    text-align:justify;
+    padding:0;
+
+    page-break-inside: avoid;
+
+}
+*/
+
+
+div.sec{
+    width:100%;
+    max-width:800pt;    /* A. max horizontal number of boxes =~ int(A/B) */
+    margin:0 auto;
+    text-align:left;    /* (left|center) align last boxes and the set vert. line */
+
+    font-family: sans-serif;
+    font-size: 4pt;
+}
+div.article {
+    display: inline-block;
+    overflow:auto;    
+    /*height: 77mm;*/    /* B. change the vertical numb. of boxes */
+    width: 97.9mm;        /* C. change the horizontal numb. of boxes*/
+    margin-right:3mm;         /*  boxes separator */
+    vertical-align: top; /* (top|bottom) align boxes */
+    text-align:justify;
+    /*padding:6pt;*/
+
+    page-break-inside: avoid;
+
+    /*border:solid 1px #ccc;*/
+
+    margin-bottom: 4pt;
+}
+
+
+p.title{
+    text-align: left;
+
+    font-family: FuturaBT-Heavy;
+
+    font-size: 5pt;
+
+    line-height: 8pt;
+
+}
+
+div.aux+div.contrib-group{
+    margin: 0 0;
+    padding: 0 0;
+}
+
+div.contrib-group{
+    display: inline-block;
+    width: 90%;
+
+    text-align: left;
+
+    margin-top: .8pt;
+
+
+}
+
+span.contrib{
+    display: inline;
+    text-align:left;
+    text-decoration:none;
+
+    font-style: italic;
+
+    text-align: left;
+
+    font-family: FuturaBT-LightItalic;
+    font-size: 5pt;
+
+}
+p.aff
+{
+    text-align: left;
+    font-family: FuturaBT-Light;
+    font-size: 5pt;
+
+}
+
+p.corresp{
+    text-align: left;
+    font-family: FuturaBT-Light;
+    font-size: 5pt;
+
+}
+/*
+p.abstract::first-letter
+{
+    font-size:200%;
+    font-family: FuturaBT-Heavy;
+}
+*/
+p.abstract{
+    font-family: SabonLTStd-Roman;
+    font-size: 5pt;
+
+    line-height: 8pt;
+
+    margin-top: 4pt;
+}
+
+p.conclusion{
+    line-height: 7pt;
+    font-size: 5pt;
+    font-style: italic;
+
+    margin-top: 2pt;
+
+    font-family: SabonLTStd-Italic;
+}
+
+sup, sub{
+    font-size: 3pt;
+    margin: 0 0;
+    padding: 0 0;
+    line-height: 3pt;
+}

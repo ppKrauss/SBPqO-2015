@@ -1,0 +1,22 @@
+div.title-block{
+    width: 85%;
+    font-size: 7.2pt;
+    padding-top: .5pt;
+}
+
+span.contrib{
+    font-size: 7pt;
+}
+
+
+/*--------------Formato da página------------------------*/
+@page { 
+    size: 210mm 280mm;;
+}
+@page:left{
+    margin: 19mm 3mm 11mm 20mm;
+}
+@page:right{
+   margin: 19mm 12mm 11mm 11mm;
+}
+/*------------------------fim----------------------------*/

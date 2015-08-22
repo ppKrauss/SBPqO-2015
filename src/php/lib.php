@@ -118,12 +118,10 @@ $FILTRO['func'] = function ($out,$regrasTroca=NULL,$utfEncode=TRUE) use (&$FILTR
 
 define ('XML_HEADER1', '<?xml version="1.0" encoding="UTF-8"?>');
 //setlocale (LC_COLLATE, 'pt_br');
-date_default_timezone_set('Brazil/East');
-setlocale(LC_ALL,'pt_BR.UTF8'); // ou setlocale( LC_ALL, 'pt_BR.utf-8', 'pt_BR', 'Portuguese_Brazil');
+date_default_timezone_set('America/Sao_Paulo'); // deprecated 'Brazil/East'
+setlocale(LC_ALL,'pt_BR.UTF8');
 mb_internal_encoding('UTF8'); 
 mb_regex_encoding('UTF8');
-
-
 
 
 $NTOTAL        = 0;
@@ -156,11 +154,10 @@ foreach($csvFiles_rowByKey as $name=>$rec) {
 	}) )
 		$csvFiles_rowByKey[$name][2]['CSV_HEAD'] = $CSV_HEAD; // transforma tudo em hash
 	else 
-		die("\n ERRO AO cARREGAR '$name'\n");
+		die("\n ERRO AO CARREGAR '$name'\n");
 }
 $idLoc = array_column( $csvFiles_rowByKey['local'][2], 1,0);
 $valiDia = array_flip( array_column( $csvFiles_rowByKey['programacaoGrupoDia'][2], 3,1) );
-//var_dump($valiDia);
 
 /**
  *  CARGA DOS DESCRITORES DE CADA RESUMO:	
@@ -1154,48 +1151,42 @@ function xsl_regRestore($type,$secid){
 	}
 }
 
-function dayFormat($s){
-	global $valiDia;	
-	$s2='';
-	$s=trim($s);
-	$s0=$s;
-	if (preg_match('|(\d+)/(\d+)/(\d\d+)|s',$s,$m)) // força para data válida
-		return [sprintf('2015-09-%02d',$m[1]), sprintf('%02d/09/2015',$m[1])];
-	if ($s=='4/9/2015')
-		return ['2015-09-06','04/09/2015'];
-	elseif ($s=='3/9/2015')
-		return ['2015-09-03','03/09/2015'];	 // data de preparo do evento
-	elseif ($s=='5/9/2015')
-		return ['2015-09-05','05/09/2015'];
-	elseif ($s=='6/9/2015')
-		return ['2015-09-06','06/09/2015'];
-	elseif ($s=='7/9/2015')
-		return ['2015-09-07','07/09/2015'];
-	elseif (!trim($s))
-		return array("ERR_DAY0-iso","ERR_DAY0-ext");
 
-	if (preg_match('/(\d\d+)\-?(\d*)\-?(\d*)/',$s,$m))
-		$s2 = "$m[3]/$m[2]/$m[1]";
-	elseif (preg_match('|(\d)(\d?)/(\d)(\d?)/(\d\d+)|',$s,$m)) { // 6/9/2015, //2015,
-		$s2 = $s;
-		$dia = $m[2]? "$m[1]$m[2]": "0$m[1]";
-		$mes = $m[4]? "$m[3]$m[4]": "0$m[3]";
-		$s = "$m[5]-$mes-$dia";
-	}
-	if (!isset($valiDia[$s])) print "\n--- $s, $s2, ";
-	if (!isset($valiDia[$s]))
-		return array("ERR_DAY2-iso $s","ERR_DAY2-br $s0");
-    	// die("\n ERRO 233 no resumo $rid: $dayISO invalida.\n");  
+
+/**
+ * Date parse for any dates and validating context. Use strtotime().
+ * @param $s string, the input "any date".
+ * @param $valid mix, associative array of iso dates; string 'global' for the associative global;
+ *        string "iso1 iso2" for iso dates closed range; string for year or iso "year-month".
+ */
+function dayFormat($s,$valid='global',$onlyIso=FALSE) {
+	$t = strtotime($s); // not need trim
+	if (!$t)
+		$t = strtotime( str_replace('/','-',$s) );
+	$iso = date("Y-m-d", $t);
+	$ok = $len = 1;
+	if (is_array($valid))  		// param array
+		$ok = isset($valid[$iso]);
+	elseif ($valid=='global') {	// global array
+		global $valiDia;		
+		$ok = isset($valiDia[$iso]);
+	} elseif (($p=explode(' ',$valid)) && count($p)>1) {
+		$t0 = strtotime($p[0]); $t1 = strtotime($p[1]);
+		$ok = ($t>=$t0 && $t<=$t1);
+	} elseif ($valid && ($len=strlen($valid))>=4)
+		$ok = (substr($iso,0,($len<=7)?$len:7)==$valid);
+	// else no validation
+	if ($ok)
+	    return $onlyIso? $iso: array( $iso, date("d/m/Y",$t) );
 	else
-	    return array($s,$s2);
+		return $onlyIso? "ERR": array( "ERR", "ERR" );
 }
-function dayIso($s){
-	list($s,$s2) = dayFormat($s);
-	return $s;
+function dayIso($s,$valid='global') {
+	return dayFormat($s,$valid,TRUE);
 }
-function xsl_dayFormat($s){
-	list($s,$s2) = dayFormat($s);
-    return DOMDocument::loadXML("<day iso='$s'>$s2</day>");
+function xsl_dayFormat($s,$valid='global') {
+	list($iso,$br) = dayFormat($s,$valid,FALSE);
+    return DOMDocument::loadXML("<day iso='$iso'>$br</day>");
 }
 
 
