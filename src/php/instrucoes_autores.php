@@ -8,7 +8,7 @@
  * @param -h      help
  * USO:
  *  $ cd projeto
- *  $ php src/php/instrucoes_autores.php -r
+ *  $ php src/php/instrucoes_autores.php -r > entregas/conteudoExtra/InstrucoesAutores/instrucoes_dumps.txt
  */
 
 // CONFIGS:

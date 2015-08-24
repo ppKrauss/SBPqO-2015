@@ -147,6 +147,7 @@ $ctrl_idnames     = array(); // cria e controla IDs
 $csvFiles_rowByKey=[
 'programacaoGrupoDia'=>['entregas/conteudoExtra/programacaoGrupoDia.csv', 0,[]], //key=ID
 'local'=>['entregas/CSV1-3/local.csv', 0,[]], //key=LOCAL
+'autores'=>[$fileAutores,0,[]]
 ];
 foreach($csvFiles_rowByKey as $name=>$rec) {
 	$f = $rec[0];
