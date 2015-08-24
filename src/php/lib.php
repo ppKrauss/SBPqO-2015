@@ -18,7 +18,6 @@ $io_baseDir = realpath( dirname(__FILE__).'/..' );  // não usar getcwd();
 // CONFIGS:
 $modoAmostra   = FALSE;
 $pastaDados    = $modoAmostra? 'amostras': 'entregas';
-$fileAutores   = "$io_baseDir/../$pastaDados/CSV1-3/indiceAutores.csv"; // fora de uso, falta usar com resoluçao de homonimos!
 $fileDescr     = "$io_baseDir/../$pastaDados/CSV1-3/indiceDescritores.csv";
 $fileLocalHora = "$io_baseDir/../$pastaDados/CSV1-3/localHorario.csv";
 $fileLocal     = "$io_baseDir/../$pastaDados/CSV1-3/local.csv";
@@ -146,13 +145,15 @@ $ctrl_idnames     = array(); // cria e controla IDs
  */
 $csvFiles_rowByKey=[
 'programacaoGrupoDia'=>['entregas/conteudoExtra/programacaoGrupoDia.csv', 0,[]], //key=ID
-'local'=>['entregas/CSV1-3/local.csv', 0,[]], //key=LOCAL
-'autores'=>[$fileAutores,0,[]]
+'local'=>  ['entregas/CSV1-3/local.csv', 0,[]], //key=LOCAL
+'autores'=>['entregas/CSV1-3/indiceAutores.csv',0,[]]
 ];
 foreach($csvFiles_rowByKey as $name=>$rec) {
 	$f = $rec[0];
 	$key = $rec[1];
 	if ( csv_get($f,'',function ($tmp) use (&$csvFiles_rowByKey,$name,$key) {
+		if ($name=='autores' && $tmp[3]=mb_strtoupper($tmp[3]))
+			$tmp[3] = mb_ptbrPersonName($tmp[3]);
 		$csvFiles_rowByKey[$name][2][$tmp[$key]] = $tmp; // repete key em tmp
 	}) )
 		$csvFiles_rowByKey[$name][2]['CSV_HEAD'] = $CSV_HEAD; // transforma tudo em hash
@@ -1243,7 +1244,7 @@ function csv_get($fileDescr,$fileField00,$funcGet,$testaLen=0,$check00=false) {
     global $CSV_SEP;
     global $CSV_HEAD;
 	if (($handle = fopen($fileDescr, "r")) !== FALSE) {
-		$CSV_HEAD = fgetcsv( $handle, $buffsize, $CSV_SEP);
+		$CSV_HEAD = fgetcsv($handle, $buffsize, $CSV_SEP);
 		if ( $fileField00 && $CSV_HEAD[0]!=$fileField00 )
 			die("\nERRO343 em $fileDescr, campo nao esperasdo {$CSV_HEAD[0]}\n");
 	    while (($tmp = fgetcsv($handle, $buffsize, $CSV_SEP)) !== FALSE)
@@ -1468,5 +1469,17 @@ function localValido($s,$retID=FALSE){
 	else
 		return ($retID===2)? array('',''): '';
 }
+
+/**
+ * Normaliza nome próprio (de pessoa física) brasileiro.
+ */
+function mb_ptbrPersonName($s){ // supondo espaços já normalizados
+	$s = mb_convert_case($s,MB_CASE_TITLE, 'UTF-8');
+	return str_replace(
+		[' Da ',' De ',' Do ', ' E '],
+		[' da ',' de ',' do ', ' e '],
+		$s
+	);
+} // func
 
 ?>

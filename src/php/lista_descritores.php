@@ -41,8 +41,8 @@ $names = array_keys($DESCRITORES);
 sort($names);
 foreach ($names as $k) {
 	$resumos = join(', ',$DESCRITORES[$k]);
-	print "\n
-	<p><span class='nome'>$k</span><span class='pontinhos'>...</span><span class='resumos'>$resumos</span></p>";
+	print "
+	<p><span class='nome'>$k</span>\t<span class='resumos'>$resumos</span></p>";
 }
 
 print "\n</body>\n</html>\n";

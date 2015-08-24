@@ -39,25 +39,25 @@ $auts = $csvFiles_rowByKey['autores'][2];
 $idx = [];
 $nsup = 0;
 $sups = [];
-foreach ($auts as $id => $r) if ($r[2]!='#ERROR!') {
+foreach ($auts as $id => $r) if ($r[2]!='#ERROR!' && $id!='CSV_HEAD') {
 	if ($r[1]){
 		$nsup++;
 		$idx["$r[2]<sup>$nsup</sup>"] = $r;
 		$sups[$nsup] = $r[3];
 	} else
 		$idx[$r[2]] = $r;
-} else {
+} elseif ($id!='CSV_HEAD') {
 	print "\n--- err com $r[0].";
 }
 $names = array_keys($idx);
 sort($names);
-foreach ($names as $name) {
-	print "\n
-	<p><span class='nome'>$name</span><span class='pontinhos'>...</span><span class='resumos'>{$idx[$name][4]}</span></p>";
+foreach ($names as $name) { // conforme espec. Paula
+	print "
+	<p><span class='nome'>$name</span>\t<span class='resumos'>{$idx[$name][4]}</span></p>";
 }
-print "\n\n<p>-----------FOOTNOTES-----</p>";
+print "\n\n<p>---------FOOTNOTES (desambiguação de homônimos)-----</p>";
 foreach ($sups as $nsup=>$name)
-	print "\n<p><sup>$nsup</sup> $name.</p>";
+	print "\n<p><sup>$nsup</sup> $name</p>";
 
 print "\n</body>\n</html>\n";
 ?>
