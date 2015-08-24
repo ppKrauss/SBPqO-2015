@@ -52,7 +52,8 @@ foreach ($auts as $id => $r) if ($r[2]!='#ERROR!') {
 $names = array_keys($idx);
 sort($names);
 foreach ($names as $name) {
-	print "\n\n<p><span class='nome'>$name</span><span class='pontinhos'>...</span><span class='resumos'>{$idx[$name][4]}</span>";
+	print "\n
+	<p><span class='nome'>$name</span><span class='pontinhos'>...</span><span class='resumos'>{$idx[$name][4]}</span></p>";
 }
 print "\n\n<p>-----------FOOTNOTES-----</p>";
 foreach ($sups as $nsup=>$name)
