@@ -120,13 +120,13 @@ function exec_cmd($cmd,$file,$isRELAT,$isMultiSec=FALSE,$rmHeader=1,$finalUTF8=T
 
 	if (!isset($io_options['breaklines'])) { // na verdade no-breaklines
 		$out = str_replace(
-			array('<p',  '<div',  '<article',  '<sec',  '<keys', '<days'), 
-			array("\n\n\n<p","\n\n<div","\n\n<article","\n\n<sec","\n<keys","\n<days"),
+			['<p',  '<div',  '<article',  '<sec',  '<keys', '<days'], 
+			["\n\n\n<p","\n\n<div","\n\n<article","\n\n<sec","\n<keys","\n<days"],
 			$out
 		);
 		$out = preg_replace("/[ \\t]*\n[ \\t]*/s","\n",$out); // trim nas quebras de linha 
 	}
-
+	$out = rmClosedFormatters($out); // repete limpeza já realizada no raw
 	if (isset($io_options['entnum']))
 		$out = utf2html($out);	
 	return "$out\n";

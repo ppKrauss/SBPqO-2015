@@ -1,406 +1,538 @@
 
---- section-dump(PN0001 | tem range | tem location) 
-	Modalidade: PAINEL ASPIRANTE / EFETIVO - Sessão I PN0001 - PN0311
+== RELATÓRIO DE DADOS NO HTML ==
+ arquivo entregas/conteudoExtra/InstrucoesAutores/instrucoes_autores.html
+
+--- section(linha 23)-dump(PN0001 | tem range | tem location) 
+	Modalidade: PAINEL ASPIRANTE / EFETIVO - Sessão IPN0001 - PN0311
 	Instalação: Sexta-Feira (04/09) 07:30h
-	Local: Foyer 1
+	Local: Foyer I
 	Apresentação e arguição: período manhã 08:00 - 11:30h
 	Retirada: Sexta-Feira (04/09) 11:30 - 11:45h
---- section-dump(PN0001 | tem range | tem location) 
+--- section(linha 36)-dump(PN0001 | tem range | tem location) 
 	Localize seu grupo observando a área e o n. do painel:
-	Reunião de Grupo Sessão I área 1 (PN 01 - PN 17) e Sessão II área 1 (PN 312 - PN 329)
+	Reunião de Grupo Sessão I área 1 (PN0001 - PN0017) e Sessão II área 1 (PN0312 - PN0329)
 	Sala Cerejeira
-	Reunião de Grupo Sessão I área 2 (PN 18 - PN 67) e Sessão II área 2 (PN 330 - PN 378)
+	Reunião de Grupo Sessão I área 2 (PN0018 - PN0067) e Sessão II área 2 (PN0330 - PN0378)
 	Sala Amoreira I
-	Reunião de Grupo Sessão I área 3 (PN 68 - PN 97) e Sessão II área 3 (PN 379 - PN 408)
+	Reunião de Grupo Sessão I área 3 (PN0068 - PN0097) e Sessão II área 3 (PN0379 - PN0408)
 	Sala Amoreira II
-	Reunião de Grupo Sessão I área 5 (PN 98 - PN 194) e Sessão II área 5 (PN 409 - PN 505)
+	Reunião de Grupo Sessão I área 5 (PN0098 - PN0194) e Sessão II área 5 (PN0409 - PN0505)
 	Sala Carvalho I
-	Reunião de Grupo Sessão I área 6 (PN 195 - PN 231) e Sessão II área 6 (PN 506 - PN 542)
+	Reunião de Grupo Sessão I área 6 (PN0195 - PN0231) e Sessão II área 6 (PN0506 - PN0542)
 	Sala Carvalho III
-	Reunião de Grupo Sessão I área 7 (PN 232 - PN 277) e Sessão II área 7 (PN 543 - PN 588)
+	Reunião de Grupo Sessão I área 7 (PN0232 - PN0277) e Sessão II área 7 (PN0543 - PN0588)
 	Sala Carvalho II
-	Reunião de Grupo Sessão I área 10 (PN 278 - PN 311) e Sessão II área 10 (PN 589 - PN 622)
+	Reunião de Grupo Sessão I área 10 (PN0278 - PN0311) e Sessão II área 10 (PN0589 - PN0622)
 	Sala Seringueira
---- td-dump(PN0001 | tem range | SEM location) 
-	Reunião de Grupo Sessão I área 1 (PN 01 - PN 17) e Sessão II área 1 (PN 312 - PN 329)
---- td-dump(PN0018 | tem range | SEM location) 
-	Reunião de Grupo Sessão I área 2 (PN 18 - PN 67) e Sessão II área 2 (PN 330 - PN 378)
---- td-dump(PN0068 | tem range | SEM location) 
-	Reunião de Grupo Sessão I área 3 (PN 68 - PN 97) e Sessão II área 3 (PN 379 - PN 408)
---- td-dump(PN0098 | tem range | SEM location) 
-	Reunião de Grupo Sessão I área 5 (PN 98 - PN 194) e Sessão II área 5 (PN 409 - PN 505)
---- td-dump(PN0195 | tem range | SEM location) 
-	Reunião de Grupo Sessão I área 6 (PN 195 - PN 231) e Sessão II área 6 (PN 506 - PN 542)
---- td-dump(PN0232 | tem range | SEM location) 
-	Reunião de Grupo Sessão I área 7 (PN 232 - PN 277) e Sessão II área 7 (PN 543 - PN 588)
---- td-dump(PN0278 | tem range | SEM location) 
-	Reunião de Grupo Sessão I área 10 (PN 278 - PN 311) e Sessão II área 10 (PN 589 - PN 622)
---- section-dump(PN0312 | tem range | tem location) 
-	Modalidade: PAINEL ASPIRANTE / EFETIVO - Sessão II PN0312 - PN0622
+	 * PN0001 | PN0017 | loc8 | 
+	 * PN0312 | PN0329 | loc8 | 
+	 * PN0018 | PN0067 | loc8 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+	 * PN0330 | PN0378 | loc8 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+	 * PN0068 | PN0097 | loc8 | CONFERIR: deveria ser loc2 = Sala Amoreira II.
+	 * PN0379 | PN0408 | loc8 | CONFERIR: deveria ser loc2 = Sala Amoreira II.
+	 * PN0098 | PN0194 | loc8 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+	 * PN0409 | PN0505 | loc8 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+	 * PN0195 | PN0231 | loc8 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+	 * PN0506 | PN0542 | loc8 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+	 * PN0232 | PN0277 | loc8 | CONFERIR: deveria ser loc18 = Sala Carvalho II.
+	 * PN0543 | PN0588 | loc8 | CONFERIR: deveria ser loc18 = Sala Carvalho II.
+	 * PN0278 | PN0311 | loc8 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+	 * PN0589 | PN0622 | loc8 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+--- td(linha 40)-dump(PN0001 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 1 (PN0001 - PN0017) e Sessão II área 1 (PN0312 - PN0329)
+--- td(linha 44)-dump(PN0018 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 2 (PN0018 - PN0067) e Sessão II área 2 (PN0330 - PN0378)
+	 * PN0018 | PN0067 | loc8 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+	 * PN0330 | PN0378 | loc8 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+--- td(linha 48)-dump(PN0068 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 3 (PN0068 - PN0097) e Sessão II área 3 (PN0379 - PN0408)
+	 * PN0068 | PN0097 | loc8 | CONFERIR: deveria ser loc2 = Sala Amoreira II.
+	 * PN0379 | PN0408 | loc8 | CONFERIR: deveria ser loc2 = Sala Amoreira II.
+--- td(linha 52)-dump(PN0098 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 5 (PN0098 - PN0194) e Sessão II área 5 (PN0409 - PN0505)
+	 * PN0098 | PN0194 | loc8 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+	 * PN0409 | PN0505 | loc8 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+--- td(linha 56)-dump(PN0195 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 6 (PN0195 - PN0231) e Sessão II área 6 (PN0506 - PN0542)
+	 * PN0195 | PN0231 | loc8 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+	 * PN0506 | PN0542 | loc8 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+--- td(linha 60)-dump(PN0232 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 7 (PN0232 - PN0277) e Sessão II área 7 (PN0543 - PN0588)
+	 * PN0232 | PN0277 | loc8 | CONFERIR: deveria ser loc18 = Sala Carvalho II.
+	 * PN0543 | PN0588 | loc8 | CONFERIR: deveria ser loc18 = Sala Carvalho II.
+--- td(linha 64)-dump(PN0278 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 10 (PN0278 - PN0311) e Sessão II área 10 (PN0589 - PN0622)
+	 * PN0278 | PN0311 | loc8 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+	 * PN0589 | PN0622 | loc8 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+--- section(linha 70)-dump(PN0312 | tem range | tem location) 
+	Modalidade: PAINEL ASPIRANTE / EFETIVO - Sessão IIPN0312 - PN0622
 	Instalação: Sexta-Feira (04/09) 12:45h
-	Local: Foyer 1
+	Local: Foyer I
 	Apresentação e arguição: período tarde 13:00 - 16:30h
 	Retirada: Sexta-Feira (04/09) 16:30 - 16:45h
---- section-dump(PN0001 | tem range | tem location) 
+--- section(linha 83)-dump(PN0001 | tem range | tem location) 
 	Localize seu grupo observando a área e o n. do painel:
-	Reunião de Grupo Sessão I área 1 (PN 01 - PN 17) e Sessão II área 1 (PN 312 - PN 329)
+	Reunião de Grupo Sessão I área 1 (PN0001 - PN0017) e Sessão II área 1 (PN0312 - PN0329)
 	Sala Cerejeira
-	Reunião de Grupo Sessão I área 2 (PN 18 - PN 67) e Sessão II área 2 (PN 330 - PN 378)
+	Reunião de Grupo Sessão I área 2 (PN0018 - PN0067) e Sessão II área 2 (PN0330 - PN0378)
 	Sala Amoreira I
-	Reunião de Grupo Sessão I área 3 (PN 68 - PN 97) e Sessão II área 3 (PN 379 - PN 408)
+	Reunião de Grupo Sessão I área 3 (PN0068 - PN0097) e Sessão II área 3 (PN0379 - PN0408)
 	Sala Amoreira II
-	Reunião de Grupo Sessão I área 5 (PN 98 - PN 194) e Sessão II área 5 (PN 409 - PN 505)
+	Reunião de Grupo Sessão I área 5 (PN0098 - PN0194) e Sessão II área 5 (PN0409 - PN0505)
 	Sala Carvalho I
-	Reunião de Grupo Sessão I área 6 (PN 195 - PN 231) e Sessão II área 6 (PN 506 - PN 542)
+	Reunião de Grupo Sessão I área 6 (PN0195 - PN0231) e Sessão II área 6 (PN0506 - PN0542)
 	Sala Carvalho III
-	Reunião de Grupo Sessão I área 7 (PN 232 - PN 277) e Sessão II área 7 (PN 543 - PN 588)
+	Reunião de Grupo Sessão I área 7 (PN0232 - PN0277) e Sessão II área 7 (PN0543 - PN0588)
 	Sala Carvalho II
-	Reunião de Grupo Sessão I área 10 (PN 278 - PN 311) e Sessão II área 10 (PN 589 - PN 622)
+	Reunião de Grupo Sessão I área 10 (PN0278 - PN0311) e Sessão II área 10 (PN0589 - PN0622)
 	Sala Seringueira
---- td-dump(PN0001 | tem range | SEM location) 
-	Reunião de Grupo Sessão I área 1 (PN 01 - PN 17) e Sessão II área 1 (PN 312 - PN 329)
---- td-dump(PN0018 | tem range | SEM location) 
-	Reunião de Grupo Sessão I área 2 (PN 18 - PN 67) e Sessão II área 2 (PN 330 - PN 378)
---- td-dump(PN0068 | tem range | SEM location) 
-	Reunião de Grupo Sessão I área 3 (PN 68 - PN 97) e Sessão II área 3 (PN 379 - PN 408)
---- td-dump(PN0098 | tem range | SEM location) 
-	Reunião de Grupo Sessão I área 5 (PN 98 - PN 194) e Sessão II área 5 (PN 409 - PN 505)
---- td-dump(PN0195 | tem range | SEM location) 
-	Reunião de Grupo Sessão I área 6 (PN 195 - PN 231) e Sessão II área 6 (PN 506 - PN 542)
---- td-dump(PN0232 | tem range | SEM location) 
-	Reunião de Grupo Sessão I área 7 (PN 232 - PN 277) e Sessão II área 7 (PN 543 - PN 588)
---- td-dump(PN0278 | tem range | SEM location) 
-	Reunião de Grupo Sessão I área 10 (PN 278 - PN 311) e Sessão II área 10 (PN 589 - PN 622)
---- section-dump(PN0623 | tem range | tem location) 
-	Modalidade: PAINEL ASPIRANTE / EFETIVO - III PN0623 - PN0933
+	 * PN0001 | PN0017 | loc8 | 
+	 * PN0312 | PN0329 | loc8 | 
+	 * PN0018 | PN0067 | loc8 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+	 * PN0330 | PN0378 | loc8 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+	 * PN0068 | PN0097 | loc8 | CONFERIR: deveria ser loc2 = Sala Amoreira II.
+	 * PN0379 | PN0408 | loc8 | CONFERIR: deveria ser loc2 = Sala Amoreira II.
+	 * PN0098 | PN0194 | loc8 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+	 * PN0409 | PN0505 | loc8 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+	 * PN0195 | PN0231 | loc8 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+	 * PN0506 | PN0542 | loc8 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+	 * PN0232 | PN0277 | loc8 | CONFERIR: deveria ser loc18 = Sala Carvalho II.
+	 * PN0543 | PN0588 | loc8 | CONFERIR: deveria ser loc18 = Sala Carvalho II.
+	 * PN0278 | PN0311 | loc8 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+	 * PN0589 | PN0622 | loc8 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+--- td(linha 87)-dump(PN0001 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 1 (PN0001 - PN0017) e Sessão II área 1 (PN0312 - PN0329)
+--- td(linha 91)-dump(PN0018 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 2 (PN0018 - PN0067) e Sessão II área 2 (PN0330 - PN0378)
+	 * PN0018 | PN0067 | loc8 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+	 * PN0330 | PN0378 | loc8 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+--- td(linha 95)-dump(PN0068 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 3 (PN0068 - PN0097) e Sessão II área 3 (PN0379 - PN0408)
+	 * PN0068 | PN0097 | loc8 | CONFERIR: deveria ser loc2 = Sala Amoreira II.
+	 * PN0379 | PN0408 | loc8 | CONFERIR: deveria ser loc2 = Sala Amoreira II.
+--- td(linha 99)-dump(PN0098 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 5 (PN0098 - PN0194) e Sessão II área 5 (PN0409 - PN0505)
+	 * PN0098 | PN0194 | loc8 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+	 * PN0409 | PN0505 | loc8 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+--- td(linha 103)-dump(PN0195 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 6 (PN0195 - PN0231) e Sessão II área 6 (PN0506 - PN0542)
+	 * PN0195 | PN0231 | loc8 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+	 * PN0506 | PN0542 | loc8 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+--- td(linha 107)-dump(PN0232 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 7 (PN0232 - PN0277) e Sessão II área 7 (PN0543 - PN0588)
+	 * PN0232 | PN0277 | loc8 | CONFERIR: deveria ser loc18 = Sala Carvalho II.
+	 * PN0543 | PN0588 | loc8 | CONFERIR: deveria ser loc18 = Sala Carvalho II.
+--- td(linha 111)-dump(PN0278 | tem range | SEM location) 
+	Reunião de Grupo Sessão I área 10 (PN0278 - PN0311) e Sessão II área 10 (PN0589 - PN0622)
+	 * PN0278 | PN0311 | loc8 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+	 * PN0589 | PN0622 | loc8 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+--- section(linha 118)-dump(PN0623 | tem range | tem location) 
+	Modalidade: PAINEL ASPIRANTE / EFETIVO - IIIPN0623 - PN0933
 	Instalação: Sábado (05/09) 07:30h
-	Local: Foyer 1
+	Local: Foyer I
 	Apresentação e arguição: período manhã 08:00 - 11:30h
 	Retirada: Sábado (05/09) 11:30 - 11:45h
---- section-dump(PN0623 | tem range | tem location) 
+--- section(linha 131)-dump(PN0623 | tem range | tem location) 
 	Localize seu grupo observando a área e o n. do painel:
-	Reunião de Grupo Sessão III área 1 (PN 623 - PN 640) e Sessão IV área 1 (PN 934 - PN 951)
+	Reunião de Grupo Sessão III área 1 (PN0623 - PN0640) e Sessão IV área 1 (PN0934 - PN0951)
 	Sala Cerejeira
-	Reunião de Grupo Sessão III área 4 (PN 641 - PN 730) e Sessão IV área 1 (PN 952 - PN 1042)
+	Reunião de Grupo Sessão III área 4 (PN0641 - PN0730) e Sessão IV área 1 (PN0952 - PN1042)
 	Sala Carvalho II
-	Reunião de Grupo Sessão III área 5 (PN 731 - PN 828) e Sessão IV área 5 (PN 1043 - PN 1140)
+	Reunião de Grupo Sessão III área 5 (PN0731 - PN0828) e Sessão IV área 5 (PN1043 - PN1140)
 	Sala Carvalho III
-	Reunião de Grupo Sessão III área 6 (PN 829 - PN 867) e Sessão IV área 6 (PN 1141 - PN 1178)
+	Reunião de Grupo Sessão III área 6 (PN0829 - PN0867) e Sessão IV área 6 (PN1141 - PN1178)
 	Sala Amoreira I
-	Reunião de Grupo Sessão III área 8 (PN 868 - PN 898) e Sessão IV área 8 (PN 1179 - PN 1209)
+	Reunião de Grupo Sessão III área 8 (PN0868 - PN0898) e Sessão IV área 8 (PN1179 - PN1209)
 	Sala Carvalho I
-	Reunião de Grupo Sessão III área 9 (PN 899 - PN 933) e Sessão IV área 9 (PN 1210 - PN 1244)
+	Reunião de Grupo Sessão III área 9 (PN0899 - PN0933) e Sessão IV área 9 (PN1210 - PN1244)
 	Sala Seringueira
---- td-dump(PN0623 | tem range | SEM location) 
-	Reunião de Grupo Sessão III área 1 (PN 623 - PN 640) e Sessão IV área 1 (PN 934 - PN 951)
---- td-dump(PN0641 | tem range | SEM location) 
-	Reunião de Grupo Sessão III área 4 (PN 641 - PN 730) e Sessão IV área 1 (PN 952 - PN 1042)
---- td-dump(PN0731 | tem range | SEM location) 
-	Reunião de Grupo Sessão III área 5 (PN 731 - PN 828) e Sessão IV área 5 (PN 1043 - PN 1140)
---- td-dump(PN0829 | tem range | SEM location) 
-	Reunião de Grupo Sessão III área 6 (PN 829 - PN 867) e Sessão IV área 6 (PN 1141 - PN 1178)
---- td-dump(PN0868 | tem range | SEM location) 
-	Reunião de Grupo Sessão III área 8 (PN 868 - PN 898) e Sessão IV área 8 (PN 1179 - PN 1209)
---- td-dump(PN0899 | tem range | SEM location) 
-	Reunião de Grupo Sessão III área 9 (PN 899 - PN 933) e Sessão IV área 9 (PN 1210 - PN 1244)
---- section-dump(PN0934 | tem range | tem location) 
-	Modalidade: PAINEL ASPIRANTE / EFETIVO - Sessão IV PN0934 - PN1244
+	 * PN0623 | PN0640 | loc8 | 
+	 * PN0934 | PN0951 | loc8 | 
+	 * PN0641 | PN0730 | loc8 | CONFERIR: deveria ser loc18 = Sala Carvalho II.
+	 * PN0952 | PN1042 | loc8 | CONFERIR: deveria ser loc18 = Sala Carvalho II.
+	 * PN0731 | PN0828 | loc8 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+	 * PN1043 | PN1140 | loc8 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+	 * PN0829 | PN0867 | loc8 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+	 * PN1141 | PN1178 | loc8 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+	 * PN0868 | PN0898 | loc8 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+	 * PN1179 | PN1209 | loc8 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+	 * PN0899 | PN0933 | loc8 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+	 * PN1210 | PN1244 | loc8 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+--- td(linha 135)-dump(PN0623 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 1 (PN0623 - PN0640) e Sessão IV área 1 (PN0934 - PN0951)
+--- td(linha 139)-dump(PN0641 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 4 (PN0641 - PN0730) e Sessão IV área 1 (PN0952 - PN1042)
+	 * PN0641 | PN0730 | loc8 | CONFERIR: deveria ser loc18 = Sala Carvalho II.
+	 * PN0952 | PN1042 | loc8 | CONFERIR: deveria ser loc18 = Sala Carvalho II.
+--- td(linha 143)-dump(PN0731 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 5 (PN0731 - PN0828) e Sessão IV área 5 (PN1043 - PN1140)
+	 * PN0731 | PN0828 | loc8 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+	 * PN1043 | PN1140 | loc8 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+--- td(linha 147)-dump(PN0829 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 6 (PN0829 - PN0867) e Sessão IV área 6 (PN1141 - PN1178)
+	 * PN0829 | PN0867 | loc8 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+	 * PN1141 | PN1178 | loc8 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+--- td(linha 151)-dump(PN0868 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 8 (PN0868 - PN0898) e Sessão IV área 8 (PN1179 - PN1209)
+	 * PN0868 | PN0898 | loc8 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+	 * PN1179 | PN1209 | loc8 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+--- td(linha 155)-dump(PN0899 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 9 (PN0899 - PN0933) e Sessão IV área 9 (PN1210 - PN1244)
+	 * PN0899 | PN0933 | loc8 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+	 * PN1210 | PN1244 | loc8 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+--- section(linha 161)-dump(PN0934 | tem range | tem location) 
+	Modalidade: PAINEL ASPIRANTE / EFETIVO - Sessão IVPN0934 - PN1244
 	Instalação: Sábado (05/09) 12:45h
-	Local: Foyer 1
+	Local: Foyer I
 	Apresentação e arguição: período tarde 13:00 - 16:30h
 	Retirada: Sábado (05/09) 16:30 - 16:45h
---- section-dump(PN0623 | tem range | tem location) 
+--- section(linha 174)-dump(PN0623 | tem range | tem location) 
 	Localize seu grupo observando a área e o n. do painel:
-	Reunião de Grupo Sessão III área 1 (PN 623 - PN 640) e Sessão IV área 1 (PN 934 - PN 951)
+	Reunião de Grupo Sessão III área 1 (PN0623 - PN0640) e Sessão IV área 1 (PN0934 - PN0951)
 	Sala Cerejeira
-	Reunião de Grupo Sessão III área 4 (PN 641 - PN 730) e Sessão IV área 1 (PN 952 - PN 1042)
+	Reunião de Grupo Sessão III área 4 (PN0641 - PN0730) e Sessão IV área 1 (PN0952 - PN1042)
 	Sala Carvalho II
-	Reunião de Grupo Sessão III área 5 (PN 731 - PN 828) e Sessão IV área 5 (PN 1043 - PN 1140)
+	Reunião de Grupo Sessão III área 5 (PN0731 - PN0828) e Sessão IV área 5 (PN1043 - PN1140)
 	Sala Carvalho III
-	Reunião de Grupo Sessão III área 6 (PN 829 - PN 867) e Sessão IV área 6 (PN 1141 - PN 1178)
+	Reunião de Grupo Sessão III área 6 (PN0829 - PN0867) e Sessão IV área 6 (PN1141 - PN1178)
 	Sala Amoreira I
-	Reunião de Grupo Sessão III área 8 (PN 868 - PN 898) e Sessão IV área 8 (PN 1179 - PN 1209)
+	Reunião de Grupo Sessão III área 8 (PN0868 - PN0898) e Sessão IV área 8 (PN1179 - PN1209)
 	Sala Carvalho I
-	Reunião de Grupo Sessão III área 9 (PN 899 - PN 933) e Sessão IV área 9 (PN 1210 - PN 1244)
+	Reunião de Grupo Sessão III área 9 (PN0899 - PN0933) e Sessão IV área 9 (PN1210 - PN1244)
 	Sala Seringueira
---- td-dump(PN0623 | tem range | SEM location) 
-	Reunião de Grupo Sessão III área 1 (PN 623 - PN 640) e Sessão IV área 1 (PN 934 - PN 951)
---- td-dump(PN0641 | tem range | SEM location) 
-	Reunião de Grupo Sessão III área 4 (PN 641 - PN 730) e Sessão IV área 1 (PN 952 - PN 1042)
---- td-dump(PN0731 | tem range | SEM location) 
-	Reunião de Grupo Sessão III área 5 (PN 731 - PN 828) e Sessão IV área 5 (PN 1043 - PN 1140)
---- td-dump(PN0829 | tem range | SEM location) 
-	Reunião de Grupo Sessão III área 6 (PN 829 - PN 867) e Sessão IV área 6 (PN 1141 - PN 1178)
---- td-dump(PN0868 | tem range | SEM location) 
-	Reunião de Grupo Sessão III área 8 (PN 868 - PN 898) e Sessão IV área 8 (PN 1179 - PN 1209)
---- td-dump(PN0899 | tem range | SEM location) 
-	Reunião de Grupo Sessão III área 9 (PN 899 - PN 933) e Sessão IV área 9 (PN 1210 - PN 1244)
---- section-dump(PN1245 | tem range | tem location) 
-	Modalidade: PAINEL ASPIRANTE / EFETIVO - Sessão V PN1245 - PN1555
+	 * PN0623 | PN0640 | loc8 | 
+	 * PN0934 | PN0951 | loc8 | 
+	 * PN0641 | PN0730 | loc8 | CONFERIR: deveria ser loc18 = Sala Carvalho II.
+	 * PN0952 | PN1042 | loc8 | CONFERIR: deveria ser loc18 = Sala Carvalho II.
+	 * PN0731 | PN0828 | loc8 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+	 * PN1043 | PN1140 | loc8 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+	 * PN0829 | PN0867 | loc8 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+	 * PN1141 | PN1178 | loc8 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+	 * PN0868 | PN0898 | loc8 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+	 * PN1179 | PN1209 | loc8 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+	 * PN0899 | PN0933 | loc8 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+	 * PN1210 | PN1244 | loc8 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+--- td(linha 178)-dump(PN0623 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 1 (PN0623 - PN0640) e Sessão IV área 1 (PN0934 - PN0951)
+--- td(linha 182)-dump(PN0641 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 4 (PN0641 - PN0730) e Sessão IV área 1 (PN0952 - PN1042)
+	 * PN0641 | PN0730 | loc8 | CONFERIR: deveria ser loc18 = Sala Carvalho II.
+	 * PN0952 | PN1042 | loc8 | CONFERIR: deveria ser loc18 = Sala Carvalho II.
+--- td(linha 186)-dump(PN0731 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 5 (PN0731 - PN0828) e Sessão IV área 5 (PN1043 - PN1140)
+	 * PN0731 | PN0828 | loc8 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+	 * PN1043 | PN1140 | loc8 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+--- td(linha 190)-dump(PN0829 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 6 (PN0829 - PN0867) e Sessão IV área 6 (PN1141 - PN1178)
+	 * PN0829 | PN0867 | loc8 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+	 * PN1141 | PN1178 | loc8 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+--- td(linha 194)-dump(PN0868 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 8 (PN0868 - PN0898) e Sessão IV área 8 (PN1179 - PN1209)
+	 * PN0868 | PN0898 | loc8 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+	 * PN1179 | PN1209 | loc8 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+--- td(linha 198)-dump(PN0899 | tem range | SEM location) 
+	Reunião de Grupo Sessão III área 9 (PN0899 - PN0933) e Sessão IV área 9 (PN1210 - PN1244)
+	 * PN0899 | PN0933 | loc8 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+	 * PN1210 | PN1244 | loc8 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+--- section(linha 204)-dump(PN1245 | tem range | tem location) 
+	Modalidade: PAINEL ASPIRANTE / EFETIVO - Sessão VPN1245 - PN1555
 	Instalação: Domingo  (06/09) 07:30h
-	Local: Foyer 1
+	Local: Foyer I
 	Apresentação e arguição: período manhã 08:00 - 11:30h
 	Retirada: Domingo (06/09) 11:30 - 11:45h
---- section-dump(PN1245 | tem range | tem location) 
+--- section(linha 217)-dump(PN1245 | tem range | tem location) 
 	Localize seu grupo observando a área e o n. do painel:
-	Reunião de Grupo Sessão V área 2 (PN 1245 - PN 1293) e Sessão VI área 2 (PN 1556 - PN 1604)
+	Reunião de Grupo Sessão V área 2 (PN1245 - PN1293) e Sessão VI área 2 (PN1556 - PN1604)
 	Sala Carvalho II
-	Reunião de Grupo Sessão V área 3 (PN 1294 - PN 1323) e Sessão VI área 3 (PN 1605 - PN 1635)
+	Reunião de Grupo Sessão V área 3 (PN1294 - PN1323) e Sessão VI área 3 (PN1605 - PN1635)
 	Sala Amoreira I
-	Reunião de Grupo Sessão V área 4 ( PN 1324 - PN 1412) e Sessão VI área 4 (PN 1636 - PN 1724)
+	Reunião de Grupo Sessão V área 4 (PN1324 - PN1412) e Sessão VI área 4 (PN1636 - PN1724)
 	Sala Amoreira II
-	Reunião de Grupo Sessão V área 7 ( PN 1413 - PN 1459) e Sessão VI área 7 (PN 1725 - PN 1771)
+	Reunião de Grupo Sessão V área 7 (PN1413 - PN1459) e Sessão VI área 7 (PN1725 - PN1771)
 	Sala Carvalho III
-	Reunião de Grupo Sessão V área 8 ( PN 1460 - PN 1488) e Sessão VI área 8 (PN 1772 - PN 1800)
+	Reunião de Grupo Sessão V área 8 (PN1460 - PN1488) e Sessão VI área 8 (PN1772 - PN1800)
 	Sala Carvalho I
-	Reunião de Grupo Sessão V área 9 ( PN 1489 - PN 1521) e Sessão VI área 9 (PN 1801 - PN 1834)
+	Reunião de Grupo Sessão V área 9 (PN1489 - PN1521) e Sessão VI área 9 (PN1801 - PN1834)
 	Sala Cerejeira
-	Reunião de Grupo Sessão V área 10 ( PN 1522 - PN 1555) e Sessão VI área 10 (PN 1835 - PN 1867)
+	Reunião de Grupo Sessão V área 10 (PN1522 - PN1555) e Sessão VI área 10 (PN1835 - PN1867)
 	Sala Seringueira
---- td-dump(PN1245 | tem range | SEM location) 
-	Reunião de Grupo Sessão V área 2 (PN 1245 - PN 1293) e Sessão VI área 2 (PN 1556 - PN 1604)
---- td-dump(PN1294 | tem range | SEM location) 
-	Reunião de Grupo Sessão V área 3 (PN 1294 - PN 1323) e Sessão VI área 3 (PN 1605 - PN 1635)
---- td-dump(PN1324 | tem range | SEM location) 
-	Reunião de Grupo Sessão V área 4 ( PN 1324 - PN 1412) e Sessão VI área 4 (PN 1636 - PN 1724)
---- td-dump(PN1413 | tem range | SEM location) 
-	Reunião de Grupo Sessão V área 7 ( PN 1413 - PN 1459) e Sessão VI área 7 (PN 1725 - PN 1771)
---- td-dump(PN1460 | tem range | SEM location) 
-	Reunião de Grupo Sessão V área 8 ( PN 1460 - PN 1488) e Sessão VI área 8 (PN 1772 - PN 1800)
---- td-dump(PN1489 | tem range | SEM location) 
-	Reunião de Grupo Sessão V área 9 ( PN 1489 - PN 1521) e Sessão VI área 9 (PN 1801 - PN 1834)
---- td-dump(PN1522 | tem range | SEM location) 
-	Reunião de Grupo Sessão V área 10 ( PN 1522 - PN 1555) e Sessão VI área 10 (PN 1835 - PN 1867)
---- section-dump(PN1556 | tem range | tem location) 
-	Modalidade: PAINEL ASPIRANTE / EFETIVO - Sessão VI PN1556 - PN1867
+	 * PN1245 | PN1293 | loc18 | 
+	 * PN1556 | PN1604 | loc18 | 
+	 * PN1294 | PN1323 | loc18 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+	 * PN1605 | PN1635 | loc18 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+	 * PN1324 | PN1412 | loc18 | CONFERIR: deveria ser loc2 = Sala Amoreira II.
+	 * PN1636 | PN1724 | loc18 | CONFERIR: deveria ser loc2 = Sala Amoreira II.
+	 * PN1413 | PN1459 | loc18 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+	 * PN1725 | PN1771 | loc18 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+	 * PN1460 | PN1488 | loc18 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+	 * PN1772 | PN1800 | loc18 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+	 * PN1489 | PN1521 | loc18 | CONFERIR: deveria ser loc8 = Sala Cerejeira.
+	 * PN1801 | PN1834 | loc18 | CONFERIR: deveria ser loc8 = Sala Cerejeira.
+	 * PN1522 | PN1555 | loc18 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+	 * PN1835 | PN1867 | loc18 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+--- td(linha 221)-dump(PN1245 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 2 (PN1245 - PN1293) e Sessão VI área 2 (PN1556 - PN1604)
+--- td(linha 225)-dump(PN1294 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 3 (PN1294 - PN1323) e Sessão VI área 3 (PN1605 - PN1635)
+	 * PN1294 | PN1323 | loc18 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+	 * PN1605 | PN1635 | loc18 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+--- td(linha 229)-dump(PN1324 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 4 (PN1324 - PN1412) e Sessão VI área 4 (PN1636 - PN1724)
+	 * PN1324 | PN1412 | loc18 | CONFERIR: deveria ser loc2 = Sala Amoreira II.
+	 * PN1636 | PN1724 | loc18 | CONFERIR: deveria ser loc2 = Sala Amoreira II.
+--- td(linha 233)-dump(PN1413 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 7 (PN1413 - PN1459) e Sessão VI área 7 (PN1725 - PN1771)
+	 * PN1413 | PN1459 | loc18 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+	 * PN1725 | PN1771 | loc18 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+--- td(linha 237)-dump(PN1460 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 8 (PN1460 - PN1488) e Sessão VI área 8 (PN1772 - PN1800)
+	 * PN1460 | PN1488 | loc18 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+	 * PN1772 | PN1800 | loc18 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+--- td(linha 241)-dump(PN1489 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 9 (PN1489 - PN1521) e Sessão VI área 9 (PN1801 - PN1834)
+	 * PN1489 | PN1521 | loc18 | CONFERIR: deveria ser loc8 = Sala Cerejeira.
+	 * PN1801 | PN1834 | loc18 | CONFERIR: deveria ser loc8 = Sala Cerejeira.
+--- td(linha 245)-dump(PN1522 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 10 (PN1522 - PN1555) e Sessão VI área 10 (PN1835 - PN1867)
+	 * PN1522 | PN1555 | loc18 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+	 * PN1835 | PN1867 | loc18 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+--- section(linha 251)-dump(PN1556 | tem range | tem location) 
+	Modalidade: PAINEL ASPIRANTE / EFETIVO - Sessão VIPN1556 - PN1867
 	Instalação: Domingo  (06/09) 12:45h
-	Local: Foyer 1
+	Local: Foyer I
 	Apresentação e arguição: período tarde 13:00 - 16:30h
 	Retirada: Domingo (06/09) 16:30 - 16:45h
---- section-dump(PN1245 | tem range | tem location) 
+--- section(linha 264)-dump(PN1245 | tem range | tem location) 
 	Localize seu grupo observando a área e o n. do painel:
-	Reunião de Grupo Sessão V área 2 (PN 1245 - PN 1293) e Sessão VI área 2 (PN 1556 - PN 1604)
+	Reunião de Grupo Sessão V área 2 (PN1245 - PN1293) e Sessão VI área 2 (PN1556 - PN1604)
 	Sala Carvalho II
-	Reunião de Grupo Sessão V área 3 (PN 1294 - PN 1323) e Sessão VI área 3 (PN 1605 - PN 1635)
+	Reunião de Grupo Sessão V área 3 (PN1294 - PN1323) e Sessão VI área 3 (PN1605 - PN1635)
 	Sala Amoreira I
-	Reunião de Grupo Sessão V área 4 ( PN 1324 - PN 1412) e Sessão VI área 4 (PN 1636 - PN 1724)
+	Reunião de Grupo Sessão V área 4 (PN1324 - PN1412) e Sessão VI área 4 (PN1636 - PN1724)
 	Sala Amoreira II
-	Reunião de Grupo Sessão V área 7 ( PN 1413 - PN 1459) e Sessão VI área 7 (PN 1725 - PN 1771)
+	Reunião de Grupo Sessão V área 7 (PN1413 - PN1459) e Sessão VI área 7 (PN1725 - PN1771)
 	Sala Carvalho III
-	Reunião de Grupo Sessão V área 8 ( PN 1460 - PN 1488) e Sessão VI área 8 (PN 1772 - PN 1800)
+	Reunião de Grupo Sessão V área 8 (PN1460 - PN1488) e Sessão VI área 8 (PN1772 - PN1800)
 	Sala Carvalho I
-	Reunião de Grupo Sessão V área 9 ( PN 1489 - PN 1521) e Sessão VI área 9 (PN 1801 - PN 1834)
+	Reunião de Grupo Sessão V área 9 (PN1489 - PN1521) e Sessão VI área 9 (PN1801 - PN1834)
 	Sala Cerejeira
-	Reunião de Grupo Sessão V área 10 ( PN 1522 - PN 1555) e Sessão VI área 10 (PN 1835 - PN 1867)
+	Reunião de Grupo Sessão V área 10 (PN1522 - PN1555) e Sessão VI área 10 (PN1835 - PN1867)
 	Sala Seringueira
---- td-dump(PN1245 | tem range | SEM location) 
-	Reunião de Grupo Sessão V área 2 (PN 1245 - PN 1293) e Sessão VI área 2 (PN 1556 - PN 1604)
---- td-dump(PN1294 | tem range | SEM location) 
-	Reunião de Grupo Sessão V área 3 (PN 1294 - PN 1323) e Sessão VI área 3 (PN 1605 - PN 1635)
---- td-dump(PN1324 | tem range | SEM location) 
-	Reunião de Grupo Sessão V área 4 ( PN 1324 - PN 1412) e Sessão VI área 4 (PN 1636 - PN 1724)
---- td-dump(PN1413 | tem range | SEM location) 
-	Reunião de Grupo Sessão V área 7 ( PN 1413 - PN 1459) e Sessão VI área 7 (PN 1725 - PN 1771)
---- td-dump(PN1460 | tem range | SEM location) 
-	Reunião de Grupo Sessão V área 8 ( PN 1460 - PN 1488) e Sessão VI área 8 (PN 1772 - PN 1800)
---- td-dump(PN1489 | tem range | SEM location) 
-	Reunião de Grupo Sessão V área 9 ( PN 1489 - PN 1521) e Sessão VI área 9 (PN 1801 - PN 1834)
---- td-dump(PN1522 | tem range | SEM location) 
-	Reunião de Grupo Sessão V área 10 ( PN 1522 - PN 1555) e Sessão VI área 10 (PN 1835 - PN 1867)
---- section-dump(AO0001 | tem range | tem location) 
-	Area 4
-	AO0001 - AO0012
+	 * PN1245 | PN1293 | loc18 | 
+	 * PN1556 | PN1604 | loc18 | 
+	 * PN1294 | PN1323 | loc18 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+	 * PN1605 | PN1635 | loc18 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+	 * PN1324 | PN1412 | loc18 | CONFERIR: deveria ser loc2 = Sala Amoreira II.
+	 * PN1636 | PN1724 | loc18 | CONFERIR: deveria ser loc2 = Sala Amoreira II.
+	 * PN1413 | PN1459 | loc18 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+	 * PN1725 | PN1771 | loc18 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+	 * PN1460 | PN1488 | loc18 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+	 * PN1772 | PN1800 | loc18 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+	 * PN1489 | PN1521 | loc18 | CONFERIR: deveria ser loc8 = Sala Cerejeira.
+	 * PN1801 | PN1834 | loc18 | CONFERIR: deveria ser loc8 = Sala Cerejeira.
+	 * PN1522 | PN1555 | loc18 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+	 * PN1835 | PN1867 | loc18 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+--- td(linha 268)-dump(PN1245 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 2 (PN1245 - PN1293) e Sessão VI área 2 (PN1556 - PN1604)
+--- td(linha 272)-dump(PN1294 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 3 (PN1294 - PN1323) e Sessão VI área 3 (PN1605 - PN1635)
+	 * PN1294 | PN1323 | loc18 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+	 * PN1605 | PN1635 | loc18 | CONFERIR: deveria ser loc1 = Sala Amoreira I.
+--- td(linha 276)-dump(PN1324 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 4 (PN1324 - PN1412) e Sessão VI área 4 (PN1636 - PN1724)
+	 * PN1324 | PN1412 | loc18 | CONFERIR: deveria ser loc2 = Sala Amoreira II.
+	 * PN1636 | PN1724 | loc18 | CONFERIR: deveria ser loc2 = Sala Amoreira II.
+--- td(linha 280)-dump(PN1413 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 7 (PN1413 - PN1459) e Sessão VI área 7 (PN1725 - PN1771)
+	 * PN1413 | PN1459 | loc18 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+	 * PN1725 | PN1771 | loc18 | CONFERIR: deveria ser loc3 = Sala Carvalho III.
+--- td(linha 284)-dump(PN1460 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 8 (PN1460 - PN1488) e Sessão VI área 8 (PN1772 - PN1800)
+	 * PN1460 | PN1488 | loc18 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+	 * PN1772 | PN1800 | loc18 | CONFERIR: deveria ser loc5 = Sala Carvalho I.
+--- td(linha 288)-dump(PN1489 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 9 (PN1489 - PN1521) e Sessão VI área 9 (PN1801 - PN1834)
+	 * PN1489 | PN1521 | loc18 | CONFERIR: deveria ser loc8 = Sala Cerejeira.
+	 * PN1801 | PN1834 | loc18 | CONFERIR: deveria ser loc8 = Sala Cerejeira.
+--- td(linha 292)-dump(PN1522 | tem range | SEM location) 
+	Reunião de Grupo Sessão V área 10 (PN1522 - PN1555) e Sessão VI área 10 (PN1835 - PN1867)
+	 * PN1522 | PN1555 | loc18 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+	 * PN1835 | PN1867 | loc18 | CONFERIR: deveria ser loc6 = Sala Seringueira.
+--- section(linha 311)-dump(AO0001 | tem range | tem location) 
+	Area 4AO0001 - AO0012
 	Informações para as apresentações:
 	Horário: Sexta-Feira (04/09) 08:00 - 11:30h
 	Local: Sala Amoreira I
---- section-dump(AO0013 | tem range | tem location) 
-	Area 4
-	AO0013 - AO0024
+--- section(linha 320)-dump(AO0013 | tem range | tem location) 
+	Area 4AO0013 - AO0024
 	Informações para as apresentações:
 	Horário: Sexta-Feira (04/09) 13:00 - 16:45h
 	Local: Sala Amoreira I
---- section-dump(AO0025 | tem range | tem location) 
-	Area 8
-	AO0025 - AO0035
+--- section(linha 329)-dump(AO0025 | tem range | tem location) 
+	Area 8AO0025 - AO0035
 	Informações para as apresentações:
 	Horário: Sexta-Feira (04/09) 08:00 - 11:30h
 	Local: Sala Amoreira II
---- section-dump(AO0036 | tem range | tem location) 
-	Area 9
-	AO0036 - AO0045
+--- section(linha 338)-dump(AO0036 | tem range | tem location) 
+	Area 9AO0036 - AO0045
 	Informações para as apresentações:
 	Horário: Sexta-Feira (04/09) 08:00 - 11:30h
 	Local: Sala Carvalho III
---- section-dump(AO0046 | tem range | tem location) 
-	Area 9
-	AO0046 - AO0056
+--- section(linha 347)-dump(AO0046 | tem range | tem location) 
+	Area 9AO0046 - AO0056
 	Informações para as apresentações:
 	Horário: Sexta-Feira (04/09) 13:00 - 16:45h
 	Local: Sala Carvalho III
---- section-dump(AO0057 | tem range | tem location) 
-	Area 2
-	AO0057 - AO0068
+--- section(linha 356)-dump(AO0057 | tem range | tem location) 
+	Area 2AO0057 - AO0068
 	Informações para as apresentações:
 	Horário: Sábado (05/09) 08:00 - 11:30h
 	Local: Sala Amoreira I
---- section-dump(AO0069 | tem range | tem location) 
-	Area 2
-	AO0069 - AO0080
+--- section(linha 365)-dump(AO0069 | tem range | tem location) 
+	Area 2AO0069 - AO0080
 	Informações para as apresentações:
 	Horário: Sábado (05/09) 13:00 - 16:45h
 	Local: Sala Amoreira I
---- section-dump(AO0081 | tem range | tem location) 
-	Area 3
-	AO0081 - AO0092
+--- section(linha 374)-dump(AO0081 | tem range | tem location) 
+	Area 3AO0081 - AO0092
 	Informações para as apresentações:
 	Horário: Sábado (05/09) 08:00 - 11:30h
 	Local: Sala Amoreira II
---- section-dump(AO0093 | tem range | tem location) 
-	Area 3
-	AO0093 - AO0105
+--- section(linha 383)-dump(AO0093 | tem range | tem location) 
+	Area 3AO0093 - AO0105
 	Informações para as apresentações:
 	Horário: Sábado (05/09) 13:00 - 16:45h
 	Local: Sala Amoreira II
---- section-dump(AO0106 | tem range | tem location) 
-	Area 7
-	AO0106 - AO0116
+--- section(linha 392)-dump(AO0106 | tem range | tem location) 
+	Area 7AO0106 - AO0116
 	Informações para as apresentações:
 	Horário: Sábado (05/09) 08:00 - 11:30h
 	Local: Sala Carvalho I
---- section-dump(AO0117 | tem range | tem location) 
-	Area 7
-	AO0117 - AO0127
+--- section(linha 401)-dump(AO0117 | tem range | tem location) 
+	Area 7AO0117 - AO0127
 	Informações para as apresentações:
 	Horário: Sábado (05/09) 13:00 - 16:45h
 	Local: Sala Carvalho I
---- section-dump(AO0128 | tem range | tem location) 
-	Area 10
-	AO0128 - AO0138
+--- section(linha 410)-dump(AO0128 | tem range | tem location) 
+	Area 10AO0128 - AO0138
 	Informações para as apresentações:
 	Horário: Sábado (05/09) 08:00 - 11:30h
 	Local: Sala Seringueira
---- section-dump(AO0139 | tem range | tem location) 
-	Area 10
-	AO0139 - AO0150
+--- section(linha 419)-dump(AO0139 | tem range | tem location) 
+	Area 10AO0139 - AO0150
 	Informações para as apresentações:
 	Horário: Sábado (05/09) 13:00 - 16:45h
 	Local: Sala Seringueira
---- section-dump(AO0151 | tem range | tem location) 
-	Area 1
-	AO0151 - AO0158
+--- section(linha 428)-dump(AO0151 | tem range | tem location) 
+	Area 1AO0151 - AO0158
 	Informações para as apresentações:
 	Horário: Domingo (06/09) 08:00 - 11:30h
 	Local: Sala Carvalho I
---- section-dump(AO0159 | tem range | tem location) 
-	Area 1
-	AO0159 - AO0167
+--- section(linha 437)-dump(AO0159 | tem range | tem location) 
+	Area 1AO0159 - AO0167
 	Informações para as apresentações:
 	Horário: Domingo (06/09) 13:00 - 16:45h
 	Local: Sala Carvalho I
---- section-dump(AO0168 | tem range | tem location) 
-	Area 5
-	AO0168 - AO0179
+--- section(linha 446)-dump(AO0168 | tem range | tem location) 
+	Area 5AO0168 - AO0179
 	Informações para as apresentações:
 	Horário: Domingo (06/09) 08:00 - 11:30h
 	Local: Sala Amoreira II
---- section-dump(AO0180 | tem range | tem location) 
-	Area 5
-	AO0180 - AO0191
+--- section(linha 455)-dump(AO0180 | tem range | tem location) 
+	Area 5AO0180 - AO0191
 	Informações para as apresentações:
 	Horário: Domingo (06/09) 13:00 - 16:45h
 	Local: Sala Amoreira II
---- section-dump(AO0192 | tem range | tem location) 
-	Area 6
-	AO0192 - AO0203
+--- section(linha 464)-dump(AO0192 | tem range | tem location) 
+	Area 6AO0192 - AO0203
 	Informações para as apresentações:
 	Horário: Domingo (06/09) 08:00 - 11:30h
 	Local: Sala Amoreira I
---- section-dump(AO0204 | tem range | tem location) 
-	Area 6
-	AO0204 - AO0215
+--- section(linha 473)-dump(AO0204 | tem range | tem location) 
+	Area 6AO0204 - AO0215
 	Informações para as apresentações:
 	Horário: Domingo (06/09) 13:00 - 16:45h
 	Local: Sala Amoreira I
---- section-dump(PI0001 | tem range | tem location) 
-	Modalidade: ISSAO Sessão I - PI0001 - PI0152
+--- section(linha 503)-dump(PI0001 | tem range | tem location) 
+	Modalidade: ISSAO Sessão I -PI0001 - PI0152
 	Instalação: Sexta-Feira (04/09) 07:30h
-	Local: Foyer 2
+	Local: Foyer II
 	Apresentação e arguição: período manhã 8:00 - 11:30h
 	Retirada: Sexta-Feira (04/09) 11:30 - 11:45h
---- section-dump(PI0153 | tem range | tem location) 
-	Modalidade: ISSAO Sessão II - PI0153 - PI0304
+--- section(linha 517)-dump(PI0153 | tem range | tem location) 
+	Modalidade: ISSAO Sessão II -PI0153 - PI0304
 	Instalação: Sexta-Feira (04/09) 12:45h
-	Local: Foyer 2
+	Local: Foyer II
 	Apresentação e arguição: período tarde 13:00 - 16:30h
 	Retirada: Sexta-Feira (04/09) 16:30 - 16:45h
---- section-dump(PI0305 | tem range | tem location) 
-	Modalidade: ISSAO Sessão III - PI0305 - PI0456
+--- section(linha 531)-dump(PI0305 | tem range | tem location) 
+	Modalidade: ISSAO Sessão III -PI0305 - PI0456
 	Instalação: Sábado (05/09) 07:30h
-	Local: Foyer 2
+	Local: Foyer II
 	Apresentação e arguição: período manhã 08:00 - 11:30h
 	Retirada: Sábado (05/09) 11:30 - 11:45h
---- section-dump(PI0457 | tem range | tem location) 
-	Modalidade: ISSAO Sessão IV - PI0457 - PI0608
+--- section(linha 545)-dump(PI0457 | tem range | tem location) 
+	Modalidade: ISSAO Sessão IV -PI0457 - PI0608
 	Instalação: Sábado (05/09) 12:45h
-	Local: Foyer 2
+	Local: Foyer II
 	Apresentação e arguição: período tarde 13:00 - 16:30h
 	Retirada: Sábado (05/09) 16:30 - 16:45 h
---- section-dump(PI0609 | tem range | tem location) 
-	Modalidade: ISSAO Sessão V - PI0609 - PI0760
+--- section(linha 559)-dump(PI0609 | tem range | tem location) 
+	Modalidade: ISSAO Sessão V -PI0609 - PI0760
 	Instalação: Domingo (06/09) 07:30h
-	Local: Foyer 2
+	Local: Foyer II
 	Apresentação e arguição: período manhã 08:00 - 11:30h
 	Retirada: Domingo (06/09) 11:30 - 11:45h
---- section-dump(PI0761 | tem range | tem location) 
-	Modalidade: ISSAO Sessão VI - PI0761 - PI0911
+--- section(linha 573)-dump(PI0761 | tem range | tem location) 
+	Modalidade: ISSAO Sessão VI -PI0761 - PI0911
 	Instalação: Domingo (06/09) 12:45h
-	Local: Foyer 2
+	Local: Foyer II
 	Apresentação e arguição: período tarde 13:00 - 16:30h
 	Retirada: Domingo (06/09) 16:30 - 16:45h
---- section-dump(FC0001 | tem range | tem location) 
-	FC001 - FC005 - Apresentação e Arguição do Fórum Científico
+--- section(linha 638)-dump(FC0001 | tem range | tem location) 
+	FC0001 - FC0005 - Apresentação e Arguição do Fórum Científico
 	Informações para as apresentações:
 	Horário: Sexta-feira (04/09) 08:00 - 11:30h
 	Local: Sala Cerejeira
---- section-dump(FC0006 | tem range | tem location) 
-	FC006 - FC011 - Apresentação e Arguição do Fórum Científico
+--- section(linha 646)-dump(FC0006 | tem range | tem location) 
+	FC0006 - FC0011 - Apresentação e Arguição do Fórum Científico
 	Informações para as apresentações:
 	Horário: Sexta-feira (04/09) 13:00 - 16:30h
 	Local: Sala Cerejeira
---- section-dump(FC0012 | tem range | tem location) 
-	FC012 - FC016 - Apresentação e Arguição do Fórum Científico
+--- section(linha 654)-dump(FC0012 | tem range | tem location) 
+	FC0012 - FC0016 - Apresentação e Arguição do Fórum Científico
 	Informações para as apresentações:
 	Horário: Sábado (05/09) 08:00 - 11:30h
 	Local: Sala Cerejeira
---- section-dump(FC0017 | tem range | tem location) 
-	FC017 - FC022 - Apresentação e Arguição do Fórum Científico
+--- section(linha 662)-dump(FC0017 | tem range | tem location) 
+	FC0017 - FC0022 - Apresentação e Arguição do Fórum Científico
 	Informações para as apresentações:
 	Horário: Sábado (05/09) 13:00 - 16:30h
 	Local: Sala Cerejeira
---- section-dump(FC0023 | tem range | tem location) 
-	FC023 - FC027 - Apresentação e Arguição do Fórum Científico
+--- section(linha 670)-dump(FC0023 | tem range | tem location) 
+	FC0023 - FC0027 - Apresentação e Arguição do Fórum Científico
 	Informações para as apresentações:
 	Horário: Domingo (06/09) 08:00 - 11:30h
 	Local: Sala Cerejeira
---- section-dump(COL0001 | tem range | tem location) 
-	COL001 - COL005 - Apresentação e Arguição
+--- section(linha 756)-dump(COL0001 | tem range | tem location) 
+	COL0001 - COL0005 - Apresentação e Arguição
 	Informações para as apresentações:
 	Horário: Sábado (05/09) 08:00 - 11:30h
 	Local: Sala Manacá
---- section-dump(COL0006 | tem range | tem location) 
-	COL006 - COL010 - Apresentação e Arguição
+--- section(linha 764)-dump(COL0006 | tem range | tem location) 
+	COL0006 - COL0010 - Apresentação e Arguição
 	Informações para as apresentações:
 	Horário: Sábado (05/09) 13:00 - 16:30h
 	Local: Sala Manacá
---- section-dump(COL0011 | tem range | tem location) 
-	COL011 - COL015 - Apresentação e Arguição
+--- section(linha 772)-dump(COL0011 | tem range | tem location) 
+	COL0011 - COL0015 - Apresentação e Arguição
 	Informações para as apresentações:
 	Horário: Domingo (06/09) 08:00 - 11:30h
 	Local: Sala Manacá
---- section-dump(HA0001 | SEM range | SEM location) 
+--- section(linha 808)-dump(HA0001 | SEM range | SEM location) 
 	Sábado (05/09)
-	Horário: 08:00 - 11:30h: Apresentação dos painéis (HA001 a HA012)
-	Horário: 13:30 - 17:00h: Apresentação dos painéis (HA013 a HA024)
+	Horário: 08:00 - 11:30h: Apresentação dos painéis (HA0001 - HA0012)
+	Horário: 13:30 - 17:00h: Apresentação dos painéis (HA0013 - HA0024)
 	Tempo de apresentação: 5 minutos
 	Tempo de argüição: 5 minutos
 	Serão selecionados 12 trabalhos (resultado às 18:00h) para apresentação no Domingo (06/09)

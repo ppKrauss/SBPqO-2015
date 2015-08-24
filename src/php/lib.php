@@ -9,6 +9,8 @@
  */
 $LIBVERS = '1.5.5'; // v1.5.2 de 2015-08; v1.5.0 de 2015-07; v1.4 de 2014-08-24; v1.3 de 2014-08-12; v1.2 de 2014-08-03; v1.1 de 2014-08-02; v1.0 de 2014-08-01.
 
+//print_r (dayFormat('6/9/2015','2015-09')); die("\nDEBUG22\n" );
+
 ///////  ///////  ///////  /////// 
 /////// I/O INICIALIZATION ///////
 $io_baseDir = realpath( dirname(__FILE__).'/..' );  // não usar getcwd();
@@ -232,35 +234,6 @@ if (csv_get(
     	$dayLocais_bySec[$daysec] = join('; ',array_keys($a));
 }
 
-
-/*
- *  CARGA GAMBI de instrucoes:	
-$instrGAMBI = [];
-if (convCsv(
-	"$io_baseDir/../$pastaDados/conteudoExtra/InstrucoesAutores/instrucoes_claudio.csv"
-	//0='Data',1=hora,2=Atividade,3=Local,4=sessao,5=area,6=range,sec
-	// 4-Sep, 11:30 - 11:45h,Retirada,Foyer 2,ISSAO ,Sessão I,PI0001 - PI0152,PI
-	,function ($tmp) use (&$instrGAMBI) {
-		if (preg_match('/^\s*(\d+)/',$tmp[0],$m)) {
-			$tmp[0] = sprintf("2015-09-%02d",$m[1]); // %02d-09-2015 ERRADO! PAU NAS INSTRUCOES!
-			$tmp[3] = localValido($tmp[3]);
-			if (preg_match('/([\d:]+)h?[\s\-]*([\d:]+)?h?/s',$tmp[1],$m)) {
-				$tmp[1] = "$m[1]h".(isset($m[2])?" - $m[2]h":'');
-			}
-			$sec = '';
-			if (preg_match('/([A-Z]{2,3})\s*(\d+)[\s\-a]+([A-Z]{2,3})\s*(\d+)/s',$tmp[6],$m)) {
-				$sec = $m[1];
-				$tmp[6] = sprintf("%s%04d",$sec,$m[2]);
-				$tmp[7] = sprintf("%s%04d",$m[3],$m[4]);
-			}	
-			$tmp[] = $sec;
-		}
-		return $tmp;
-	} // func
-	,','
-)) die("\nFIM\n");
-*/
-
 /**
  *  CARGA DOS DESCRITORES DE CADA RESUMO:	
  */
@@ -271,7 +244,7 @@ if (!csv_get(
 	,'Data'
 	,function ($tmp) use (&$instrucoes_autores, &$PNgrupo) {
 		// Data,hora,Atividade,Local,sessao,area,res_ini,res_fim,sec
-		list($diaIso,$dia) = dayFormat($tmp[0]);
+		list($diaIso,$dia) = dayFormat($tmp[0],'2015'); // PERIGO FORÇANDO DATA
 		$idr1 = $tmp[6]; // primeiro resumo do range
 		$hora0 = substr($tmp[1],0,5);
 		$horario = $tmp[1];
@@ -286,7 +259,6 @@ if (!csv_get(
 	    		$r2 = (int) substr($tmp[7],2);
 				list($idloc,$locname) = localValido($tmp[3],2);
 				list($h1,$h2) = preg_split('/[\s\-]+/s', $horario);
-//print "\n-- skdjs $tmp[6] - $r1 $r2";
 	    		for($i=$r1; $i<=$r2; $i++) {// scan all resumos
 					$PNgrupo[sprintf("PN%04d",$i)] = [
 						'dia'=>$dia,     'horario'=>$horario, 'h1'=>$h1, 'h2'=>$h2,
@@ -304,8 +276,6 @@ if (!csv_get(
 )) {
    die("\nERRO 34341\n");
 }
-
-//var_dump($PNgrupo); die("\nDEBHGjsdhdhs");
 
 
 /**
@@ -1045,7 +1015,7 @@ EOD;
 			$this->formatOutput=TRUE;
 			$this->encoding = 'UTF-8';
 			// falta template HTML5 http://www.w3.org/TR/html-polyglot/
-			return $this->saveXML();
+			return rmClosedFormatters( $this->saveXML() );
 
 		} elseif ($MODO=='xml')
 			return $this->asXML($dayFilter,$isMultiSec);
@@ -1151,7 +1121,13 @@ function xsl_regRestore($type,$secid){
 	}
 }
 
-
+function rmClosedFormatters($xhtml) {
+	return str_replace(
+		['<i/>', '<em/>', '<b/>', '<strong/>', '<sub/>', '<sup/>'] 
+		,''
+		,$xhtml
+	);	
+}
 
 /**
  * Date parse for any dates and validating context. Use strtotime().
@@ -1159,16 +1135,19 @@ function xsl_regRestore($type,$secid){
  * @param $valid mix, associative array of iso dates; string 'global' for the associative global;
  *        string "iso1 iso2" for iso dates closed range; string for year or iso "year-month".
  */
-function dayFormat($s,$valid='global',$onlyIso=FALSE) {
+function dayFormat($s0,$valid='global',$onlyIso=FALSE) {
+	$s=$s0;
+	if (preg_match('|(\d+)/(\d+)/(\d{4,4})|s',$s0,$m))
+		$s = "$m[1]-$m[2]-$m[3]"; // BR to US date?
 	$t = strtotime($s); // not need trim
 	if (!$t)
-		$t = strtotime( str_replace('/','-',$s) );
+		return $onlyIso? "ERR1": array( "ERR1", "ERR1" );
 	$iso = date("Y-m-d", $t);
 	$ok = $len = 1;
 	if (is_array($valid))  		// param array
 		$ok = isset($valid[$iso]);
 	elseif ($valid=='global') {	// global array
-		global $valiDia;		
+		global $valiDia;	
 		$ok = isset($valiDia[$iso]);
 	} elseif (($p=explode(' ',$valid)) && count($p)>1) {
 		$t0 = strtotime($p[0]); $t1 = strtotime($p[1]);
@@ -1179,7 +1158,7 @@ function dayFormat($s,$valid='global',$onlyIso=FALSE) {
 	if ($ok)
 	    return $onlyIso? $iso: array( $iso, date("d/m/Y",$t) );
 	else
-		return $onlyIso? "ERR": array( "ERR", "ERR" );
+		return $onlyIso? "ERR2": array( "ERR2", "ERR2: iso=$iso s0=$s0" );
 }
 function dayIso($s,$valid='global') {
 	return dayFormat($s,$valid,TRUE);
