@@ -14,7 +14,7 @@
 
 // CONFIGS:
 $fileOut     = 'php://stdout';
-
+$TAB = '###';
 
 include('lib.php');
 $showDomWarnings = isset($io_options['warnings']);
@@ -53,7 +53,7 @@ $names = array_keys($idx);
 sort($names);
 foreach ($names as $name) { // conforme espec. Paula
 	print "
-	<p><span class='nome'>$name</span>\t<span class='resumos'>{$idx[$name][4]}</span></p>";
+	<p><span class='nome'>$name</span>$TAB<span class='resumos'>{$idx[$name][4]}</span></p>";
 }
 print "\n\n<p>---------FOOTNOTES (desambiguação de homônimos)-----</p>";
 foreach ($sups as $nsup=>$name)

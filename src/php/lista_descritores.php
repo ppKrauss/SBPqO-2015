@@ -14,6 +14,7 @@
 
 // CONFIGS:
 $fileOut     = 'php://stdout';
+$TAB = '###';
 
 include('lib.php');
 $showDomWarnings = isset($io_options['warnings']);
@@ -42,7 +43,7 @@ sort($names);
 foreach ($names as $k) {
 	$resumos = join(', ',$DESCRITORES[$k]);
 	print "
-	<p><span class='nome'>$k</span>\t<span class='resumos'>$resumos</span></p>";
+	<p><span class='nome'>$k</span>$TAB<span class='resumos'>$resumos</span></p>";
 }
 
 print "\n</body>\n</html>\n";
