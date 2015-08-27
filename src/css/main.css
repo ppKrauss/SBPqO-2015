@@ -64,7 +64,7 @@
 
 @page { 
     size: 210mm 280mm;
-    margin: 11mm 3mm 11mm 15.25mm; /* top=15mm right=3mm 15mm left=20mm;*/
+    margin: 16mm 3mm 11mm 15.25mm; /* top=15mm right=3mm 15mm left=20mm;*/
 
     @bottom-left{     
         /* content com char especial, ver coluna CSS em http://brajeshwar.github.io/entities/  */   
