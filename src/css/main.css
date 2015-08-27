@@ -64,43 +64,31 @@
 
 @page { 
     size: 210mm 280mm;
-}
-@page:right{
-    margin: 11mm 3mm 11mm 20mm; /* 15mm right=3mm 15mm left=20mm;*/
-}
-@page:left{
-   margin: 11mm 12mm 11mm 11mm; /* 15mm 12mm 15mm 11mm; */
-}
+    margin: 11mm 3mm 11mm 15.25mm; /* top=15mm right=3mm 15mm left=20mm;*/
 
-/*-----------------------paginação-------------------------------*/
-body {
-    display: block;
-    page: table-of-contents;
-    counter-reset: page 18;
-}
-
-/* content com char especial, ver coluna CSS em http://brajeshwar.github.io/entities/  */
-@page:right{  /* impares */
-    
     @bottom-left{     
-        content: "Braz Oral Res 2015;29(suppl 1) \00a0 ";
+        /* content com char especial, ver coluna CSS em http://brajeshwar.github.io/entities/  */   
+        content: "Proceedings of the 32st SBPqO Annual Meeting \00a0\00a0\00a0\00a0 \00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 \00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0  Braz Oral Res 2015;29(suppl 1) \00a0 "; /* rm Proceedings of the 32st SBPqO Annual Meeting \00a0\00a0\00a0\00a0  */
         font-family:SabonLTStd-Roman;
         font-size: 8pt;
         text-align: right;
         padding-bottom: 80%;
-        padding-left: 20%;
+        /* padding-left: 20%; */
         padding-right: 0; /*old  1%*/
     }
+
     @bottom-right{
         content:counter(page);
         text-align: left; /* ?? right */
 
         margin-top: 0;
-        margin-right: 0; /*old 2% */        
-        padding-left:4pt;
+        margin-right: 0; /*old 2% */
+        padding-left: 4pt; /* entre linha e content  */
         padding-bottom: 80%;
+        padding-right: 0; /* margem  */
+        width: 16.5mm;  /* old 11.5mm gambi para alinhar margem */
 
-        border-left: solid 1pt #9b9d9f;
+        border-left: solid 1.5pt #9C0629; /* RGB 156 6 41 */
 
         font-family:FuturaBT-Heavy;
         font-size: 9pt; 
@@ -108,33 +96,14 @@ body {
     }
 }
 
-@page:left{  /* pares */
-    
-    @bottom-right{      
-        content: " \00a0 Proceedings of the 32st SBPqO Annual Meeting";
-        /*content: "Proceedings of the 31st SBPqO Annual Meeting";*/
-        font-family:SabonLTStd-Roman;
-        font-size: 8pt;
-        text-align: left;   
-        border-left: solid 1pt #9b9d9f;
-        padding-bottom: 80%;
-        padding-left: 0; /*old 1%*/
-        padding-right: 20%;
 
-    }
-    @bottom-left{
-        content:counter(page);
-        text-align: left;
-
-        margin-top: 0;
-        padding-right:4pt;
-        margin-bottom: 80%;
-
-        font-family:FuturaBT-Heavy;
-        font-size: 9pt; 
-        font-weight: bold;
-    }
+/*-----------------------paginação-------------------------------*/
+body {
+    display: block;
+    page: table-of-contents;
+    counter-reset: page 23;
 }
+
 
 /*-----------------------BODY-------------------------------*/
 
@@ -145,25 +114,20 @@ body {
 p.secTitle{
     background-color: #9b9d9f;
     color: #fff;
-    width: 95.9%;
+    width: 94%; /* 95.9% */
+    
     text-align: center;
     font-family: FuturaBT-Heavy;
     font-size: 12pt;
-    padding-top: 10pt; 
-    padding-bottom: 10pt;          
-    margin-bottom: 12pt;
-    /* height: 5mm;  padding-top: 1.5mm; */
+    
+    padding-top: 2pt; /* 10pt */ 
+    padding-top: 2pt; /* 10pt */ 
+    padding-bottom: 3pt;   /* cinza */
+    margin-bottom: 16pt;  /* margem branca */
+    /* height: 5mm; padding-top: 1.5mm; */
 }
 
-/* indice de termos controlados */
-div.tocByKeys{
-    columns: 2;
-    column-gap: 0.18em;
-    column-fill:balance;
-    padding: 0;
-    margin: 0;
-    margin-bottom: 20pt;
-}
+
 .tocByKeys table{
         width: 86mm;
 }
@@ -233,17 +197,6 @@ div>p{
     margin-top: 2pt;
 }
 
-hr{
-    display: block; 
-    width: 100%;
-    height: 1px;
-    border: 0; 
-    border-top: 1px solid #888; /*old #9b9d9f*/
-}
-
-hr+span{
-    margin: -1pt 0;
-}
 
 div.aux{
     display: block;
@@ -255,7 +208,7 @@ div.aux{
 span.pubid{
     float: left;
     color: #fff;
-    background-color: #888; /*old #9b9d9f*/
+    background-color: #9C0629; /*old #888 old #9b9d9f*/
     padding: 2pt 2pt; 
     font-family: FuturaBT-Heavy;
     font-size: 7pt;   /* 8pt bom */
@@ -263,9 +216,21 @@ span.pubid{
     text-align: center;
     text-transform:uppercase;
     text-indent: 0;
-    margin-right: 5pt;
+
+    margin-right: 15pt;
     margin-bottom: 2pt;
 }
+hr{  /* linha no pubid */
+    display: block; 
+    width: 100%;
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #9C0629; /* old 888 old #9b9d9f*/
+}
+hr+span{
+    margin: -1pt 0;
+}
+
 
 div.sec{
     width:100%;
@@ -281,6 +246,7 @@ div.article {
     /*height: 77mm;*/    /* B. change the vertical numb. of boxes */
     width: 86mm;        /* C. change the horizontal numb. of boxes*/
     margin-right:6.8mm;         /*  boxes separator */
+
     vertical-align: top; /* (top|bottom) align boxes */
     text-align:justify;
     page-break-inside: avoid;
