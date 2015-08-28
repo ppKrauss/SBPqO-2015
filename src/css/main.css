@@ -68,7 +68,7 @@
 
     @bottom-left{     
         /* content com char especial, ver coluna CSS em http://brajeshwar.github.io/entities/  */   
-        content: "Proceedings of the 32st SBPqO Annual Meeting \00a0\00a0\00a0\00a0 \00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 \00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0  Braz Oral Res 2015;29(suppl 1) \00a0 "; /* rm Proceedings of the 32st SBPqO Annual Meeting \00a0\00a0\00a0\00a0  */
+        content: "Proceedings of the 32nd SBPqO Annual Meeting \00a0\00a0\00a0\00a0 \00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0 \00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0  Braz Oral Res 2015;29(suppl 1) \00a0 ";
         font-family:SabonLTStd-Roman;
         font-size: 8pt;
         text-align: right;
