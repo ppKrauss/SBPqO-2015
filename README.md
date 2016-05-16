@@ -65,6 +65,12 @@ Os fluxos tipo *HTM2*, *HTM3* e  *HTM4*, ilustrados no workflow, podem ser ignor
 Quanto à normalização de nomes próprios no fluxo *CSV1* (planilha `indiceAutores`), conforme e-mail de 07/08/2015 da profa. Altair, optou-se por não realizar.
 
 ##Subsídios externos
+
+Resultados:
+* [sbpqo.org.br/resumos 2015](http://www.sbpqo.org.br/hotsite2015/anais/BOR-v029-Suppl-Book_FINAL.pdf): trabalho descrito por este projeto.
+* [sbpqo.org.br/resumos 2014](http://www.sbpqo.org.br/resumos/SBPqOAnais31Reuniao.pdf): trabalho similar, com XML e processo PDF similares, realizado um ano antes.
+
+Outros:
 * http://www.SBPqO.org.br/ (cliente e evento relacionados ao presente projeto)
 * [Nosso Trello](https://trello.com/b/ST4FS44Z/sbpqo-2015) (kanban das tarefas)
 * http://www.Open-Contracting.org (referencial sobre transparência em contratos)
